@@ -16,4 +16,4 @@ jobs:
         upstream_repo: https://github.com/gitpod-io/gitpod.git
         upstream_branch: main
         local_branch: main
-        github_token: ${{ secrets.VSCODE_GITHUB_TOKEN }}
+        github_token: ${{ secrets.GITPOD_TOKEN }}
