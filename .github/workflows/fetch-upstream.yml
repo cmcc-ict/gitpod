@@ -11,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: GitHub Sync to Upstream Repository
-      uses: 135e2/sync-upstream-repo@master
+      uses: cmcc-ict/sync-upstream-repo@master
       with:
         upstream_repo: https://github.com/gitpod-io/gitpod.git
         upstream_branch: main
