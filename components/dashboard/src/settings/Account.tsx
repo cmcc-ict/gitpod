@@ -39,7 +39,7 @@ export default function Account() {
         >
             <ol className="text-gray-500 text-sm list-outside list-decimal">
                 <li className="ml-5">All your workspaces and related data will be deleted and cannot be restored afterwards.</li>
-                <li className="ml-5">Your subscription will be cancelled. If you obtained a Gitpod subscription through the GitHub marketplace, you need to cancel your plan there.</li>
+                <li className="ml-5">Your subscription will be cancelled. If you obtained a Cmict subscription through the GitHub marketplace, you need to cancel your plan there.</li>
             </ol>
             <p className="pt-4 pb-2 text-gray-600 dark:text-gray-400 text-base font-semibold">Type your email to confirm</p>
             <input className="w-full" type="text" onChange={e => setTypedEmail(e.target.value)}></input>
@@ -68,7 +68,7 @@ export default function Account() {
                 </div>
             </div>
             <h3 className="mt-12">Delete Account</h3>
-            <p className="text-base text-gray-500 pb-4">This action will remove all the data associated with your account in Gitpod.</p>
+            <p className="text-base text-gray-500 pb-4">This action will remove all the data associated with your account in Cmict.</p>
             <button className="danger secondary" onClick={() => setModal(true)}>Delete Account</button>
         </PageWithSubMenu>
     </div>;

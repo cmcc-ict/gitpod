@@ -80,7 +80,7 @@ export interface StartWorkspaceError {
 export function StartPage(props: StartPageProps) {
   const { phase, error } = props;
   let title = props.title || getPhaseTitle(phase, error);
-  useEffect(() => { document.title = 'Starting — Gitpod' }, []);
+  useEffect(() => { document.title = 'Starting — Cmict' }, []);
   return <div className="w-screen h-screen align-middle">
     <div className="flex flex-col mx-auto items-center text-center h-screen">
       <div className="h-1/3"></div>

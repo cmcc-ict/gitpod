@@ -21,7 +21,7 @@ export interface PageWithSubMenuProps {
 
 export function PageWithSubMenu(p: PageWithSubMenuProps) {
     const location = useLocation();
-    useEffect(() => { document.title = `${p.title} — Gitpod` }, []);
+    useEffect(() => { document.title = `${p.title} — Cmict` }, []);
     return <div className="w-full">
         <Header title={p.title} subtitle={p.subtitle} />
         <div className='lg:px-28 px-10 flex pt-9'>
