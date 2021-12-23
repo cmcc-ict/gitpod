@@ -39,13 +39,13 @@ export default function Setup() {
     return <div>
         {!showModal && (
             <Modal visible={true} onClose={() => { }} closeable={false}>
-                <h3 className="pb-2">Welcome to Gitpod 🎉</h3>
+                <h3 className="pb-2">Welcome to Cmict 🎉</h3>
                 <div className="border-t border-b border-gray-200 dark:border-gray-800 mt-2 -mx-6 px-6 py-4">
-                    <p className="pb-4 text-gray-500 text-base">To start using Gitpod, you will need to set up a git integration.</p>
+                    <p className="pb-4 text-gray-500 text-base">To start using Cmict, you will need to set up a git integration.</p>
 
                     <div className="flex">
                         <span className="text-gray-500">
-                            By using Gitpod, you agree to our <a className="learn-more hover:text-gray-600" target="gitpod-terms" href="https://www.gitpod.io/self-hosted-terms/">terms</a>.
+                            By using Cmict, you agree to our <a className="learn-more hover:text-gray-600" target="gitpod-terms" href="https://www.gitpod.io/self-hosted-terms/">terms</a>.
                         </span>
                     </div>
                 </div>
