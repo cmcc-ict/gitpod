@@ -16,11 +16,11 @@ module.exports = {
     devServer: {
         proxy: {
             '/api': {
-                 target: 'https://' + '3001-jade-asp-wom7fvac.ws-us25.gitpod.io',
+                 target: 'https://' + 'gitpod.io',
                  ws: true,
                  headers: {
-                     host: '3001-jade-asp-wom7fvac.ws-us25.gitpod.io',
-                     origin: 'https://' + '3001-jade-asp-wom7fvac.ws-us25.gitpod.io',
+                     host: 'gitpod.io',
+                     origin: 'https://' + 'gitpod.io',
                      cookie: '_gitpod_io_=s%3A0a317dbd-5e7c-4244-9f89-b7d08ee11b29.wcg0If6PEBe%2F7OLlbATXjULNKKMDDRS01pqUiQRIPP0'
                 }
             }
