@@ -440,6 +440,7 @@ export function GitIntegrationModal(props: ({
 
     const [type, setType] = useState<string>("GitLab");
     const [host, setHost] = useState<string>("gitlab.example.com");
+    const [schema, setSchema] = useState<string>("https");
     const [redirectURL, setRedirectURL] = useState<string>(callbackUrl("gitlab.example.com"));
     const [clientId, setClientId] = useState<string>("");
     const [clientSecret, setClientSecret] = useState<string>("");
@@ -479,6 +480,7 @@ export function GitIntegrationModal(props: ({
     const activate = async () => {
         let entry = (mode === "new") ? {
             host,
+            schema,
             type,
             clientId,
             clientSecret,
@@ -553,6 +555,14 @@ export function GitIntegrationModal(props: ({
         }
     }
 
+    const updateSchemaValue = (schema: string) => {
+        if (mode === "new") {
+            setSchema(schema);
+            setRedirectURL(callbackUrl(schema));
+            setErrorMessage(undefined);
+        }
+    }
+
     const updateClientId = (value: string) => {
         setClientId(value);
     }
@@ -577,14 +587,14 @@ export function GitIntegrationModal(props: ({
         }
     }
 
-    const getRedirectUrlDescription = (type: string, host: string) => {
+    const getRedirectUrlDescription = (type: string, schema: string, host: string) => {
         let settingsUrl = ``;
         switch (type) {
             case "GitHub":
-                settingsUrl = `${host}/settings/developers`;
+                settingsUrl = `${schema}://${host}/settings/developers`;
                 break;
             case "GitLab":
-                settingsUrl = `${host}/-/profile/applications`;
+                settingsUrl = `${schema}://${host}/-/profile/applications`;
                 break;
             default: return undefined;
         }
@@ -601,7 +611,7 @@ export function GitIntegrationModal(props: ({
 
         return (<span>
             Use this redirect URL to update the OAuth application.
-            Go to <a href={`https://${settingsUrl}`} target="_blank" rel="noopener" className="text-gray-400 learn-more hover:text-gray-600">developer settings</a> and setup the OAuth application.&nbsp;
+            Go to <a href={`${settingsUrl}`} target="_blank" rel="noopener" className="text-gray-400 learn-more hover:text-gray-600">developer settings</a> and setup the OAuth application.&nbsp;
             <a href={docsUrl} target="_blank" rel="noopener" className="text-gray-400 learn-more hover:text-gray-600">Learn more</a>.
         </span>);
     }
@@ -645,6 +655,11 @@ export function GitIntegrationModal(props: ({
                         onChange={(e) => updateHostValue(e.target.value)} />
                 </div>
                 <div className="flex flex-col space-y-2">
+                    <label htmlFor="schema" className="font-medium">schema</label>
+                    <input name="schema" disabled={mode === "edit"} type="text" value={schema} className="w-full"
+                        onChange={(e) => updateSchemaValue(e.target.value)} />
+                </div>
+                <div className="flex flex-col space-y-2">
                     <label htmlFor="redirectURL" className="font-medium">Redirect URL</label>
                     <div className="w-full relative">
                         <input name="redirectURL" disabled={true} readOnly={true} type="text" value={redirectURL} className="w-full pr-8" />
@@ -652,7 +667,7 @@ export function GitIntegrationModal(props: ({
                             <img src={copy} title="Copy the Redirect URL to clipboard" className="absolute top-1/3 right-3" />
                         </div>
                     </div>
-                    <span className="text-gray-500 text-sm">{getRedirectUrlDescription(type, host)}</span>
+                    <span className="text-gray-500 text-sm">{getRedirectUrlDescription(type, schema, host)}</span>
                 </div>
                 <div className="flex flex-col space-y-2">
                     <label htmlFor="clientId" className="font-medium">{`${type === "GitLab" ? "Application ID" : "Client ID"}`}</label>
