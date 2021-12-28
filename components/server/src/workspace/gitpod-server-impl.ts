@@ -1749,6 +1749,7 @@ export class GitpodServerImpl<Client extends GitpodClient, Server extends Gitpod
             ownerId: entry.ownerId,
         } : <AuthProviderEntry.NewEntry>{
             host: entry.host,
+            schema: entry.schema,
             type: entry.type,
             clientId: entry.clientId,
             clientSecret: entry.clientSecret,

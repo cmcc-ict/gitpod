@@ -36,7 +36,7 @@ export class GitLabAuthProvider extends GenericAuthProvider {
      */
     protected get oauthConfig() {
         const oauth = this.config.oauth!;
-        const defaultUrls = oauthUrls(this.config.host);
+        const defaultUrls = oauthUrls(this.config.host, this.config.schema || "https");
         const scopeSeparator = " ";
         return <typeof oauth>{
             ...oauth,

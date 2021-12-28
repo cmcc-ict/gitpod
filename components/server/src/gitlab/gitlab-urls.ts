@@ -5,10 +5,10 @@
  */
 
 
-export function oauthUrls(host: string) {
+export function oauthUrls(host: string, schema: string) {
     return {
-        authorizationUrl: `https://${host}/oauth/authorize`,
-        tokenUrl: `https://${host}/oauth/token`,
-        settingsUrl: `https://${host}/-/profile/applications`,
+        authorizationUrl: `${schema}://${host}/oauth/authorize`,
+        tokenUrl: `${schema}://${host}/oauth/token`,
+        settingsUrl: `${schema}://${host}/-/profile/applications`,
     }
 }

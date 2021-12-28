@@ -2636,6 +2636,24 @@
     query-string "^6.13.3"
     xcase "^2.0.1"
 
+"@gitpod/gitpod-protocol@file:components/gitpod-protocol":
+  version "0.1.5"
+  dependencies:
+    ajv "^6.5.4"
+    analytics-node "^4.0.1"
+    inversify "^5.0.1"
+    jaeger-client "3.17.2"
+    js-yaml "^3.10.0"
+    opentracing "^0.14.4"
+    prom-client "^10.2.0"
+    random-number-csprng "^1.0.2"
+    reconnecting-websocket "^4.4.0"
+    reflect-metadata "^0.1.10"
+    uuid "^3.3.3"
+    vscode-uri "^1.0.1"
+    vscode-ws-jsonrpc "^0.2.0"
+    ws "^7.4.6"
+
 "@google-cloud/common@^3.5.0":
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/@google-cloud/common/-/common-3.5.0.tgz#0959e769e8075a06eb0823cc567eef00fd0c2d02"

@@ -99,8 +99,8 @@ export class AuthProviderService {
         return await this.authProviderDB.storeAuthProvider(authProvider as AuthProviderEntry);
     }
     protected initializeNewProvider(newEntry: AuthProviderEntry.NewEntry): AuthProviderEntry {
-        const { host, type, clientId, clientSecret } = newEntry;
-        const urls = type === "GitHub" ? githubUrls(host) : (type === "GitLab" ? gitlabUrls(host) : undefined);
+        const { host, type, clientId, clientSecret, schema} = newEntry;
+        const urls = type === "GitHub" ? githubUrls(host) : (type === "GitLab" ? gitlabUrls(host, schema) : undefined);
         if (!urls) {
             throw new Error("Unexpected service type.");
         }
