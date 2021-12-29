@@ -45,9 +45,9 @@ export default function Account() {
             <input className="w-full" type="text" onChange={e => setTypedEmail(e.target.value)}></input>
         </ConfirmationModal>
 
-        <PageWithSubMenu subMenu={settingsMenu}  title='Account' subtitle='Manage account and git configuration.'>
-            <h3>Profile</h3>
-            <p className="text-base text-gray-500 pb-4 max-w-2xl">The following information will be used to set up git configuration. You can override git author name and email per project by using the default environment variables <CodeText>GIT_AUTHOR_NAME</CodeText> and <CodeText>GIT_COMMITTER_EMAIL</CodeText>.</p>
+        <PageWithSubMenu subMenu={settingsMenu}  title='账户' subtitle='管理帐户和git配置'>
+            <h3>简介</h3>
+            <p className="text-base text-gray-500 pb-4 max-w-2xl">以下信息将用于设置git配置。通过使用默认环境变量，可以覆盖每个项目的git作者姓名和电子邮件 <CodeText>GIT_AUTHOR_NAME</CodeText> and <CodeText>GIT_COMMITTER_EMAIL</CodeText>.</p>
             <div className="flex flex-col lg:flex-row">
                 <div>
                     <div className="mt-4">
@@ -67,9 +67,9 @@ export default function Account() {
                     </div>
                 </div>
             </div>
-            <h3 className="mt-12">Delete Account</h3>
-            <p className="text-base text-gray-500 pb-4">This action will remove all the data associated with your account in Cmict.</p>
-            <button className="danger secondary" onClick={() => setModal(true)}>Delete Account</button>
+            <h3 className="mt-12">删除帐户</h3>
+            <p className="text-base text-gray-500 pb-4">此操作将删除与您在Cmict中的帐户相关的所有数据.</p>
+            <button className="danger secondary" onClick={() => setModal(true)}>删除帐户</button>
         </PageWithSubMenu>
     </div>;
 }

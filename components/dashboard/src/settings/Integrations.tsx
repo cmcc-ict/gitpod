@@ -25,7 +25,7 @@ import settingsMenu from "./settings-menu";
 export default function Integrations() {
 
     return (<div>
-        <PageWithSubMenu subMenu={settingsMenu} title='Integrations' subtitle='Manage permissions for git providers and integrations.'>
+        <PageWithSubMenu subMenu={settingsMenu} title='整合' subtitle='管理git提供程序和集成的权限'>
             <GitProviders />
             <div className="h-12"></div>
             <GitIntegrations />
@@ -103,7 +103,7 @@ function GitProviders() {
             }
         } else {
             result.push({
-                title: 'Connect',
+                title: '连接',
                 customFontStyle: 'text-green-600',
                 onClick: () => connect(provider)
             })
@@ -279,8 +279,8 @@ function GitProviders() {
             </Modal>
         )}
 
-        <h3>Git Providers</h3>
-        <h2>Manage permissions for git providers.</h2>
+        <h3>Git提供者</h3>
+        <h2>管理git提供程序的权限.</h2>
         <ItemsList className="pt-6">
             {authProviders && authProviders.map(ap => (
                 <Item key={"ap-" + ap.authProviderId} className="h-16">
@@ -295,7 +295,7 @@ function GitProviders() {
                     </ItemField>
                     <ItemField className="w-6/12 xl:w-3/12 flex flex-col">
                         <span className="my-auto truncate text-gray-500 overflow-ellipsis">{getUsername(ap.authProviderId) || "–"}</span>
-                        <span className="text-sm my-auto text-gray-400">Username</span>
+                        <span className="text-sm my-auto text-gray-400">用户名</span>
                     </ItemField>
                     <ItemField className="hidden xl:w-5/12 xl:flex xl:flex-col">
                         <span className="my-auto truncate text-gray-500 overflow-ellipsis">{getPermissions(ap.authProviderId)?.join(", ") || "–"}</span>
@@ -337,12 +337,12 @@ function GitIntegrations() {
     const gitProviderMenu = (provider: AuthProviderEntry) => {
         const result: ContextMenuEntry[] = [];
         result.push({
-            title: provider.status === "verified" ? "Edit Configuration" : "Activate Integration",
+            title: provider.status === "verified" ? "编辑配置" : "激活集成",
             onClick: () => setModal({ mode: "edit", provider }),
             separator: true,
         })
         result.push({
-            title: 'Remove',
+            title: '移除',
             customFontStyle: 'text-red-600 dark:text-red-400 hover:text-red-800 dark:hover:text-red-300',
             onClick: () => setModal({ mode: "delete", provider })
         });
@@ -359,8 +359,8 @@ function GitIntegrations() {
         )}
         {modal?.mode === "delete" && (
             <ConfirmationModal
-                title="Remove Integration"
-                areYouSureText="Are you sure you want to remove the following git integration?"
+                title="移除集成"
+                areYouSureText="是否确实要删除以下的git集成?"
                 children={{
                     name: modal.provider.type,
                     description: modal.provider.host,
@@ -374,13 +374,13 @@ function GitIntegrations() {
 
         <div className="flex items-start sm:justify-between mb-2">
             <div>
-                <h3>Git Integrations</h3>
-                <h2 className="text-gray-500">Manage git integrations for GitLab or GitHub self-hosted instances.</h2>
+                <h3>Git集成</h3>
+                <h2 className="text-gray-500">管理GitLab或GitHub自托管实例的git集成.</h2>
             </div>
             {providers.length !== 0
                 ?
                 <div className="mt-3 flex mt-0">
-                    <button onClick={() => setModal({ mode: "new" })} className="ml-2">New Integration</button>
+                    <button onClick={() => setModal({ mode: "new" })} className="ml-2">新建整合</button>
                 </div>
                 : null}
         </div>
@@ -573,10 +573,10 @@ export function GitIntegrationModal(props: ({
     const validate = () => {
         const errors: string[] = [];
         if (clientId.trim().length === 0) {
-            errors.push(`${type === "GitLab" ? "Application ID" : "Client ID"} is missing.`);
+            errors.push(`${type === "GitLab" ? "应用ID" : "客户端ID"} 缺少.`);
         }
         if (clientSecret.trim().length === 0) {
-            errors.push(`${type === "GitLab" ? "Secret" : "Client Secret"} is missing.`);
+            errors.push(`${type === "GitLab" ? "密码" : "客户端密码"} 缺少.`);
         }
         if (errors.length === 0) {
             setValidationError(undefined);
@@ -610,9 +610,9 @@ export function GitIntegrationModal(props: ({
         }
 
         return (<span>
-            Use this redirect URL to update the OAuth application.
-            Go to <a href={`${settingsUrl}`} target="_blank" rel="noopener" className="text-gray-400 learn-more hover:text-gray-600">developer settings</a> and setup the OAuth application.&nbsp;
-            <a href={docsUrl} target="_blank" rel="noopener" className="text-gray-400 learn-more hover:text-gray-600">Learn more</a>.
+            使用此重定向URL更新OAuth应用程序.
+            转到 <a href={`https://${settingsUrl}`} target="_blank" rel="noopener" className="text-gray-400 learn-more hover:text-gray-600">developer settings</a> 并设置OAuth应用程序.&nbsp;
+            {/* <a href={docsUrl} target="_blank" rel="noopener" className="text-gray-400 learn-more hover:text-gray-600">Learn more</a>. */}
         </span>);
     }
 
@@ -629,19 +629,19 @@ export function GitIntegrationModal(props: ({
     };
 
     return (<Modal visible={!!props} onClose={onClose} closeable={props.closeable}>
-        <h3 className="pb-2">{mode === "new" ? "New Git Integration" : "Git Integration"}</h3>
+        <h3 className="pb-2">{mode === "new" ? "新建Git集成" : "Git集成"}</h3>
         <div className="space-y-4 border-t border-b border-gray-200 dark:border-gray-800 mt-2 -mx-6 px-6 py-4">
             {mode === "edit" && providerEntry?.status !== "verified" && (
                 <AlertBox>You need to activate this integration.</AlertBox>
             )}
             <div className="flex flex-col">
-                <span className="text-gray-500">{props.headerText || "Configure a git integration with a GitLab or GitHub self-hosted instance."}</span>
+                <span className="text-gray-500">{props.headerText || "配置与GitLab或GitHub自托管实例的git集成."}</span>
             </div>
 
             <div className="overscroll-contain max-h-96 overflow-y-auto pr-2">
                 {mode === "new" && (
                     <div className="flex flex-col space-y-2">
-                        <label htmlFor="type" className="font-medium">Provider Type</label>
+                        <label htmlFor="type" className="font-medium">提供者类型</label>
                         <select name="type" value={type} disabled={mode !== "new"} className="w-full"
                             onChange={(e) => setType(e.target.value)}>
                             <option value="GitHub">GitHub</option>
@@ -650,17 +650,17 @@ export function GitIntegrationModal(props: ({
                     </div>
                 )}
                 <div className="flex flex-col space-y-2">
-                    <label htmlFor="hostName" className="font-medium">Provider Host Name</label>
+                    <label htmlFor="hostName" className="font-medium">提供者主机名</label>
                     <input name="hostName" disabled={mode === "edit"} type="text" value={host} className="w-full"
                         onChange={(e) => updateHostValue(e.target.value)} />
                 </div>
                 <div className="flex flex-col space-y-2">
-                    <label htmlFor="schema" className="font-medium">schema</label>
+                    <label htmlFor="schema" className="font-medium">类型</label>
                     <input name="schema" disabled={mode === "edit"} type="text" value={schema} className="w-full"
                         onChange={(e) => updateSchemaValue(e.target.value)} />
                 </div>
                 <div className="flex flex-col space-y-2">
-                    <label htmlFor="redirectURL" className="font-medium">Redirect URL</label>
+                    <label htmlFor="redirectURL" className="font-medium">重定向地址</label>
                     <div className="w-full relative">
                         <input name="redirectURL" disabled={true} readOnly={true} type="text" value={redirectURL} className="w-full pr-8" />
                         <div className="cursor-pointer" onClick={() => copyRedirectUrl()}>
@@ -670,12 +670,12 @@ export function GitIntegrationModal(props: ({
                     <span className="text-gray-500 text-sm">{getRedirectUrlDescription(type, schema, host)}</span>
                 </div>
                 <div className="flex flex-col space-y-2">
-                    <label htmlFor="clientId" className="font-medium">{`${type === "GitLab" ? "Application ID" : "Client ID"}`}</label>
+                    <label htmlFor="clientId" className="font-medium">{`${type === "GitLab" ? "应用 ID" : "客户端 ID"}`}</label>
                     <input name="clientId" type="text" value={clientId} className="w-full"
                         onChange={(e) => updateClientId(e.target.value)} />
                 </div>
                 <div className="flex flex-col space-y-2">
-                    <label htmlFor="clientSecret" className="font-medium">{`${type === "GitLab" ? "Secret" : "Client Secret"}`}</label>
+                    <label htmlFor="clientSecret" className="font-medium">{`${type === "GitLab" ? "密码" : "客户端密码"}`}</label>
                     <input name="clientSecret" type="password" value={clientSecret} className="w-full"
                         onChange={(e) => updateClientSecret(e.target.value)} />
                 </div>
@@ -689,7 +689,7 @@ export function GitIntegrationModal(props: ({
             )}
         </div>
         <div className="flex justify-end mt-6">
-            <button onClick={() => validate() && activate()} disabled={!!validationError || busy}>Activate Integration</button>
+            <button onClick={() => validate() && activate()} disabled={!!validationError || busy}>激活集成</button>
         </div>
     </Modal>);
 }

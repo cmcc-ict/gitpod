@@ -44,11 +44,11 @@ export default function Preferences() {
     }
 
     return <div>
-        <PageWithSubMenu subMenu={settingsMenu} title='Preferences' subtitle='Configure user preferences.'>
-            <h3>Default IDE</h3>
-            <p className="text-base text-gray-500">Choose which IDE you want to use.</p>
+        <PageWithSubMenu subMenu={settingsMenu} title='偏好' subtitle='配置用户首选项.'>
+            <h3>默认 IDE</h3>
+            <p className="text-base text-gray-500">选择要使用的IDE.</p>
             <AlertBox className="mt-3 mb-4 w-3/4">
-                We're deprecating the Theia editor. You can still switch back to Theia for the next few weeks but the preference will be removed by the end of August 2021.
+            我们反对Theia的编辑。在接下来的几周内，你仍然可以转回Theia，但会在2021年8月后取消.
             </AlertBox>
             <div className="mt-4 space-x-4 flex">
                 <SelectableCard className="w-36 h-40" title="VS Code" selected={defaultIde === 'code'} onClick={() => actuallySetDefaultIde('code')}>
@@ -62,8 +62,8 @@ export default function Preferences() {
                     </div>
                 </SelectableCard>
             </div>
-            <h3 className="mt-12">Theme</h3>
-            <p className="text-base text-gray-500">Early bird or night owl? Choose your side.</p>
+            <h3 className="mt-12">主题</h3>
+            <p className="text-base text-gray-500">早起的鸟儿还是夜猫子？选择你的立场.</p>
             <div className="mt-4 space-x-4 flex">
                 <SelectableCard className="w-36 h-32" title="Light" selected={theme === 'light'} onClick={() => actuallySetTheme('light')}>
                     <div className="flex-grow flex justify-center items-end">

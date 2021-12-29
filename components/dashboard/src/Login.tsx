@@ -108,7 +108,7 @@
                          <img src={gitpodDark} className="h-8 hidden dark:block" />
                      </div>
                      <div className="mb-10">
-                         <h1 className="text-5xl mb-3">Welcome to CMICT</h1>
+                         <h1 className="text-5xl mb-3">欢迎使用 OneCode Space</h1>
                          <div className="text-gray-400 text-lg">
                              为云中的每个任务秒级启动全新的自动化开发环境。
                          </div>
@@ -134,7 +134,7 @@
                              <img src={gitpodIcon} className="h-16 mx-auto" />
                          </div>
                          <div className="mx-auto text-center pb-8 space-y-2">
-                             <h1 className="text-3xl">登录{showWelcome ? '' : ' to Gitpod'}</h1>
+                             <h1 className="text-3xl">登录{showWelcome ? '' : ' 到 CMICT'}</h1>
                              <h2 className="uppercase text-sm text-gray-400">时刻准备好编程</h2>
                          </div>
                          <div className="flex flex-col space-y-3 items-center">
@@ -163,7 +163,7 @@
                  </div>
                  <div className="flex-none mx-auto h-20 text-center">
                      <span className="text-gray-400">
-                         By signing in, you agree to our <a className="learn-more hover:text-gray-600" target="gitpod-terms" href="https://www.gitpod.io/terms/">terms of service</a>.
+                         {/* By signing in, you agree to our <a className="learn-more hover:text-gray-600" target="gitpod-terms" href="https://www.gitpod.io/terms/">terms of service</a>. */}
                      </span>
                  </div>
              </div>

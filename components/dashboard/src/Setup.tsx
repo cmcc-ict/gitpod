@@ -34,18 +34,18 @@ export default function Setup() {
         })();
     }
 
-    const headerText = "Configure a git integration with a GitLab or GitHub instance."
+    const headerText = "配置与GitLab或GitHub实例的git集成."
 
     return <div>
         {!showModal && (
             <Modal visible={true} onClose={() => { }} closeable={false}>
-                <h3 className="pb-2">Welcome to Cmict 🎉</h3>
+                <h3 className="pb-2">欢迎来到 OneCode Space 🎉</h3>
                 <div className="border-t border-b border-gray-200 dark:border-gray-800 mt-2 -mx-6 px-6 py-4">
-                    <p className="pb-4 text-gray-500 text-base">To start using Cmict, you will need to set up a git integration.</p>
+                    <p className="pb-4 text-gray-500 text-base">要开始使用OneCode Space，您需要设置git集成.</p>
 
                     <div className="flex">
                         <span className="text-gray-500">
-                            By using Cmict, you agree to our <a className="learn-more hover:text-gray-600" target="gitpod-terms" href="https://www.gitpod.io/self-hosted-terms/">terms</a>.
+                            {/* By using Cmict, you agree to our <a className="learn-more hover:text-gray-600" target="gitpod-terms" href="https://www.gitpod.io/self-hosted-terms/">terms</a>. */}
                         </span>
                     </div>
                 </div>

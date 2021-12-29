@@ -73,12 +73,12 @@ export default function Menu() {
         if (!team) {
             return [
                 {
-                    title: 'Workspaces',
+                    title: '工作区',
                     link: '/workspaces',
                     alternatives: ['/']
                 },
                 {
-                    title: 'Settings',
+                    title: '设置',
                     link: '/settings',
                     alternatives: settingsMenu.flatMap(e => e.link)
                 }
@@ -117,11 +117,11 @@ export default function Menu() {
             alternatives: adminMenu.flatMap(e => e.link)
         }] : []),
         {
-            title: 'Docs',
+            title: '文档',
             link: 'https://www.gitpod.io/docs/',
         },
         {
-            title: 'Community',
+            title: '社区',
             link: 'https://community.gitpod.io/',
         }
     ];
@@ -219,12 +219,12 @@ export default function Menu() {
                                 separator: true
                             },
                             {
-                                title: 'Settings',
+                                title: '设置',
                                 link: '/settings',
                                 separator: true
                             },
                             {
-                                title: 'Logout',
+                                title: '退出',
                                 href: gitpodHostUrl.asApiLogout().toString()
                             },
                         ]}>

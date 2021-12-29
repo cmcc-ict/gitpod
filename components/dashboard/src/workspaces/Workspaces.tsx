@@ -65,14 +65,14 @@ export default class Workspaces extends React.Component<WorkspacesProps, Workspa
         const onActive = () => wsModel!.active = true;
         const onAll = () => wsModel!.active = false;
         return <>
-            <Header title="Workspaces" subtitle="Manage recent and stopped workspaces." />
+            <Header title="工作区" subtitle="管理最近和停止的工作区" />
 
             <div className="lg:px-28 px-10 pt-8 flex">
                 <div className="flex">
                     <div className="py-4">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" width="16" height="16"><path fill="#A8A29E" d="M6 2a4 4 0 100 8 4 4 0 000-8zM0 6a6 6 0 1110.89 3.477l4.817 4.816a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 010 6z"/></svg>
                     </div>
-                    <input type="search" placeholder="Search Workspaces" onChange={(v) => { if (wsModel) wsModel.setSearch(v.target.value) }} />
+                    <input type="search" placeholder="搜索工作区" onChange={(v) => { if (wsModel) wsModel.setSearch(v.target.value) }} />
                 </div>
                 <div className="flex-1" />
                 <div className="py-3">
@@ -97,7 +97,7 @@ export default class Workspaces extends React.Component<WorkspacesProps, Workspa
                     }]} />
                 </div>
                 {wsModel && this.state?.workspaces.length > 0 ?
-                 <button onClick={this.showStartWSModal} className="ml-2">New Workspace</button>
+                 <button onClick={this.showStartWSModal} className="ml-2">新建工作区</button>
                  : null
                 }
             </div>
@@ -106,10 +106,10 @@ export default class Workspaces extends React.Component<WorkspacesProps, Workspa
                     <ItemsList className="lg:px-28 px-10">
                         <Item header={true} className="px-6">
                             <ItemFieldIcon />
-                            <ItemField className="w-3/12">Name</ItemField>
-                            <ItemField className="w-4/12">Context</ItemField>
-                            <ItemField className="w-2/12">Pending Changes</ItemField>
-                            <ItemField className="w-2/12">Last Start</ItemField>
+                            <ItemField className="w-3/12">名称</ItemField>
+                            <ItemField className="w-4/12">环境</ItemField>
+                            <ItemField className="w-2/12">修改</ItemField>
+                            <ItemField className="w-2/12">最后开始</ItemField>
                             <ItemFieldContextMenu />
                         </Item>
                         {
@@ -119,8 +119,8 @@ export default class Workspaces extends React.Component<WorkspacesProps, Workspa
                                         <img src={exclamation} alt="Exclamation Mark" className="m-auto" />
                                     </ItemFieldIcon>
                                     <ItemField className=" flex flex-col">
-                                        <div className="text-gitpod-red font-semibold">Garbage Collection</div>
-                                        <p className="text-gray-500">Unpinned workspaces that have been stopped for more than 14 days will be automatically deleted. <a className="text-blue-600 learn-more hover:text-gray-800 hover:dark:text-gray-100" href="https://www.gitpod.io/docs/life-of-workspace/#garbage-collection">Learn more</a></p>
+                                        <div className="text-gitpod-red font-semibold">垃圾收集</div>
+                                        <p className="text-gray-500">停止超过14天的未固定工作区将自动删除. <a className="text-blue-600 learn-more hover:text-gray-800 hover:dark:text-gray-100" href="https://www.gitpod.io/docs/life-of-workspace/#garbage-collection">Learn more</a></p>
                                     </ItemField>
                                 </Item>
                         }

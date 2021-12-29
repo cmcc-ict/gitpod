@@ -58,25 +58,25 @@ function AddEnvVarModal(p: EnvVarModalProps) {
                 {error}
             </div> : null}
             <div>
-                <h4>Name</h4>
+                <h4>名称</h4>
                 <input className="w-full" type="text" value={ev.name} onChange={(v) => { update({name: v.target.value}) }} />
             </div>
             <div className="mt-4">
-                <h4>Value</h4>
+                <h4>值</h4>
                 <input className="w-full" type="text" value={ev.value} onChange={(v) => { update({value: v.target.value}) }} />
             </div>
             <div className="mt-4">
-                <h4>Scope</h4>
+                <h4>范围</h4>
                 <input className="w-full" type="text" value={ev.repositoryPattern} placeholder="e.g. org/project"
                     onChange={(v) => { update({repositoryPattern: v.target.value}) }} />
             </div>
             <div className="mt-1">
-                <p className="text-gray-500">You can pass a variable for a specific project or use wildcard character (<CodeText>*/*</CodeText>) to make it available in more projects.</p>
+                <p className="text-gray-500">可以为特定项目传递变量，也可以使用通配符 (<CodeText>*/*</CodeText>) 使其在更多项目中可用.</p>
             </div>
         </div>
         <div className="flex justify-end mt-6">
-            <button className="secondary" onClick={p.onClose}>Cancel</button>
-            <button className="ml-2" onClick={save} >{isNew ? 'Add' : 'Update'} Variable</button>
+            <button className="secondary" onClick={p.onClose}>取消</button>
+            <button className="ml-2" onClick={save} >{isNew ? '新增' : '更新'}环境变量</button>
         </div>
     </Modal>
 }
@@ -153,16 +153,16 @@ export default function EnvVars() {
         const name = variable.name;
         const pattern = variable.repositoryPattern;
         if (name.trim() === '') {
-            return 'Name must not be empty.';
+            return '名称不可为空.';
         }
         if (!/^[a-zA-Z0-9_]*$/.test(name)) {
             return 'Name must match /[a-zA-Z_]+[a-zA-Z0-9_]*/.';
         }
         if (variable.value.trim() === '') {
-            return 'Value must not be empty.';
+            return '值不可为空.';
         }
         if (pattern.trim() === '') {
-            return 'Scope must not be empty.';
+            return '范围不可为空.';
         }
         const split = pattern.split('/');
         if (split.length < 2) {
@@ -183,7 +183,7 @@ export default function EnvVars() {
 
 
 
-    return <PageWithSubMenu subMenu={settingsMenu} title='Variables' subtitle='Configure environment variables for all workspaces.'>
+    return <PageWithSubMenu subMenu={settingsMenu} title='环境变量' subtitle='为所有工作区配置环境变量'>
         {isAddEnvVarModalVisible && <AddEnvVarModal
             save={save}
             envVar={currentEnvVar}
@@ -195,21 +195,23 @@ export default function EnvVars() {
             onClose={() => setDeleteEnvVarModalVisible(false)} />}
         <div className="flex items-start sm:justify-between mb-2">
             <div>
-                <h3>Environment Variables</h3>
-                <h2 className="text-gray-500">Variables are used to store information like passwords.</h2>
+                <h3>环境变量</h3>
+                <h2 className="text-gray-500">变量用于存储密码等信息.</h2>
             </div>
             {envVars.length !== 0
                 ? <div className="mt-3 flex mt-0">
-                    <button onClick={add} className="ml-2">New Variable</button>
+                    <button onClick={add} className="ml-2">新建环境变量</button>
                 </div>
                 : null}
         </div>
         {envVars.length === 0
             ? <div className="bg-gray-100 dark:bg-gray-800 rounded-xl w-full h-96">
                 <div className="pt-28 flex flex-col items-center w-96 m-auto">
-                    <h3 className="text-center pb-3 text-gray-500 dark:text-gray-400">No Environment Variables</h3>
-                    <div className="text-center pb-6 text-gray-500">In addition to user-specific environment variables you can also pass variables through a workspace creation URL. <a className="text-gray-400 learn-more hover:text-gray-600" href="https://www.gitpod.io/docs/environment-variables/#using-the-account-settings">Learn more</a></div>
-                    <button onClick={add}>New Variable</button>
+                    <h3 className="text-center pb-3 text-gray-500 dark:text-gray-400">没有环境变量</h3>
+                    <div className="text-center pb-6 text-gray-500">除了用户特定的环境变量外，还可以通过工作区创建URL传递变量.
+                        {/* <a className="text-gray-400 learn-more hover:text-gray-600" href="https://www.gitpod.io/docs/environment-variables/#using-the-account-settings">了解更多</a> */}
+                    </div>
+                    <button onClick={add}>新建环境变量</button>
                 </div>
             </div>
             : <ItemsList>
