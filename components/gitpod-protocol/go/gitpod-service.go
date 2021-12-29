@@ -1551,6 +1551,7 @@ type OAuth2Config struct {
 // AuthProviderEntry is the AuthProviderEntry message type
 type AuthProviderEntry struct {
 	Host    string        `json:"host,omitempty"`
+	Schema  string        `json:"schema,omitempty"`
 	ID      string        `json:"id,omitempty"`
 	Oauth   *OAuth2Config `json:"oauth,omitempty"`
 	OwnerID string        `json:"ownerId,omitempty"`
