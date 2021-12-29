@@ -598,16 +598,16 @@ export function GitIntegrationModal(props: ({
                 break;
             default: return undefined;
         }
-        let docsUrl = ``;
-        switch (type) {
-            case "GitHub":
-                docsUrl = `https://www.gitpod.io/docs/github-integration/#oauth-application`;
-                break;
-            case "GitLab":
-                docsUrl = `https://www.gitpod.io/docs/gitlab-integration/#oauth-application`;
-                break;
-            default: return undefined;
-        }
+        // let docsUrl = ``;
+        // switch (type) {
+        //     case "GitHub":
+        //         docsUrl = `https://www.gitpod.io/docs/github-integration/#oauth-application`;
+        //         break;
+        //     case "GitLab":
+        //         docsUrl = `https://www.gitpod.io/docs/gitlab-integration/#oauth-application`;
+        //         break;
+        //     default: return undefined;
+        // }
 
         return (<span>
             使用此重定向URL更新OAuth应用程序.
