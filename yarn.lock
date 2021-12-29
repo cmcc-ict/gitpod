@@ -2636,6 +2636,27 @@
     query-string "^6.13.3"
     xcase "^2.0.1"
 
+"@gitpod/content-service@file:components/content-service":
+  version "0.0.0"
+
+"@gitpod/gitpod-db@file:components/gitpod-db":
+  version "0.1.5"
+  dependencies:
+    "@gitpod/gitpod-protocol" "0.1.5"
+    "@jmondi/oauth2-server" "^1.1.0"
+    mysql "^2.15.0"
+    reflect-metadata "^0.1.10"
+    typeorm "0.1.20"
+    uuid "^3.1.0"
+
+"@gitpod/gitpod-messagebus@file:components/gitpod-messagebus":
+  version "0.1.5"
+  dependencies:
+    "@gitpod/gitpod-protocol" "0.1.5"
+    amqplib "^0.5.2"
+    opentracing "^0.14.4"
+    uuid "^3.3.3"
+
 "@gitpod/gitpod-protocol@file:components/gitpod-protocol":
   version "0.1.5"
   dependencies:
@@ -2653,6 +2674,15 @@
     vscode-uri "^1.0.1"
     vscode-ws-jsonrpc "^0.2.0"
     ws "^7.4.6"
+
+"@gitpod/image-builder@file:components/image-builder":
+  version "0.0.0"
+
+"@gitpod/licensor@file:components/licensor":
+  version "0.0.0"
+
+"@gitpod/ws-manager@file:components/ws-manager":
+  version "0.0.0"
 
 "@google-cloud/common@^3.5.0":
   version "3.5.0"
