@@ -6,17 +6,17 @@
 
 import { status } from '@grpc/grpc-js';
 import fetch from "node-fetch";
-import { User } from '@gitpod/gitpod-protocol/lib/protocol';
+import { User } from 'cmict-gitpod-protocol/lib/protocol';
 import bodyParser = require('body-parser');
 import * as util from 'util';
 import * as express from 'express';
 import { inject, injectable } from 'inversify';
 import { BearerAuth } from '../auth/bearer-authenticator';
 import { isWithFunctionAccessGuard } from '../auth/function-access';
-import { CodeSyncResourceDB, UserStorageResourcesDB, ALL_SERVER_RESOURCES, ServerResource, SyncResource } from '@gitpod/gitpod-db/lib';
+import { CodeSyncResourceDB, UserStorageResourcesDB, ALL_SERVER_RESOURCES, ServerResource, SyncResource } from 'cmict-gitpod-db/lib';
 import { BlobServiceClient } from '@gitpod/content-service/lib/blobs_grpc_pb';
 import { DeleteRequest, DownloadUrlRequest, DownloadUrlResponse, UploadUrlRequest, UploadUrlResponse } from '@gitpod/content-service/lib/blobs_pb';
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
 import uuid = require('uuid');
 import { accessCodeSyncStorage, UserRateLimiter } from '../auth/rate-limiter';
 import { increaseApiCallUserCounter } from '../prometheus-metrics';

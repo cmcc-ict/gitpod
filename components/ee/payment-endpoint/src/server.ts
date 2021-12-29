@@ -8,7 +8,7 @@ import { injectable, inject } from 'inversify';
 import { Application as App } from 'express';
 import * as http from 'http';
 
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
 
 import { EndpointController } from './chargebee/endpoint-controller';
 import { GithubEndpointController } from './github/endpoint-controller';

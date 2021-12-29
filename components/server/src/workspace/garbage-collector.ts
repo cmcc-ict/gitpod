@@ -7,12 +7,12 @@
 
 import { injectable, inject } from "inversify";
 import { ConsensusLeaderQorum } from "../consensus/consensus-leader-quorum";
-import { Disposable } from "@gitpod/gitpod-protocol";
-import { log } from "@gitpod/gitpod-protocol/lib/util/logging";
+import { Disposable } from "cmict-gitpod-protocol";
+import { log } from "cmict-gitpod-protocol/lib/util/logging";
 import { WorkspaceDeletionService } from "./workspace-deletion-service";
 import * as opentracing from 'opentracing';
-import { TracedWorkspaceDB, DBWithTracing, WorkspaceDB } from "@gitpod/gitpod-db/lib";
-import { TraceContext } from "@gitpod/gitpod-protocol/lib/util/tracing";
+import { TracedWorkspaceDB, DBWithTracing, WorkspaceDB } from "cmict-gitpod-db/lib";
+import { TraceContext } from "cmict-gitpod-protocol/lib/util/tracing";
 import { Env } from "../env";
 
 /**

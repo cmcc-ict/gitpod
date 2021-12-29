@@ -5,12 +5,12 @@
  */
 
 import { injectable, inject } from "inversify";
-import { TraceContext } from "@gitpod/gitpod-protocol/lib/util/tracing";
-import { WorkspaceInstance, WorkspaceProbeContext, RunningWorkspaceInfo } from "@gitpod/gitpod-protocol";
-import { log } from "@gitpod/gitpod-protocol/lib/util/logging";
+import { TraceContext } from "cmict-gitpod-protocol/lib/util/tracing";
+import { WorkspaceInstance, WorkspaceProbeContext, RunningWorkspaceInfo } from "cmict-gitpod-protocol";
+import { log } from "cmict-gitpod-protocol/lib/util/logging";
 import { URL } from "url";
 import { WorkspaceFactory } from "../../../src/workspace/workspace-factory";
-import { UserDB, BUILTIN_WORKSPACE_PROBE_USER_NAME, WorkspaceDB, TracedWorkspaceDB, DBWithTracing, TracedUserDB } from "@gitpod/gitpod-db/lib";
+import { UserDB, BUILTIN_WORKSPACE_PROBE_USER_NAME, WorkspaceDB, TracedWorkspaceDB, DBWithTracing, TracedUserDB } from "cmict-gitpod-db/lib";
 import { Env } from "../../../src/env";
 import { WorkspaceStarter } from "../../../src/workspace/workspace-starter";
 import fetch from "node-fetch";

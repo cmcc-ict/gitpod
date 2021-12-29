@@ -6,19 +6,19 @@
 
 import * as url from 'url';
 import { injectable, inject } from 'inversify';
-import { ResolvePluginsParams, ResolvedPlugins, TheiaPlugin, PreparePluginUploadParams, InstallPluginsParams, UninstallPluginParams, ResolvedPluginKind } from '@gitpod/gitpod-protocol';
-import { TheiaPluginDB, UserStorageResourcesDB } from "@gitpod/gitpod-db/lib";
+import { ResolvePluginsParams, ResolvedPlugins, TheiaPlugin, PreparePluginUploadParams, InstallPluginsParams, UninstallPluginParams, ResolvedPluginKind } from 'cmict-gitpod-protocol';
+import { TheiaPluginDB, UserStorageResourcesDB } from "cmict-gitpod-db/lib";
 import { Env } from '../env';
-import { GitpodHostUrl } from '@gitpod/gitpod-protocol/lib/util/gitpod-host-url';
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { GitpodHostUrl } from 'cmict-gitpod-protocol/lib/util/gitpod-host-url';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
 import { ResponseError } from 'vscode-jsonrpc';
-import { ErrorCodes } from '@gitpod/gitpod-protocol/lib/messaging/error';
-import { PluginIndexEntry } from '@gitpod/gitpod-protocol/lib/theia-plugins';
+import { ErrorCodes } from 'cmict-gitpod-protocol/lib/messaging/error';
+import { PluginIndexEntry } from 'cmict-gitpod-protocol/lib/theia-plugins';
 import { StorageClient } from '../storage/storage-client';
-import {  } from '@gitpod/gitpod-db/lib';
+import {  } from 'cmict-gitpod-db/lib';
 import fetch from 'node-fetch';
 
-const builtinExtensions: PluginIndexEntry[] = require('@gitpod/gitpod-protocol/data/builtin-theia-plugins.json');
+const builtinExtensions: PluginIndexEntry[] = require('cmict-gitpod-protocol/data/builtin-theia-plugins.json');
 
 const userPluginsUri = 'user-plugins://';
 

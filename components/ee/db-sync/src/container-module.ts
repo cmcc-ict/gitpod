@@ -6,7 +6,7 @@
 
 import { ContainerModule } from 'inversify';
 import { ICommand, RunCommand, ExportCommand } from './commands';
-import { TableDescriptionProvider, GitpodTableDescriptionProvider, GitpodSessionTableDescriptionProvider } from '@gitpod/gitpod-db/lib/tables';
+import { TableDescriptionProvider, GitpodTableDescriptionProvider, GitpodSessionTableDescriptionProvider } from 'cmict-gitpod-db/lib/tables';
 import { PeriodicReplicatorProvider, PeriodicReplicator } from './replication';
 import { TableUpdateProvider } from './export';
 import { NamedConnection } from './database';

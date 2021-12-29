@@ -10,7 +10,7 @@ import { AuthProviderParams } from "./auth-provider";
 import { Env } from "../env";
 import { AuthProviderService } from "./auth-provider-service";
 import { HostContextProvider, HostContextProviderFactory } from "./host-context-provider";
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
 import { HostContainerMapping } from "./host-container-mapping";
 import { RepositoryService } from "../repohost/repo-service";
 

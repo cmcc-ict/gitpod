@@ -6,12 +6,12 @@
 
 import { injectable, inject } from "inversify";
 import * as express from 'express';
-import { log } from "@gitpod/gitpod-protocol/lib/util/logging";
+import { log } from "cmict-gitpod-protocol/lib/util/logging";
 import { Env } from "./env";
-import { OneTimeSecretDB, DBWithTracing, TracedOneTimeSecretDB } from "@gitpod/gitpod-db/lib";
-import { Disposable } from "@gitpod/gitpod-protocol";
+import { OneTimeSecretDB, DBWithTracing, TracedOneTimeSecretDB } from "cmict-gitpod-db/lib";
+import { Disposable } from "cmict-gitpod-protocol";
 import * as opentracing from 'opentracing';
-import { TraceContext } from "@gitpod/gitpod-protocol/lib/util/tracing";
+import { TraceContext } from "cmict-gitpod-protocol/lib/util/tracing";
 
 @injectable()
 export class OneTimeSecretServer implements Disposable {

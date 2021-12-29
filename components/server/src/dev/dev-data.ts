@@ -4,7 +4,7 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { IssueContext, User, PullRequestContext, Repository, Token } from "@gitpod/gitpod-protocol";
+import { IssueContext, User, PullRequestContext, Repository, Token } from "cmict-gitpod-protocol";
 import { GitHubScope } from "../github/scopes";
 import { GitLabScope } from "../gitlab/scopes";
 import { TokenService } from "../user/token-service";

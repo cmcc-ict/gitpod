@@ -11,8 +11,8 @@ import { suite, test } from "@testdeck/mocha";
 import * as chai from 'chai';
 import { WorkspaceManagerClientProvider } from "./client-provider";
 import { WorkspaceManagerClientProviderCompositeSource, WorkspaceManagerClientProviderSource } from "./client-provider-source";
-import { WorkspaceCluster, WorkspaceClusterWoTLS } from "@gitpod/gitpod-protocol/lib/workspace-cluster";
-import { User, Workspace, WorkspaceInstance } from "@gitpod/gitpod-protocol";
+import { WorkspaceCluster, WorkspaceClusterWoTLS } from "cmict-gitpod-protocol/lib/workspace-cluster";
+import { User, Workspace, WorkspaceInstance } from "cmict-gitpod-protocol";
 const expect = chai.expect;
 
 @suite

@@ -5,7 +5,7 @@
  */
 
 import { RepositoryService } from "../../../src/repohost/repo-service";
-import { CommitContext, User, WorkspaceContext } from "@gitpod/gitpod-protocol";
+import { CommitContext, User, WorkspaceContext } from "cmict-gitpod-protocol";
 import { inject, injectable } from "inversify";
 import { GitLabApi, GitLab } from "../../../src/gitlab/api";
 import { AuthProviderParams } from "../../../src/auth/auth-provider";

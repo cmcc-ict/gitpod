@@ -14,9 +14,9 @@ generates:
       maybeValue: T | undefined
       useIndexSignature: true
       mappers:
-        User: "@gitpod/gitpod-protocol#User"
-        Workspace: "@gitpod/gitpod-protocol#Workspace"
-        WorkspaceInstance: "@gitpod/gitpod-protocol#WorkspaceInstance"
+        User: "cmict-gitpod-protocol#User"
+        Workspace: "cmict-gitpod-protocol#Workspace"
+        WorkspaceInstance: "cmict-gitpod-protocol#WorkspaceInstance"
       contextType: "./graphql-controller#Context"
   ./graphql.schema.json:
     plugins:

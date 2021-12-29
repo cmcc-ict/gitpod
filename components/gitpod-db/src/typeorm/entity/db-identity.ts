@@ -6,7 +6,7 @@
 
 import { Entity, Column, PrimaryColumn, ManyToOne, Index } from "typeorm";
 
-import { Identity, Token } from "@gitpod/gitpod-protocol";
+import { Identity, Token } from "cmict-gitpod-protocol";
 import { DBUser } from "./db-user";
 import { Transformer } from "../transformer";
 

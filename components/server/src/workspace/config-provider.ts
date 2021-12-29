@@ -8,16 +8,16 @@ import { inject, injectable } from "inversify";
 import fetch from 'node-fetch';
 import * as path from 'path';
 
-import { log, LogContext } from '@gitpod/gitpod-protocol/lib/util/logging';
-import { User, WorkspaceConfig, CommitContext, Repository, ImageConfigString, ExternalImageConfigFile, ImageConfigFile, Commit, NamedWorkspaceFeatureFlag, AdditionalContentContext } from "@gitpod/gitpod-protocol";
-import { GitpodFileParser } from "@gitpod/gitpod-protocol/lib/gitpod-file-parser";
+import { log, LogContext } from 'cmict-gitpod-protocol/lib/util/logging';
+import { User, WorkspaceConfig, CommitContext, Repository, ImageConfigString, ExternalImageConfigFile, ImageConfigFile, Commit, NamedWorkspaceFeatureFlag, AdditionalContentContext } from "cmict-gitpod-protocol";
+import { GitpodFileParser } from "cmict-gitpod-protocol/lib/gitpod-file-parser";
 
 import { MaybeContent } from "../repohost/file-provider";
 import { ConfigInferenceProvider } from "./config-inference-provider";
 import { HostContextProvider } from "../auth/host-context-provider";
 import { AuthorizationService } from "../user/authorization-service";
 import { TheiaPluginService } from "../theia-plugin/theia-plugin-service";
-import { TraceContext } from "@gitpod/gitpod-protocol/lib/util/tracing";
+import { TraceContext } from "cmict-gitpod-protocol/lib/util/tracing";
 import { Env } from "../env";
 
 const POD_PATH_WORKSPACE_BASE = "/workspace";

@@ -7,15 +7,15 @@
 import { Config } from "../config";
 import { inject, injectable } from "inversify";
 import * as fs from 'fs';
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
 import * as jwt from 'jsonwebtoken';
-import { PendingGithubEventDB, UserDB } from "@gitpod/gitpod-db/lib";
+import { PendingGithubEventDB, UserDB } from "cmict-gitpod-db/lib";
 import { GithubSubscriptionMapper, MarketplacePurchaseEvent } from "./subscription-mapper";
-import { User, Queue } from "@gitpod/gitpod-protocol";
-import { UserPaidSubscription } from "@gitpod/gitpod-protocol/lib/accounting-protocol";
-import { AccountingDB } from "@gitpod/gitpod-db/lib/accounting-db";
+import { User, Queue } from "cmict-gitpod-protocol";
+import { UserPaidSubscription } from "cmict-gitpod-protocol/lib/accounting-protocol";
+import { AccountingDB } from "cmict-gitpod-db/lib/accounting-db";
 import { SubscriptionModel } from "../accounting/subscription-model";
-import { Plans, Plan } from "@gitpod/gitpod-protocol/lib/plans";
+import { Plans, Plan } from "cmict-gitpod-protocol/lib/plans";
 import * as Webhooks from '@octokit/webhooks';
 import fetch from "node-fetch";
 

@@ -4,7 +4,7 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
 import { GrantIdentifier, OAuthClient, OAuthClientRepository, OAuthScope, OAuthScopeRepository } from "@jmondi/oauth2-server";
 import { inMemoryDatabase } from "./db";
 

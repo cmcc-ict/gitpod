@@ -5,10 +5,10 @@
  */
 
 import { WorkspaceStatus, WorkspaceLogMessage, SubscribeRequest, SubscribeResponse, GetWorkspacesRequest, PromisifiedWorkspaceManagerClient } from "@gitpod/ws-manager/lib";
-import { Disposable } from "@gitpod/gitpod-protocol";
+import { Disposable } from "cmict-gitpod-protocol";
 import { ClientReadableStream } from "@grpc/grpc-js";
-import { log, LogPayload } from "@gitpod/gitpod-protocol/lib/util/logging";
-import { TraceContext } from "@gitpod/gitpod-protocol/lib/util/tracing";
+import { log, LogPayload } from "cmict-gitpod-protocol/lib/util/logging";
+import { TraceContext } from "cmict-gitpod-protocol/lib/util/tracing";
 import * as opentracing from "opentracing";
 
 export type ClientProvider = () => Promise<PromisifiedWorkspaceManagerClient>;

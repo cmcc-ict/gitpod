@@ -6,20 +6,20 @@
 
 import { inject, injectable } from "inversify";
 import { MessageBusIntegration } from "./messagebus-integration";
-import { Disposable, WorkspaceInstance, Queue, WorkspaceInstancePort, PortVisibility, RunningWorkspaceInfo } from "@gitpod/gitpod-protocol";
+import { Disposable, WorkspaceInstance, Queue, WorkspaceInstancePort, PortVisibility, RunningWorkspaceInfo } from "cmict-gitpod-protocol";
 import { WorkspaceStatus, WorkspacePhase, GetWorkspacesRequest, WorkspaceConditionBool, WorkspaceLogMessage, PortVisibility as WsManPortVisibility, WorkspaceType, PromisifiedWorkspaceManagerClient } from "@gitpod/ws-manager/lib";
-import { WorkspaceDB } from "@gitpod/gitpod-db/lib/workspace-db";
-import { UserDB } from "@gitpod/gitpod-db/lib/user-db";
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
-import { HeadlessLogEvent } from "@gitpod/gitpod-protocol/lib/headless-workspace-log";
-import { TraceContext } from "@gitpod/gitpod-protocol/lib/util/tracing";
-import { IAnalyticsWriter } from "@gitpod/gitpod-protocol/lib/analytics";
-import { TracedWorkspaceDB, TracedUserDB, DBWithTracing } from '@gitpod/gitpod-db/lib/traced-db';
+import { WorkspaceDB } from "cmict-gitpod-db/lib/workspace-db";
+import { UserDB } from "cmict-gitpod-db/lib/user-db";
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
+import { HeadlessLogEvent } from "cmict-gitpod-protocol/lib/headless-workspace-log";
+import { TraceContext } from "cmict-gitpod-protocol/lib/util/tracing";
+import { IAnalyticsWriter } from "cmict-gitpod-protocol/lib/analytics";
+import { TracedWorkspaceDB, TracedUserDB, DBWithTracing } from 'cmict-gitpod-db/lib/traced-db';
 import { PrometheusMetricsExporter } from "./prometheus-metrics-exporter";
 import { ClientProvider, WsmanSubscriber } from "./wsman-subscriber";
 import { Timestamp } from "google-protobuf/google/protobuf/timestamp_pb";
 import { Configuration } from "./config";
-import { WorkspaceCluster } from "@gitpod/gitpod-protocol/lib/workspace-cluster";
+import { WorkspaceCluster } from "cmict-gitpod-protocol/lib/workspace-cluster";
 
 export const WorkspaceManagerBridgeFactory = Symbol("WorkspaceManagerBridgeFactory");
 

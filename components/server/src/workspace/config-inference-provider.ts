@@ -5,7 +5,7 @@
  */
 
 import { inject, injectable, postConstruct } from "inversify";
-import { CommitContext, User, WorkspaceConfig } from "@gitpod/gitpod-protocol";
+import { CommitContext, User, WorkspaceConfig } from "cmict-gitpod-protocol";
 import { HostContextProvider } from "../auth/host-context-provider";
 import { Env } from "../env";
 

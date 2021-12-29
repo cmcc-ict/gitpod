@@ -4,10 +4,10 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { WorkspaceDB } from '@gitpod/gitpod-db/lib/workspace-db';
-import { Queue } from '@gitpod/gitpod-protocol';
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
-import { WorkspaceCluster, WorkspaceClusterDB, WorkspaceClusterState, TLSConfig, AdmissionConstraint, AdmissionConstraintHasRole, WorkspaceClusterWoTLS } from '@gitpod/gitpod-protocol/lib/workspace-cluster';
+import { WorkspaceDB } from 'cmict-gitpod-db/lib/workspace-db';
+import { Queue } from 'cmict-gitpod-protocol';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
+import { WorkspaceCluster, WorkspaceClusterDB, WorkspaceClusterState, TLSConfig, AdmissionConstraint, AdmissionConstraintHasRole, WorkspaceClusterWoTLS } from 'cmict-gitpod-protocol/lib/workspace-cluster';
 import {
     ClusterServiceService,
     ClusterState,

@@ -5,9 +5,9 @@
  */
 
 import { injectable, inject, postConstruct } from "inversify";
-import { Token, Identity, User, TokenEntry } from "@gitpod/gitpod-protocol";
+import { Token, Identity, User, TokenEntry } from "cmict-gitpod-protocol";
 import { HostContextProvider } from "../auth/host-context-provider";
-import { UserDB } from "@gitpod/gitpod-db/lib";
+import { UserDB } from "cmict-gitpod-db/lib";
 import * as uuid from "uuid/v4";
 import { TokenProvider } from "./token-provider";
 import { TokenGarbageCollector } from "./token-garbage-collector";

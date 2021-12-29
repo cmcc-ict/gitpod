@@ -6,8 +6,8 @@
 
 import { injectable } from 'inversify';
 import * as express from "express"
-import { AuthProviderInfo } from '@gitpod/gitpod-protocol';
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { AuthProviderInfo } from 'cmict-gitpod-protocol';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
 import { GitHubScope } from "./scopes";
 import { AuthUserSetup } from "../auth/auth-provider";
 import { Octokit } from "@octokit/rest"

@@ -5,7 +5,7 @@
  */
 
 import { IPrefixContextParser } from "./context-parser";
-import { User, WorkspaceContext, UserEnvVarValue, WithEnvvarsContext } from "@gitpod/gitpod-protocol";
+import { User, WorkspaceContext, UserEnvVarValue, WithEnvvarsContext } from "cmict-gitpod-protocol";
 import { injectable } from "inversify";
 
 @injectable()

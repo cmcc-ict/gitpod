@@ -6,11 +6,11 @@
 
 import { injectable, inject } from "inversify";
 import * as opentracing from 'opentracing';
-import { UserDB, DBWithTracing, TracedWorkspaceDB, WorkspaceDB } from "@gitpod/gitpod-db/lib";
-import { Disposable } from "@gitpod/gitpod-protocol";
+import { UserDB, DBWithTracing, TracedWorkspaceDB, WorkspaceDB } from "cmict-gitpod-db/lib";
+import { Disposable } from "cmict-gitpod-protocol";
 import { ConsensusLeaderQorum } from "../consensus/consensus-leader-quorum";
-import { TraceContext } from "@gitpod/gitpod-protocol/lib/util/tracing";
-import { log } from "@gitpod/gitpod-protocol/lib/util/logging";
+import { TraceContext } from "cmict-gitpod-protocol/lib/util/tracing";
+import { log } from "cmict-gitpod-protocol/lib/util/logging";
 
 @injectable()
 export class TokenGarbageCollector {

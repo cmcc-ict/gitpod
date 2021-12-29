@@ -4,7 +4,7 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { Identity, Token, UserEnvVar, User } from "@gitpod/gitpod-protocol";
+import { Identity, Token, UserEnvVar, User } from "cmict-gitpod-protocol";
 import { AuthUser } from "../auth/auth-provider";
 import { saveSession } from "../express-util";
 

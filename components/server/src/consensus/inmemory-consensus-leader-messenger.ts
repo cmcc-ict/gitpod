@@ -5,7 +5,7 @@
  */
 
 import { ConsensusLeaderMessenger, HeartbeatMessage, RequestVoteMessage, ConsensusLeaderMessageType, CastVoteMessage } from "./consensus-leader-messenger";
-import { Disposable } from "@gitpod/gitpod-protocol";
+import { Disposable } from "cmict-gitpod-protocol";
 import { EventEmitter } from "events";
 import { injectable } from "inversify";
 

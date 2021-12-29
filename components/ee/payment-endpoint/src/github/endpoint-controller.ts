@@ -8,7 +8,7 @@ import { injectable, inject } from 'inversify';
 import { Config } from '../config';
 import * as Webhooks from '@octokit/webhooks';
 import { Application as App } from 'express';
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
 import { GithubSubscriptionReconciler } from './subscription-reconciler';
 
 /**

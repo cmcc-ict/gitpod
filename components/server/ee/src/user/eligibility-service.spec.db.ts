@@ -4,17 +4,17 @@
  * See License.enterprise.txt in the project root folder.
  */
 
-import { Identity, User } from '@gitpod/gitpod-protocol';
+import { Identity, User } from 'cmict-gitpod-protocol';
 import * as chai from 'chai';
 import { suite, test } from 'mocha-typescript';
 import { QueryRunner } from 'typeorm';
-import { testContainer } from '@gitpod/gitpod-db/lib/test-container';
-import { UserDB, DBUser, TransactionalUserDBImpl, TypeORM, TracedWorkspaceDB, bindDbWithTracing, WorkspaceDB } from '@gitpod/gitpod-db/lib';
+import { testContainer } from 'cmict-gitpod-db/lib/test-container';
+import { UserDB, DBUser, TransactionalUserDBImpl, TypeORM, TracedWorkspaceDB, bindDbWithTracing, WorkspaceDB } from 'cmict-gitpod-db/lib';
 import { ContainerModule, Container } from 'inversify';
 import { UserService } from '../../../src/user/user-service';
 
 import { SubscriptionService } from '@gitpod/gitpod-payment-endpoint/lib/accounting';
-import { DBSubscription } from '@gitpod/gitpod-db/lib/typeorm/entity/db-subscription';
+import { DBSubscription } from 'cmict-gitpod-db/lib/typeorm/entity/db-subscription';
 import { TokenService } from '../../../src/user/token-service';
 import { TokenProvider } from '../../../src/user/token-provider';
 import { Env } from '../../../src/env';
@@ -22,7 +22,7 @@ import { TokenGarbageCollector } from '../../../src/user/token-garbage-collector
 import { ConsensusLeaderQorum } from '../../../src/consensus/consensus-leader-quorum';
 import { ConsensusLeaderMessenger } from '../../../src/consensus/consensus-leader-messenger';
 import { InMemoryConsensusLeaderMessenger } from '../../../src/consensus/inmemory-consensus-leader-messenger';
-import { TracingManager } from '@gitpod/gitpod-protocol/lib/util/tracing';
+import { TracingManager } from 'cmict-gitpod-protocol/lib/util/tracing';
 import { EligibilityService } from '../user/eligibility-service';
 import { EMailDomainService, EMailDomainServiceImpl } from '../auth/email-domain-service';
 import { AuthProviderParams } from '../../../src/auth/auth-provider';

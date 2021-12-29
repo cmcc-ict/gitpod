@@ -8,7 +8,7 @@ import * as chargebeeApi from 'chargebee';
 import { Chargebee as chargebee } from './chargebee-types';
 import { injectable, inject, postConstruct, optional } from 'inversify';
 import * as fs from 'fs';
-import { log } from "@gitpod/gitpod-protocol/lib/util/logging";
+import { log } from "cmict-gitpod-protocol/lib/util/logging";
 
 export const ChargebeeProviderOptions = Symbol('ChargebeeProviderOptions');
 export interface ChargebeeProviderOptions {

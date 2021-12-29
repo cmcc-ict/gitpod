@@ -4,7 +4,7 @@
  * See License.enterprise.txt in the project root folder.
  */
 
-import { TeamSubscriptionSlot, AssigneeIdentifier } from "@gitpod/gitpod-protocol/lib/team-subscription-protocol";
+import { TeamSubscriptionSlot, AssigneeIdentifier } from "cmict-gitpod-protocol/lib/team-subscription-protocol";
 import { TypeORM } from "../../typeorm/typeorm";
 import { Transformer } from "../../typeorm/transformer";
 import { PrimaryColumn, Entity, Column, Index } from "typeorm";

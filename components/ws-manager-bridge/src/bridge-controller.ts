@@ -9,10 +9,10 @@ import { WorkspaceClusterInfo, WorkspaceManagerBridge, WorkspaceManagerBridgeFac
 import { Configuration } from "./config";
 import { WorkspaceManagerClientProvider } from '@gitpod/ws-manager/lib/client-provider';
 import { WorkspaceManagerClientProviderSource } from '@gitpod/ws-manager/lib/client-provider-source';
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
-import { TLSConfig, WorkspaceClusterDB, WorkspaceClusterWoTLS } from "@gitpod/gitpod-protocol/lib/workspace-cluster";
-import { WorkspaceCluster } from "@gitpod/gitpod-protocol/lib/workspace-cluster";
-import { Queue } from "@gitpod/gitpod-protocol";
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
+import { TLSConfig, WorkspaceClusterDB, WorkspaceClusterWoTLS } from "cmict-gitpod-protocol/lib/workspace-cluster";
+import { WorkspaceCluster } from "cmict-gitpod-protocol/lib/workspace-cluster";
+import { Queue } from "cmict-gitpod-protocol";
 
 @injectable()
 export class BridgeController {

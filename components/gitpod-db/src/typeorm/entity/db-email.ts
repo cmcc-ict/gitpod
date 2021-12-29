@@ -5,7 +5,7 @@
  */
 
 import { Entity, Column, PrimaryColumn, Index } from "typeorm";
-import { EMail, EMailParameters } from "@gitpod/gitpod-protocol";
+import { EMail, EMailParameters } from "cmict-gitpod-protocol";
 import { TypeORM } from "../../typeorm/typeorm";
 import { Transformer } from "../../typeorm/transformer";
 

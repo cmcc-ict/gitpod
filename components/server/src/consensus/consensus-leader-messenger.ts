@@ -4,7 +4,7 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { Disposable } from "@gitpod/gitpod-protocol";
+import { Disposable } from "cmict-gitpod-protocol";
 
 export type ConsensusLeaderMessageType = 'heartbeat' | 'requestVote' | 'castVote';
 

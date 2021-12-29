@@ -8,9 +8,9 @@ import { injectable, inject } from 'inversify';
 import { MessageBusHelper, AbstractMessageBusIntegration, TopicListener, AbstractTopicListener, MessageBusHelperImpl } from "@gitpod/gitpod-messagebus/lib";
 import { Disposable, CancellationTokenSource } from 'vscode-jsonrpc';
 import { WorkspaceStatus, WorkspaceLogMessage } from '@gitpod/ws-manager/lib';
-import { WorkspaceInstance } from '@gitpod/gitpod-protocol';
-import { HeadlessLogEvent, HeadlessWorkspaceEventType } from '@gitpod/gitpod-protocol/lib/headless-workspace-log';
-import { TraceContext } from '@gitpod/gitpod-protocol/lib/util/tracing';
+import { WorkspaceInstance } from 'cmict-gitpod-protocol';
+import { HeadlessLogEvent, HeadlessWorkspaceEventType } from 'cmict-gitpod-protocol/lib/headless-workspace-log';
+import { TraceContext } from 'cmict-gitpod-protocol/lib/util/tracing';
 
 @injectable()
 export class MessageBusIntegration extends AbstractMessageBusIntegration {

@@ -9,7 +9,7 @@ import React from 'react';
 import { Terminal, ITerminalOptions, ITheme } from 'xterm';
 import { FitAddon } from 'xterm-addon-fit'
 import 'xterm/css/xterm.css';
-import { DisposableCollection, GitpodServer, HEADLESS_LOG_STREAM_STATUS_CODE_REGEX } from '@gitpod/gitpod-protocol';
+import { DisposableCollection, GitpodServer, HEADLESS_LOG_STREAM_STATUS_CODE_REGEX } from 'cmict-gitpod-protocol';
 
 export interface WorkspaceLogsProps {
   logsEmitter: EventEmitter;

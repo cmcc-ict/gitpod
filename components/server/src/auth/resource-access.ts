@@ -4,7 +4,7 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { ContextURL, GitpodToken, Snapshot, Team, TeamMemberInfo, Token, User, UserEnvVar, Workspace, WorkspaceInstance } from "@gitpod/gitpod-protocol";
+import { ContextURL, GitpodToken, Snapshot, Team, TeamMemberInfo, Token, User, UserEnvVar, Workspace, WorkspaceInstance } from "cmict-gitpod-protocol";
 import { HostContextProvider } from "./host-context-provider";
 
 declare var resourceInstance: GuardedResource;

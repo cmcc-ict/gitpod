@@ -6,9 +6,9 @@
 
 import React, { useState, useEffect, useContext } from "react";
 import { countries } from 'countries-list';
-import { AccountStatement, Subscription, UserPaidSubscription, AssignedTeamSubscription, CreditDescription } from "@gitpod/gitpod-protocol/lib/accounting-protocol";
-import { PlanCoupon, GithubUpgradeURL } from "@gitpod/gitpod-protocol/lib/payment-protocol";
-import { Plans, Plan, Currency, PlanType } from "@gitpod/gitpod-protocol/lib/plans";
+import { AccountStatement, Subscription, UserPaidSubscription, AssignedTeamSubscription, CreditDescription } from "cmict-gitpod-protocol/lib/accounting-protocol";
+import { PlanCoupon, GithubUpgradeURL } from "cmict-gitpod-protocol/lib/payment-protocol";
+import { Plans, Plan, Currency, PlanType } from "cmict-gitpod-protocol/lib/plans";
 import { ChargebeeClient } from "../chargebee/chargebee-client";
 import AlertBox from "../components/AlertBox";
 import InfoBox from "../components/InfoBox";

@@ -6,8 +6,8 @@
 
 import * as express from "express";
 import { injectable } from 'inversify';
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
-import { AuthProviderInfo } from '@gitpod/gitpod-protocol';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
+import { AuthProviderInfo } from 'cmict-gitpod-protocol';
 import { GitLabScope } from "./scopes";
 import { UnconfirmedUserException } from "../auth/errors";
 import { GitLab } from "./api";

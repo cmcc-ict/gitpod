@@ -5,7 +5,7 @@
  */
 
 import { RepositoryService } from "../../../src/repohost/repo-service";
-import { User } from "@gitpod/gitpod-protocol";
+import { User } from "cmict-gitpod-protocol";
 import { inject, injectable } from "inversify";
 import { BitbucketApiFactory } from "../../../src/bitbucket/bitbucket-api-factory";
 import { AuthProviderParams } from "../../../src/auth/auth-provider";

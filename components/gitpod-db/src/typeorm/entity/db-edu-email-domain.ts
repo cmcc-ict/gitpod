@@ -5,7 +5,7 @@
  */
 
 import { Entity, PrimaryColumn } from "typeorm";
-import { EduEmailDomain } from "@gitpod/gitpod-protocol";
+import { EduEmailDomain } from "cmict-gitpod-protocol";
 
 @Entity("d_b_edu_email_domain")
 // on DB but not Typeorm: @Index("ind_lastModified", ["_lastModified"])   // DBSync

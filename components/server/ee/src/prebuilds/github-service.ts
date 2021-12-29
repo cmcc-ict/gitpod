@@ -7,7 +7,7 @@
 import { RepositoryService } from "../../../src/repohost/repo-service";
 import { inject, injectable } from "inversify";
 import { Env } from "../../../src/env";
-import { CommitContext, User, WorkspaceContext } from "@gitpod/gitpod-protocol";
+import { CommitContext, User, WorkspaceContext } from "cmict-gitpod-protocol";
 import { GitHubGraphQlEndpoint } from "../../../src/github/api";
 
 @injectable()

@@ -4,7 +4,7 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import * as protocol from "@gitpod/gitpod-protocol/lib/workspace-cluster";
+import * as protocol from "cmict-gitpod-protocol/lib/workspace-cluster";
 
 // This interface lives in protocol due to dependency issues but is re-exported here for consistency.
 export const WorkspaceClusterDB = protocol.WorkspaceClusterDB;

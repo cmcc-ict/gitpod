@@ -7,9 +7,9 @@
 import { injectable, inject } from 'inversify';
 
 import { FileProvider, MaybeContent } from "../repohost/file-provider";
-import { Commit, User, Repository } from "@gitpod/gitpod-protocol"
+import { Commit, User, Repository } from "cmict-gitpod-protocol"
 import { GitHubGraphQlEndpoint, GitHubRestApi } from "./api";
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
 
 @injectable()
 export class GithubFileProvider implements FileProvider {

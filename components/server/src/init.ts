@@ -59,8 +59,8 @@ if (typeof (Symbol as any).asyncIterator === 'undefined') {
 import * as express from 'express';
 import { Container } from 'inversify';
 import { Server } from "./server"
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
-import { TracingManager } from '@gitpod/gitpod-protocol/lib/util/tracing';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
+import { TracingManager } from 'cmict-gitpod-protocol/lib/util/tracing';
 if (process.env.NODE_ENV === 'development') {
     require('longjohn');
 }

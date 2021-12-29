@@ -9,7 +9,7 @@ import { injectable, inject } from "inversify";
 import { TypeORM } from "./typeorm";
 import { TheiaPluginDB } from "../theia-plugin-db";
 import { DBTheiaPlugin } from "./entity/db-theia-plugin";
-import { TheiaPlugin } from "@gitpod/gitpod-protocol";
+import { TheiaPlugin } from "cmict-gitpod-protocol";
 import * as uuidv4 from 'uuid/v4';
 
 @injectable()

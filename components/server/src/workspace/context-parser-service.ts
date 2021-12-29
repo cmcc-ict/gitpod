@@ -4,11 +4,11 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { WorkspaceContext, User } from "@gitpod/gitpod-protocol";
+import { WorkspaceContext, User } from "cmict-gitpod-protocol";
 import { injectable, multiInject, inject } from "inversify";
 import { HostContextProvider } from "../auth/host-context-provider";
 import { IPrefixContextParser, IContextParser } from "./context-parser";
-import { TraceContext } from "@gitpod/gitpod-protocol/lib/util/tracing";
+import { TraceContext } from "cmict-gitpod-protocol/lib/util/tracing";
 
 @injectable()
 export class ContextParser {

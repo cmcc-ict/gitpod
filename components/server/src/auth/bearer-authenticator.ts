@@ -4,8 +4,8 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { UserDB } from '@gitpod/gitpod-db/lib';
-import { GitpodTokenType } from '@gitpod/gitpod-protocol';
+import { UserDB } from 'cmict-gitpod-db/lib';
+import { GitpodTokenType } from 'cmict-gitpod-protocol';
 import * as crypto from 'crypto';
 import * as express from 'express';
 import { IncomingHttpHeaders } from 'http';

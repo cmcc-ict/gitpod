@@ -4,8 +4,8 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { Identity } from "@gitpod/gitpod-protocol";
-import { SelectAccountPayload } from "@gitpod/gitpod-protocol/lib/auth";
+import { Identity } from "cmict-gitpod-protocol";
+import { SelectAccountPayload } from "cmict-gitpod-protocol/lib/auth";
 
 export interface TosNotAcceptedYetException extends Error {
     readonly identity: Identity;

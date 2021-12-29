@@ -4,7 +4,7 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { WorkspaceInstance } from "@gitpod/gitpod-protocol";
+import { WorkspaceInstance } from "cmict-gitpod-protocol";
 import ContextMenu, { ContextMenuEntry } from "./ContextMenu";
 import CaretDown from "../icons/CaretDown.svg";
 

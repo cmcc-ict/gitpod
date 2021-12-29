@@ -6,8 +6,8 @@
 
 import * as chargebee from 'chargebee';
 
-import { Without } from '@gitpod/gitpod-protocol/lib/util/without';
-import { GitpodServer } from '@gitpod/gitpod-protocol';
+import { Without } from 'cmict-gitpod-protocol/lib/util/without';
+import { GitpodServer } from 'cmict-gitpod-protocol';
 import { getGitpodService } from '../service/service';
 
 class ChargebeeClientProvider {

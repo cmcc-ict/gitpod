@@ -7,7 +7,7 @@
 require("reflect-metadata")
 
 import { ArgumentParser } from "argparse";
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
 import { ICommand } from "./commands";
 import { Container } from "inversify";
 import { productionContainerModule } from "./container-module";

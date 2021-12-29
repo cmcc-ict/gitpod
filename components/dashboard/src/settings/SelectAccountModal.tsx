@@ -4,7 +4,7 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
- import { SelectAccountPayload } from "@gitpod/gitpod-protocol/lib/auth";
+ import { SelectAccountPayload } from "cmict-gitpod-protocol/lib/auth";
  import { useEffect, useState } from "react";
  import { gitpodHostUrl } from "../service/service";
  import InfoBox from "../components/InfoBox";

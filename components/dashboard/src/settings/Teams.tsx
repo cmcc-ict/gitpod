@@ -11,15 +11,15 @@ import { PageWithSubMenu } from "../components/PageWithSubMenu";
 import { getGitpodService } from "../service/service";
 import AlertBox from "../components/AlertBox";
 import Modal from "../components/Modal";
-import { AssigneeIdentifier, TeamSubscription, TeamSubscriptionSlotResolved } from "@gitpod/gitpod-protocol/lib/team-subscription-protocol";
-import { Currency, Plan, Plans } from "@gitpod/gitpod-protocol/lib/plans";
+import { AssigneeIdentifier, TeamSubscription, TeamSubscriptionSlotResolved } from "cmict-gitpod-protocol/lib/team-subscription-protocol";
+import { Currency, Plan, Plans } from "cmict-gitpod-protocol/lib/plans";
 import { ChargebeeClient } from "../chargebee/chargebee-client";
 import copy from '../images/copy.svg';
 import exclamation from '../images/exclamation.svg';
-import { ErrorCodes } from "@gitpod/gitpod-protocol/lib/messaging/error";
+import { ErrorCodes } from "cmict-gitpod-protocol/lib/messaging/error";
 import { poll, PollOptions } from "../utils";
 import settingsMenu from "./settings-menu";
-import { Disposable } from "@gitpod/gitpod-protocol";
+import { Disposable } from "cmict-gitpod-protocol";
 
 export default function Teams() {
 

@@ -5,7 +5,7 @@
  */
 
 import { inject, injectable } from "inversify";
-import { PendingGithubEvent } from "@gitpod/gitpod-protocol";
+import { PendingGithubEvent } from "cmict-gitpod-protocol";
 import { EntityManager, Repository } from "typeorm";
 import { TypeORM } from './typeorm';
 import { PendingGithubEventDB, PendingGithubEventWithUser } from "../pending-github-event-db";

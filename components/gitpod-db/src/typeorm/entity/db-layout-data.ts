@@ -6,7 +6,7 @@
 
 import { PrimaryColumn, Column, Entity } from "typeorm";
 
-import { LayoutData } from "@gitpod/gitpod-protocol";
+import { LayoutData } from "cmict-gitpod-protocol";
 import { Transformer } from "../transformer";
 import { TypeORM } from "../typeorm";
 

@@ -7,8 +7,8 @@
 import { injectable, inject } from "inversify";
 import { ImageBuilderClientProvider, ResolveBaseImageRequest, BuildRegistryAuthTotal, BuildRegistryAuth } from "@gitpod/image-builder/lib";
 import { HostContextProvider } from "../auth/host-context-provider";
-import { TraceContext } from "@gitpod/gitpod-protocol/lib/util/tracing";
-import { CommitContext, WorkspaceImageSource, WorkspaceConfig, WorkspaceImageSourceReference, WorkspaceImageSourceDocker, ImageConfigFile, ExternalImageConfigFile, User, AdditionalContentContext } from "@gitpod/gitpod-protocol";
+import { TraceContext } from "cmict-gitpod-protocol/lib/util/tracing";
+import { CommitContext, WorkspaceImageSource, WorkspaceConfig, WorkspaceImageSourceReference, WorkspaceImageSourceDocker, ImageConfigFile, ExternalImageConfigFile, User, AdditionalContentContext } from "cmict-gitpod-protocol";
 import { createHash } from 'crypto';
 
 @injectable()

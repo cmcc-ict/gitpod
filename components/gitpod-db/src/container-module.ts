@@ -16,8 +16,8 @@ import { TypeORMUserMessageViewsDBImpl } from './typeorm/user-message-views-db-i
 import { UserStorageResourcesDB } from './user-storage-resources-db';
 import { TypeORMUserStorageResourcesDBImpl } from './typeorm/user-storage-resources-db-impl';
 import { TypeORM } from './typeorm/typeorm';
-import { encryptionModule } from '@gitpod/gitpod-protocol/lib/encryption/container-module';
-import { KeyProviderImpl, KeyProviderConfig } from '@gitpod/gitpod-protocol/lib/encryption/key-provider';
+import { encryptionModule } from 'cmict-gitpod-protocol/lib/encryption/container-module';
+import { KeyProviderImpl, KeyProviderConfig } from 'cmict-gitpod-protocol/lib/encryption/key-provider';
 import { DBWithTracing, bindDbWithTracing, TracedWorkspaceDB, TracedUserDB, TracedOneTimeSecretDB } from './traced-db';
 import { OneTimeSecretDB } from './one-time-secret-db';
 import { DeletedEntryGC } from './typeorm/deleted-entry-gc';

@@ -4,12 +4,12 @@
  * See License.enterprise.txt in the project root folder.
  */
 
-import { Subscription } from '@gitpod/gitpod-protocol/lib/accounting-protocol';
+import { Subscription } from 'cmict-gitpod-protocol/lib/accounting-protocol';
 import * as chai from 'chai';
 import { suite, test, timeout } from 'mocha-typescript';
 import { QueryRunner } from 'typeorm';
 import { AccountingDB } from './accounting-db';
-import { oneMonthLater, rightAfter, rightBefore } from '@gitpod/gitpod-protocol/lib/util/timeutil';
+import { oneMonthLater, rightAfter, rightBefore } from 'cmict-gitpod-protocol/lib/util/timeutil';
 import { DBAccountEntry } from './typeorm/entity/db-account-entry';
 import { TransactionalAccountingDBImpl } from './typeorm/accounting-db-impl';
 import { DBWorkspace } from './typeorm/entity/db-workspace';

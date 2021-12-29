@@ -4,7 +4,7 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { Team, TeamMemberInfo, TeamMemberRole, TeamMembershipInvite, User } from "@gitpod/gitpod-protocol";
+import { Team, TeamMemberInfo, TeamMemberRole, TeamMembershipInvite, User } from "cmict-gitpod-protocol";
 import { inject, injectable } from "inversify";
 import { TypeORM } from "./typeorm";
 import { Repository } from "typeorm";

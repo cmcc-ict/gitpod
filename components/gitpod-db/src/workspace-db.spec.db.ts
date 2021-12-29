@@ -8,7 +8,7 @@ import * as chai from 'chai';
 const expect = chai.expect;
 import { suite, test, timeout } from 'mocha-typescript';
 
-import { WorkspaceInstance, Workspace } from '@gitpod/gitpod-protocol';
+import { WorkspaceInstance, Workspace } from 'cmict-gitpod-protocol';
 import { testContainer } from './test-container';
 import { TypeORMWorkspaceDBImpl } from './typeorm/workspace-db-impl';
 import { fail } from 'assert';

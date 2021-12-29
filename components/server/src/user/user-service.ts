@@ -5,10 +5,10 @@
  */
 
 import { injectable, inject } from "inversify";
-import { User, Identity, WorkspaceTimeoutDuration, UserEnvVarValue, Token } from "@gitpod/gitpod-protocol";
-import { TermsAcceptanceDB, UserDB } from "@gitpod/gitpod-db/lib";
+import { User, Identity, WorkspaceTimeoutDuration, UserEnvVarValue, Token } from "cmict-gitpod-protocol";
+import { TermsAcceptanceDB, UserDB } from "cmict-gitpod-db/lib";
 import { HostContextProvider } from "../auth/host-context-provider";
-import { log } from "@gitpod/gitpod-protocol/lib/util/logging";
+import { log } from "cmict-gitpod-protocol/lib/util/logging";
 import { Env } from "../env";
 import { AuthProviderParams, AuthUser } from "../auth/auth-provider";
 import { BlockedUserFilter } from "../auth/blocked-user-filter";
@@ -16,7 +16,7 @@ import * as uuidv4 from 'uuid/v4';
 import { TermsProvider } from "../terms/terms-provider";
 import { TokenService } from "./token-service";
 import { EmailAddressAlreadyTakenException, SelectAccountException } from "../auth/errors";
-import { SelectAccountPayload } from "@gitpod/gitpod-protocol/lib/auth";
+import { SelectAccountPayload } from "cmict-gitpod-protocol/lib/auth";
 
 export interface FindUserByIdentityStrResult {
     user: User;

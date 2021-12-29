@@ -7,14 +7,14 @@
 import * as uuidv4 from 'uuid/v4';
 import { WorkspaceFactory } from "../../../src/workspace/workspace-factory";
 import { injectable, inject } from "inversify";
-import { TraceContext } from "@gitpod/gitpod-protocol/lib/util/tracing";
-import { User, StartPrebuildContext, Workspace, CommitContext, PrebuiltWorkspaceContext, WorkspaceContext, WithSnapshot, WithPrebuild, TaskConfig } from "@gitpod/gitpod-protocol";
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { TraceContext } from "cmict-gitpod-protocol/lib/util/tracing";
+import { User, StartPrebuildContext, Workspace, CommitContext, PrebuiltWorkspaceContext, WorkspaceContext, WithSnapshot, WithPrebuild, TaskConfig } from "cmict-gitpod-protocol";
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
 import { LicenseEvaluator } from '@gitpod/licensor/lib';
 import { Feature } from '@gitpod/licensor/lib/api';
 import { ResponseError } from 'vscode-jsonrpc';
-import { ErrorCodes } from '@gitpod/gitpod-protocol/lib/messaging/error';
-import { generateWorkspaceID } from '@gitpod/gitpod-protocol/lib/util/generate-workspace-id';
+import { ErrorCodes } from 'cmict-gitpod-protocol/lib/messaging/error';
+import { generateWorkspaceID } from 'cmict-gitpod-protocol/lib/util/generate-workspace-id';
 
 @injectable()
 export class WorkspaceFactoryEE extends WorkspaceFactory {

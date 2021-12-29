@@ -7,7 +7,7 @@
 import * as websocket from 'ws';
 import * as express from 'express';
 import { WsHandler, WsRequestHandler, WsErrorHandler, WsNextFunction, MaybePromise } from './ws-handler';
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
 
 export interface WsLayer {
     handleError: WsErrorHandler;

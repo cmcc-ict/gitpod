@@ -4,10 +4,10 @@
  * See License.enterprise.txt in the project root folder.
  */
 
-import { DBWithTracing, TracedWorkspaceDB, WorkspaceDB } from '@gitpod/gitpod-db/lib';
-import { CommitContext, Project, StartPrebuildContext, User, WorkspaceConfig, WorkspaceInstance } from '@gitpod/gitpod-protocol';
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
-import { TraceContext } from '@gitpod/gitpod-protocol/lib/util/tracing';
+import { DBWithTracing, TracedWorkspaceDB, WorkspaceDB } from 'cmict-gitpod-db/lib';
+import { CommitContext, Project, StartPrebuildContext, User, WorkspaceConfig, WorkspaceInstance } from 'cmict-gitpod-protocol';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
+import { TraceContext } from 'cmict-gitpod-protocol/lib/util/tracing';
 import { inject, injectable } from 'inversify';
 import { URL } from 'url';
 import { HostContextProvider } from '../../../src/auth/host-context-provider';

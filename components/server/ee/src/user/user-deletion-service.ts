@@ -7,7 +7,7 @@
 import { injectable, inject } from "inversify";
 import { UserDeletionService } from "../../../src/user/user-deletion-service";
 import { SubscriptionService } from "@gitpod/gitpod-payment-endpoint/lib/accounting/subscription-service";
-import { Plans } from "@gitpod/gitpod-protocol/lib/plans";
+import { Plans } from "cmict-gitpod-protocol/lib/plans";
 import { ChargebeeService } from "./chargebee-service";
 import { EnvEE } from "../env";
 @injectable()

@@ -5,7 +5,7 @@
  */
 
 import { inject, injectable } from "inversify";
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
 
 
 import { GitpodTableDescriptionProvider, TableDescription } from "./tables";

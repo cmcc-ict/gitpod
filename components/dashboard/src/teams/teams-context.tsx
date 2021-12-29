@@ -4,7 +4,7 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { Team } from '@gitpod/gitpod-protocol';
+import { Team } from 'cmict-gitpod-protocol';
 import React, { createContext, useState } from 'react';
 import { Location } from "history";
 

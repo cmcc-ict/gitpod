@@ -7,7 +7,7 @@
 import { useLocation } from "react-router";
 import InfoBox from "../components/InfoBox";
 import Modal from "../components/Modal";
-import { Deferred } from "@gitpod/gitpod-protocol/lib/util/deferred";
+import { Deferred } from "cmict-gitpod-protocol/lib/util/deferred";
 import { getGitpodService, gitpodHostUrl } from "../service/service";
 import { useState } from "react";
 import { openAuthorizeWindow } from "../provider-utils";

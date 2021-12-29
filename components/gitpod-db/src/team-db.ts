@@ -4,7 +4,7 @@
  * See License.enterprise.txt in the project root folder.
  */
 
-import { Team, TeamMemberInfo, TeamMemberRole, TeamMembershipInvite } from "@gitpod/gitpod-protocol";
+import { Team, TeamMemberInfo, TeamMemberRole, TeamMembershipInvite } from "cmict-gitpod-protocol";
 
 export const TeamDB = Symbol('TeamDB');
 export interface TeamDB {

@@ -6,7 +6,7 @@
 
 import { injectable, inject } from "inversify";
 import { AuthProviderParams } from "../auth/auth-provider";
-import { User, Token } from "@gitpod/gitpod-protocol";
+import { User, Token } from "cmict-gitpod-protocol";
 import { UnauthorizedError } from "../errors";
 import { GitHubScope } from "./scopes";
 import { TokenProvider } from "../user/token-provider";

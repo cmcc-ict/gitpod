@@ -4,8 +4,8 @@
  * See License.enterprise.txt in the project root folder.
  */
 
-import { AccountingDB } from "@gitpod/gitpod-db/lib/accounting-db";
-import { Period } from "@gitpod/gitpod-protocol/lib/accounting-protocol";
+import { AccountingDB } from "cmict-gitpod-db/lib/accounting-db";
+import { Period } from "cmict-gitpod-protocol/lib/accounting-protocol";
 import { inject, injectable } from "inversify";
 import { AccountService } from "./account-service";
 

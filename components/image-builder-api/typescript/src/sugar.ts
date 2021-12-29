@@ -5,9 +5,9 @@
  */
 
 import { ImageBuilderClient } from "./imgbuilder_grpc_pb";
-import { TraceContext } from '@gitpod/gitpod-protocol/lib/util/tracing';
-import { Deferred } from "@gitpod/gitpod-protocol/lib/util/deferred";
-import { log } from "@gitpod/gitpod-protocol/lib/util/logging";
+import { TraceContext } from 'cmict-gitpod-protocol/lib/util/tracing';
+import { Deferred } from "cmict-gitpod-protocol/lib/util/deferred";
+import { log } from "cmict-gitpod-protocol/lib/util/logging";
 import * as opentracing from 'opentracing';
 import { Metadata } from "@grpc/grpc-js";
 import { BuildRequest, BuildResponse, BuildStatus, LogsRequest, LogsResponse, ResolveWorkspaceImageResponse, ResolveWorkspaceImageRequest, ResolveBaseImageRequest, ResolveBaseImageResponse } from "./imgbuilder_pb";

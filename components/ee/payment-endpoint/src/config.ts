@@ -7,7 +7,7 @@
 import { injectable } from "inversify";
 import * as fs from 'fs';
 
-import { AbstractComponentEnv, getEnvVar, filePathTelepresenceAware } from '@gitpod/gitpod-protocol/lib/env';
+import { AbstractComponentEnv, getEnvVar, filePathTelepresenceAware } from 'cmict-gitpod-protocol/lib/env';
 import { parseOptions } from "./chargebee/chargebee-provider";
 
 @injectable()

@@ -5,15 +5,15 @@
  */
 
 import { inject, injectable } from "inversify";
-import { UserDB } from "@gitpod/gitpod-db/lib";
+import { UserDB } from "cmict-gitpod-db/lib";
 import { HostContextProvider } from "../../../src/auth/host-context-provider";
 import { TokenProvider } from "../../../src/user/token-provider";
-import { User, WorkspaceTimeoutDuration, WorkspaceInstance, WorkspaceContext, CommitContext, PrebuiltWorkspaceContext } from "@gitpod/gitpod-protocol";
-import { RemainingHours } from "@gitpod/gitpod-protocol/lib/accounting-protocol";
-import { log } from "@gitpod/gitpod-protocol/lib/util/logging";
-import { Plans, MAX_PARALLEL_WORKSPACES } from "@gitpod/gitpod-protocol/lib/plans";
+import { User, WorkspaceTimeoutDuration, WorkspaceInstance, WorkspaceContext, CommitContext, PrebuiltWorkspaceContext } from "cmict-gitpod-protocol";
+import { RemainingHours } from "cmict-gitpod-protocol/lib/accounting-protocol";
+import { log } from "cmict-gitpod-protocol/lib/util/logging";
+import { Plans, MAX_PARALLEL_WORKSPACES } from "cmict-gitpod-protocol/lib/plans";
 import { Accounting, SubscriptionService } from "@gitpod/gitpod-payment-endpoint/lib/accounting";
-import { millisecondsToHours} from "@gitpod/gitpod-protocol/lib/util/timeutil";
+import { millisecondsToHours} from "cmict-gitpod-protocol/lib/util/timeutil";
 import { AccountStatementProvider, CachedAccountStatement } from "./account-statement-provider";
 import { EnvEE } from "../env";
 import { EMailDomainService } from "../auth/email-domain-service";

@@ -6,7 +6,7 @@
 
 import { SupervisorStatusResponse, IDEStatusResponse, ContentStatusResponse } from '@gitpod/supervisor-api-grpc/lib/status_pb'
 import { GitpodServiceClient } from './gitpod-service-client';
-import { GitpodHostUrl } from '@gitpod/gitpod-protocol/lib/util/gitpod-host-url';
+import { GitpodHostUrl } from 'cmict-gitpod-protocol/lib/util/gitpod-host-url';
 
 export class SupervisorServiceClient {
     readonly supervisorReady = this.checkReady('supervisor');

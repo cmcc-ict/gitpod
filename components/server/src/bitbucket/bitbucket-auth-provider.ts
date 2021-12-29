@@ -4,8 +4,8 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { AuthProviderInfo } from "@gitpod/gitpod-protocol";
-import { log } from "@gitpod/gitpod-protocol/lib/util/logging";
+import { AuthProviderInfo } from "cmict-gitpod-protocol";
+import { log } from "cmict-gitpod-protocol/lib/util/logging";
 import { Bitbucket } from "bitbucket";
 import * as express from "express";
 import { injectable } from "inversify";

@@ -6,11 +6,11 @@
 
 import { inject, injectable } from 'inversify';
 
-import { AccountingDB } from '@gitpod/gitpod-db/lib/accounting-db';
-import { log, LogContext } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { AccountingDB } from 'cmict-gitpod-db/lib/accounting-db';
+import { log, LogContext } from 'cmict-gitpod-protocol/lib/util/logging';
 import { Chargebee as chargebee } from './chargebee-types';
 import { EventHandler } from './chargebee-event-handler';
-import { DBPaymentSourceInfo } from '@gitpod/gitpod-db/lib/typeorm/entity/db-subscription';
+import { DBPaymentSourceInfo } from 'cmict-gitpod-db/lib/typeorm/entity/db-subscription';
 
 @injectable()
 export class PaymentSourceHandler implements EventHandler<chargebee.PaymentSourceEventV2> {

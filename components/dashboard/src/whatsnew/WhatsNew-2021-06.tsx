@@ -4,7 +4,7 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { User } from "@gitpod/gitpod-protocol";
+import { User } from "cmict-gitpod-protocol";
 import { WhatsNewEntry } from "./WhatsNew";
 import { switchToVSCodeAction } from "./WhatsNew-2021-04";
 import CodeText from "../components/CodeText";

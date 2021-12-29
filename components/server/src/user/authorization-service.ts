@@ -6,9 +6,9 @@
 
 import { injectable } from "inversify";
 
-import { Permission, RoleOrPermission, RoleName, PermissionName, Role } from "@gitpod/gitpod-protocol/lib/permission";
-import { User } from "@gitpod/gitpod-protocol";
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { Permission, RoleOrPermission, RoleName, PermissionName, Role } from "cmict-gitpod-protocol/lib/permission";
+import { User } from "cmict-gitpod-protocol";
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
 
 export const AuthorizationService = Symbol('AuthorizationService');
 export interface AuthorizationService {

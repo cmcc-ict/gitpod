@@ -8,7 +8,7 @@ import * as chai from 'chai';
 const expect = chai.expect;
 import { suite, test } from 'mocha-typescript';
 
-import { Subscription } from '@gitpod/gitpod-protocol/lib/accounting-protocol';
+import { Subscription } from 'cmict-gitpod-protocol/lib/accounting-protocol';
 
 import { orderByEndDateDescThenStartDateDesc, orderByStartDateAscEndDateAsc } from './accounting-util';
 

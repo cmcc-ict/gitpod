@@ -4,12 +4,12 @@
  * See License.enterprise.txt in the project root folder.
  */
 
-import { AccountingDB } from "@gitpod/gitpod-db/lib/accounting-db";
-import { User } from "@gitpod/gitpod-protocol";
-import { AccountEntry, Subscription } from "@gitpod/gitpod-protocol/lib/accounting-protocol";
+import { AccountingDB } from "cmict-gitpod-db/lib/accounting-db";
+import { User } from "cmict-gitpod-protocol";
+import { AccountEntry, Subscription } from "cmict-gitpod-protocol/lib/accounting-protocol";
 import { inject, injectable } from "inversify";
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
-import { Plan, Plans } from "@gitpod/gitpod-protocol/lib/plans";
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
+import { Plan, Plans } from "cmict-gitpod-protocol/lib/plans";
 import { orderByStartDateAscEndDateAsc } from "./accounting-util";
 import { SubscriptionModel } from "./subscription-model";
 

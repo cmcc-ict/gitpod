@@ -5,12 +5,12 @@
  */
 
 import { inject, injectable } from "inversify";
-import { TracedWorkspaceDB, DBWithTracing, TracedUserDB, UserDB, WorkspaceDB } from '@gitpod/gitpod-db/lib';
+import { TracedWorkspaceDB, DBWithTracing, TracedUserDB, UserDB, WorkspaceDB } from 'cmict-gitpod-db/lib';
 import { MessageBusIntegration } from "../../../src/workspace/messagebus-integration";
-import { log } from "@gitpod/gitpod-protocol/lib/util/logging";
-import { TraceContext } from "@gitpod/gitpod-protocol/lib/util/tracing";
-import { HeadlessLogEvent, HeadlessWorkspaceEventType } from "@gitpod/gitpod-protocol/lib/headless-workspace-log";
-import { Disposable, PrebuiltWorkspace } from "@gitpod/gitpod-protocol";
+import { log } from "cmict-gitpod-protocol/lib/util/logging";
+import { TraceContext } from "cmict-gitpod-protocol/lib/util/tracing";
+import { HeadlessLogEvent, HeadlessWorkspaceEventType } from "cmict-gitpod-protocol/lib/headless-workspace-log";
+import { Disposable, PrebuiltWorkspace } from "cmict-gitpod-protocol";
 import { PrebuildRateLimiter } from "./prebuild-rate-limiter";
 import { WorkspaceStarter } from "../../../src/workspace/workspace-starter";
 import { IClientDataPrometheusAdapter } from "../../../src/workspace/client-data-prometheus-adapter";

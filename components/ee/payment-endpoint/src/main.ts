@@ -11,8 +11,8 @@ import { Container } from 'inversify';
 import { Server } from "./server";
 import { productionContainerModule } from './container-module';
 
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
-import { dbContainerModule } from '@gitpod/gitpod-db/lib/container-module';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
+import { dbContainerModule } from 'cmict-gitpod-db/lib/container-module';
 
 log.enableJSONLogging('payment-endpoint', process.env.VERSION);
 

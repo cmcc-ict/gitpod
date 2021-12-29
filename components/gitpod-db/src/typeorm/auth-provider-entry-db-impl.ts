@@ -7,7 +7,7 @@
 import { Repository, EntityManager } from "typeorm";
 import { injectable, inject } from "inversify";
 import { TypeORM } from "./typeorm";
-import { AuthProviderEntry } from "@gitpod/gitpod-protocol";
+import { AuthProviderEntry } from "cmict-gitpod-protocol";
 import { AuthProviderEntryDB } from "../auth-provider-entry-db";
 import { DBAuthProviderEntry } from "./entity/db-auth-provider-entry";
 import { DBIdentity } from "./entity/db-identity";

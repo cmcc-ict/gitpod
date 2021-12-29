@@ -5,8 +5,8 @@
  */
 
 import { injectable, inject } from "inversify";
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
-import { LogContext } from "@gitpod/gitpod-protocol/lib/util/logging";
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
+import { LogContext } from "cmict-gitpod-protocol/lib/util/logging";
 import { ChargebeeProvider } from "@gitpod/gitpod-payment-endpoint/lib/chargebee";
 
 

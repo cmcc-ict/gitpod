@@ -4,9 +4,9 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { IssueContext, NavigatorContext, PullRequestContext, Repository, User, WorkspaceContext } from "@gitpod/gitpod-protocol";
-import { log } from "@gitpod/gitpod-protocol/lib/util/logging";
-import { TraceContext } from "@gitpod/gitpod-protocol/lib/util/tracing";
+import { IssueContext, NavigatorContext, PullRequestContext, Repository, User, WorkspaceContext } from "cmict-gitpod-protocol";
+import { log } from "cmict-gitpod-protocol/lib/util/logging";
+import { TraceContext } from "cmict-gitpod-protocol/lib/util/tracing";
 import { Schema } from "bitbucket";
 import { inject, injectable } from "inversify";
 import { NotFoundError } from "../errors";

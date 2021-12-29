@@ -6,7 +6,7 @@
 
 import { injectable } from 'inversify';
 
-import { getEnvVar, filePathTelepresenceAware } from '@gitpod/gitpod-protocol/lib/env';
+import { getEnvVar, filePathTelepresenceAware } from 'cmict-gitpod-protocol/lib/env';
 import { readOptionsFromFile } from '@gitpod/gitpod-payment-endpoint/lib/chargebee';
 import { Env } from '../../src/env';
 

@@ -5,13 +5,13 @@
  */
 
 import { injectable, inject } from "inversify";
-import { User } from "@gitpod/gitpod-protocol"
+import { User } from "cmict-gitpod-protocol"
 
 import { Gitlab } from "@gitbeaker/node";
 import { Projects, Users, Commits, ProjectHooks, Repositories, Branches, Tags, MergeRequests, Issues, RepositoryFiles } from "@gitbeaker/core";
 import { ProjectSchemaDefault } from "@gitbeaker/core/dist/types/services/Projects";
 import { UserSchemaDefault } from "@gitbeaker/core/dist/types/services/Users";
-import { log } from "@gitpod/gitpod-protocol/lib/util/logging";
+import { log } from "cmict-gitpod-protocol/lib/util/logging";
 import { GitLabScope } from "./scopes";
 import { AuthProviderParams } from "../auth/auth-provider";
 import { GitLabTokenHelper } from "./gitlab-token-helper";

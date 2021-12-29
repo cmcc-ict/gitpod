@@ -4,8 +4,8 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { Commit, Repository, User } from "@gitpod/gitpod-protocol";
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { Commit, Repository, User } from "cmict-gitpod-protocol";
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
 import { inject, injectable } from 'inversify';
 import { FileProvider, MaybeContent } from "../repohost/file-provider";
 import { BitbucketApiFactory } from './bitbucket-api-factory';

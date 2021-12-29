@@ -4,7 +4,7 @@
  * See License.enterprise.txt in the project root folder.
  */
 
-import { EMail } from "@gitpod/gitpod-protocol";
+import { EMail } from "cmict-gitpod-protocol";
 import { DeepPartial, Repository } from "typeorm";
 import { DBEmail } from "./typeorm/entity/db-email";
 

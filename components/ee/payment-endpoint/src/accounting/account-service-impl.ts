@@ -6,19 +6,19 @@
 
 import { inject, injectable } from "inversify";
 
-import { AccountingDB } from "@gitpod/gitpod-db/lib/accounting-db";
-import { UserDB, WorkspaceDB, WorkspaceInstanceSessionWithWorkspace } from '@gitpod/gitpod-db/lib';
-import { hoursToMilliseconds, millisecondsToHours, oneMonthLater, rightBefore, oldest, earliest, durationInHours, isDateSmallerOrEqual, durationInMillis, addMillis } from "@gitpod/gitpod-protocol/lib/util/timeutil";
-import { CommitContext, PrebuiltWorkspaceContext, WorkspaceContext } from "@gitpod/gitpod-protocol";
-import { AccountEntry, Subscription, AccountStatement, AccountEntryFixedPeriod, SessionDescription, CreditDescription, Debit, DebitAccountEntryKind, Credit, LossDebit } from "@gitpod/gitpod-protocol/lib/accounting-protocol";
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { AccountingDB } from "cmict-gitpod-db/lib/accounting-db";
+import { UserDB, WorkspaceDB, WorkspaceInstanceSessionWithWorkspace } from 'cmict-gitpod-db/lib';
+import { hoursToMilliseconds, millisecondsToHours, oneMonthLater, rightBefore, oldest, earliest, durationInHours, isDateSmallerOrEqual, durationInMillis, addMillis } from "cmict-gitpod-protocol/lib/util/timeutil";
+import { CommitContext, PrebuiltWorkspaceContext, WorkspaceContext } from "cmict-gitpod-protocol";
+import { AccountEntry, Subscription, AccountStatement, AccountEntryFixedPeriod, SessionDescription, CreditDescription, Debit, DebitAccountEntryKind, Credit, LossDebit } from "cmict-gitpod-protocol/lib/accounting-protocol";
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
 
 import { Accounting } from "./accounting";
 import { orderByExpiryDateDesc, SortedArray, orderCreditFirst, within } from "./accounting-util";
 import { AccountService } from "./account-service";
 import { SubscriptionService } from "./subscription-service";
-import { Without } from "@gitpod/gitpod-protocol/lib/util/without";
-import { Plans } from "@gitpod/gitpod-protocol/lib/plans";
+import { Without } from "cmict-gitpod-protocol/lib/util/without";
+import { Plans } from "cmict-gitpod-protocol/lib/plans";
 
 /**
  * There are some things to do/check which are not vital right now:

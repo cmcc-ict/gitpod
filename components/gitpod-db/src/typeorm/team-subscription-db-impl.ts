@@ -7,7 +7,7 @@
 import { injectable, inject } from "inversify";
 import { EntityManager, Repository, DeepPartial } from "typeorm";
 
-import { TeamSubscription, TeamSubscriptionSlot } from "@gitpod/gitpod-protocol/lib/team-subscription-protocol";
+import { TeamSubscription, TeamSubscriptionSlot } from "cmict-gitpod-protocol/lib/team-subscription-protocol";
 
 import { TeamSubscriptionDB } from "../team-subscription-db";
 import { DBTeamSubscription } from "./entity/db-team-subscription";

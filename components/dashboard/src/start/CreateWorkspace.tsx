@@ -6,15 +6,15 @@
 
 import EventEmitter from "events";
 import React, { useEffect, Suspense, useContext, useState } from "react";
-import { CreateWorkspaceMode, WorkspaceCreationResult, RunningWorkspacePrebuildStarting } from "@gitpod/gitpod-protocol";
-import { ErrorCodes } from "@gitpod/gitpod-protocol/lib/messaging/error";
+import { CreateWorkspaceMode, WorkspaceCreationResult, RunningWorkspacePrebuildStarting } from "cmict-gitpod-protocol";
+import { ErrorCodes } from "cmict-gitpod-protocol/lib/messaging/error";
 import Modal from "../components/Modal";
 import { getGitpodService, gitpodHostUrl } from "../service/service";
 import { UserContext } from "../user-context";
 import { StartPage, StartPhase, StartWorkspaceError } from "./StartPage";
 import StartWorkspace from "./StartWorkspace";
 import { openAuthorizeWindow } from "../provider-utils";
-import { SelectAccountPayload } from "@gitpod/gitpod-protocol/lib/auth";
+import { SelectAccountPayload } from "cmict-gitpod-protocol/lib/auth";
 import { SelectAccountModal } from "../settings/SelectAccountModal";
 import { watchHeadlessLogs } from "./WorkspaceLogs";
 

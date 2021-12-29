@@ -4,7 +4,7 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { AuthProviderInfo, GuessedGitTokenScopes, GuessGitTokenScopesParams } from "@gitpod/gitpod-protocol";
+import { AuthProviderInfo, GuessedGitTokenScopes, GuessGitTokenScopesParams } from "cmict-gitpod-protocol";
 import { inject, injectable } from "inversify";
 import { GitTokenValidator } from "./git-token-validator";
 

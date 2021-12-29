@@ -5,7 +5,7 @@
  */
 
 import React from "react";
-import { WhitelistedRepository, Workspace, WorkspaceInfo } from "@gitpod/gitpod-protocol";
+import { WhitelistedRepository, Workspace, WorkspaceInfo } from "cmict-gitpod-protocol";
 import Header from "../components/Header";
 import DropDown from "../components/DropDown";
 import exclamation from "../images/exclamation.svg";

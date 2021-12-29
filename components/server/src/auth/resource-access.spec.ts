@@ -8,7 +8,7 @@ import { suite, test } from "mocha-typescript";
 import * as chai from 'chai';
 const expect = chai.expect;
 import { TokenResourceGuard, ScopedResourceGuard, GuardedResource, ResourceAccessOp, GuardEnvVar, WorkspaceEnvVarAccessGuard } from "./resource-access";
-import { UserEnvVar } from "@gitpod/gitpod-protocol/lib/protocol";
+import { UserEnvVar } from "cmict-gitpod-protocol/lib/protocol";
 
 @suite class TestResourceAccess {
 

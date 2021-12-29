@@ -11,8 +11,8 @@
 
 require('../src/shared/index.css');
 
-import { createGitpodService, WorkspaceInstancePhase } from "@gitpod/gitpod-protocol";
-import { DisposableCollection } from '@gitpod/gitpod-protocol/lib/util/disposable';
+import { createGitpodService, WorkspaceInstancePhase } from "cmict-gitpod-protocol";
+import { DisposableCollection } from 'cmict-gitpod-protocol/lib/util/disposable';
 import * as GitpodServiceClient from "./ide/gitpod-service-client";
 import * as heartBeat from "./ide/heart-beat";
 import * as IDEFrontendService from "./ide/ide-frontend-service-impl";

@@ -6,12 +6,12 @@
 
 import { connect, Channel, Connection, Options, ConfirmChannel, Message } from "amqplib";
 import { injectable, inject } from 'inversify';
-import { Disposable } from "@gitpod/gitpod-protocol";
+import { Disposable } from "cmict-gitpod-protocol";
 export type WorkspaceSubtopic = "updates" | "log" | "credit" | "headless-log" | "ports";
 export const MessageBusHelper = Symbol("MessageBusHelper");
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
 import { MessagebusConfiguration } from "./config";
-import { TraceContext } from '@gitpod/gitpod-protocol/lib/util/tracing';
+import { TraceContext } from 'cmict-gitpod-protocol/lib/util/tracing';
 import { globalTracer, FORMAT_HTTP_HEADERS, childOf } from "opentracing";
 import { CancellationToken } from 'vscode-jsonrpc/lib/cancellation';
 

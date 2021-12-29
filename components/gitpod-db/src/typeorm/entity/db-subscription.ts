@@ -7,7 +7,7 @@
 import { Entity, Column, PrimaryColumn, Index } from "typeorm";
 import { TypeORM } from "../../typeorm/typeorm";
 import { Transformer } from "../../typeorm/transformer";
-import { Subscription, PaymentData } from "@gitpod/gitpod-protocol/lib/accounting-protocol";
+import { Subscription, PaymentData } from "cmict-gitpod-protocol/lib/accounting-protocol";
 
 @Entity()
 @Index("ind_user_paymentReference", ["userId", "paymentReference"])

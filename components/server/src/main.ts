@@ -5,10 +5,10 @@
  */
 
 import { start } from "./init";
-import { log } from "@gitpod/gitpod-protocol/lib/util/logging";
+import { log } from "cmict-gitpod-protocol/lib/util/logging";
 import { Container } from "inversify";
 import { productionContainerModule } from "./container-module";
-import { dbContainerModule } from "@gitpod/gitpod-db/lib/container-module";
+import { dbContainerModule } from "cmict-gitpod-db/lib/container-module";
 
 const container = new Container();
 container.load(productionContainerModule);

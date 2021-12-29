@@ -4,7 +4,7 @@
  * See License.enterprise.txt in the project root folder.
  */
 
-import { hoursToMilliseconds } from "@gitpod/gitpod-protocol/lib/util/timeutil";
+import { hoursToMilliseconds } from "cmict-gitpod-protocol/lib/util/timeutil";
 
 export namespace Accounting {
     /**

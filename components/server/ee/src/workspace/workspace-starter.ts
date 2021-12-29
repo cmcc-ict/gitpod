@@ -4,7 +4,7 @@
  * See License.enterprise.txt in the project root folder.
  */
 
-import { Workspace, User, WorkspaceInstance, WorkspaceInstanceConfiguration, NamedWorkspaceFeatureFlag } from "@gitpod/gitpod-protocol";
+import { Workspace, User, WorkspaceInstance, WorkspaceInstanceConfiguration, NamedWorkspaceFeatureFlag } from "cmict-gitpod-protocol";
 import { inject, injectable } from "inversify";
 import { WorkspaceStarter } from "../../../src/workspace/workspace-starter";
 import { EligibilityService } from "../user/eligibility-service";

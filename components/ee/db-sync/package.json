@@ -18,8 +18,8 @@
     "telepresence": "leeway run .:telepresence"
   },
   "dependencies": {
-    "@gitpod/gitpod-db": "0.1.5",
-    "@gitpod/gitpod-protocol": "0.1.5",
+    "cmict-gitpod-db": "0.1.5",
+    "cmict-gitpod-protocol": "0.1.5",
     "argparse": "^1.0.10",
     "moment": "^2.21.0",
     "mysql": "^2.15.0",

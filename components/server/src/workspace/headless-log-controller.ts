@@ -6,16 +6,16 @@
 
 import { inject, injectable } from "inversify";
 import * as express from 'express';
-import { HEADLESS_LOG_STREAM_STATUS_CODE, Queue, User } from "@gitpod/gitpod-protocol";
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { HEADLESS_LOG_STREAM_STATUS_CODE, Queue, User } from "cmict-gitpod-protocol";
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
 import { CompositeResourceAccessGuard, OwnerResourceGuard, WorkspaceLogAccessGuard } from "../auth/resource-access";
 import { HostContextProvider } from "../auth/host-context-provider";
-import { DBWithTracing, TracedWorkspaceDB } from "@gitpod/gitpod-db/lib/traced-db";
-import { WorkspaceDB } from "@gitpod/gitpod-db/lib/workspace-db";
+import { DBWithTracing, TracedWorkspaceDB } from "cmict-gitpod-db/lib/traced-db";
+import { WorkspaceDB } from "cmict-gitpod-db/lib/workspace-db";
 import { WorkspaceLogService } from "./workspace-log-service";
 import * as opentracing from 'opentracing';
 import { asyncHandler } from "../express-util";
-import { Deferred } from "@gitpod/gitpod-protocol/lib/util/deferred";
+import { Deferred } from "cmict-gitpod-protocol/lib/util/deferred";
 import { isWithFunctionAccessGuard } from "../auth/function-access";
 import { accesHeadlessLogs } from "../auth/rate-limiter";
 import { BearerAuth } from "../auth/bearer-authenticator";

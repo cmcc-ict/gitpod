@@ -7,7 +7,7 @@
 import { injectable, inject } from "inversify";
 import { Repository, EntityManager, DeepPartial, UpdateQueryBuilder } from "typeorm";
 import { MaybeWorkspace, MaybeWorkspaceInstance, WorkspaceDB, FindWorkspacesOptions, PrebuiltUpdatableAndWorkspace, WorkspaceInstanceSessionWithWorkspace, PrebuildWithWorkspace, WorkspaceAndOwner, WorkspacePortsAuthData, WorkspaceOwnerAndSoftDeleted } from "../workspace-db";
-import { Workspace, WorkspaceInstance, WorkspaceInfo, WorkspaceInstanceUser, WhitelistedRepository, Snapshot, LayoutData, PrebuiltWorkspace, RunningWorkspaceInfo, PrebuiltWorkspaceUpdatable, WorkspaceAndInstance, WorkspaceType } from "@gitpod/gitpod-protocol";
+import { Workspace, WorkspaceInstance, WorkspaceInfo, WorkspaceInstanceUser, WhitelistedRepository, Snapshot, LayoutData, PrebuiltWorkspace, RunningWorkspaceInfo, PrebuiltWorkspaceUpdatable, WorkspaceAndInstance, WorkspaceType } from "cmict-gitpod-protocol";
 import { TypeORM } from "./typeorm";
 import { DBWorkspace } from "./entity/db-workspace";
 import { DBWorkspaceInstance } from "./entity/db-workspace-instance";
@@ -15,7 +15,7 @@ import { DBLayoutData } from "./entity/db-layout-data";
 import { DBSnapshot } from "./entity/db-snapshot";
 import { DBWorkspaceInstanceUser } from "./entity/db-workspace-instance-user";
 import { DBRepositoryWhiteList } from "./entity/db-repository-whitelist";
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
 import { DBPrebuiltWorkspace } from "./entity/db-prebuilt-workspace";
 import { DBPrebuiltWorkspaceUpdatable } from "./entity/db-prebuilt-workspace-updatable";
 import { BUILTIN_WORKSPACE_PROBE_USER_NAME } from "../user-db";

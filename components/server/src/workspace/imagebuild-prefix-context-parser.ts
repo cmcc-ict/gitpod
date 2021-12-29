@@ -4,7 +4,7 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { ContextURL, User, WorkspaceContext } from "@gitpod/gitpod-protocol";
+import { ContextURL, User, WorkspaceContext } from "cmict-gitpod-protocol";
 import { injectable } from "inversify";
 import { IPrefixContextParser } from "./context-parser";
 

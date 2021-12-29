@@ -4,14 +4,14 @@
  * See License.enterprise.txt in the project root folder.
  */
 
-import { testContainer } from '@gitpod/gitpod-db/lib/test-container';
-import { TypeORM } from '@gitpod/gitpod-db/lib';
+import { testContainer } from 'cmict-gitpod-db/lib/test-container';
+import { TypeORM } from 'cmict-gitpod-db/lib';
 import * as chai from 'chai';
 import { suite, test, timeout } from 'mocha-typescript';
-import { DBSubscription } from '@gitpod/gitpod-db/lib/typeorm/entity/db-subscription';
+import { DBSubscription } from 'cmict-gitpod-db/lib/typeorm/entity/db-subscription';
 import { SubscriptionService } from './subscription-service';
-import { AccountingDB } from '@gitpod/gitpod-db/lib/accounting-db';
-import { Plan } from '@gitpod/gitpod-protocol/lib/plans';
+import { AccountingDB } from 'cmict-gitpod-db/lib/accounting-db';
+import { Plan } from 'cmict-gitpod-protocol/lib/plans';
 const expect = chai.expect;
 
 @timeout(10000)

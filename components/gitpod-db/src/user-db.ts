@@ -4,8 +4,8 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { GitpodToken, GitpodTokenType, Identity, IdentityLookup, Token, TokenEntry, User, UserEnvVar } from "@gitpod/gitpod-protocol";
-import { Without } from "@gitpod/gitpod-protocol/lib/util/without";
+import { GitpodToken, GitpodTokenType, Identity, IdentityLookup, Token, TokenEntry, User, UserEnvVar } from "cmict-gitpod-protocol";
+import { Without } from "cmict-gitpod-protocol/lib/util/without";
 import { OAuthTokenRepository, OAuthUserRepository } from "@jmondi/oauth2-server";
 import { Repository } from "typeorm";
 import { DBUser } from "./typeorm/entity/db-user";

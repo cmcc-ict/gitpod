@@ -4,14 +4,14 @@
  * See License.enterprise.txt in the project root folder.
  */
 
-import { ProviderRepository, User } from "@gitpod/gitpod-protocol";
+import { ProviderRepository, User } from "cmict-gitpod-protocol";
 import { inject, injectable } from "inversify";
 import { GithubApp } from "../prebuilds/github-app";
 import { RequestError } from "@octokit/request-error";
 import { TokenProvider } from "../../../src/user/token-provider";
-import { UserDB } from "@gitpod/gitpod-db/lib";
+import { UserDB } from "cmict-gitpod-db/lib";
 import { Octokit, RestEndpointMethodTypes } from "@octokit/rest";
-import { log } from "@gitpod/gitpod-protocol/lib/util/logging";
+import { log } from "cmict-gitpod-protocol/lib/util/logging";
 
 @injectable()
 export class GitHubAppSupport {

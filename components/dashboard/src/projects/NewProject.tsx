@@ -7,7 +7,7 @@
 import { useContext, useEffect, useState } from "react";
 import { getGitpodService, gitpodHostUrl } from "../service/service";
 import { iconForAuthProvider, openAuthorizeWindow, simplifyProviderName } from "../provider-utils";
-import { AuthProviderInfo, ProviderRepository, Team } from "@gitpod/gitpod-protocol";
+import { AuthProviderInfo, ProviderRepository, Team } from "cmict-gitpod-protocol";
 import { TeamsContext } from "../teams/teams-context";
 import { useHistory, useLocation } from "react-router";
 import ContextMenu, { ContextMenuEntry } from "../components/ContextMenu";

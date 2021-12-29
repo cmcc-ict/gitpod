@@ -4,8 +4,8 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { AdditionalContentContext, User, WorkspaceContext } from "@gitpod/gitpod-protocol";
-import { log } from "@gitpod/gitpod-protocol/lib/util/logging";
+import { AdditionalContentContext, User, WorkspaceContext } from "cmict-gitpod-protocol";
+import { log } from "cmict-gitpod-protocol/lib/util/logging";
 import { base64decode } from "@jmondi/oauth2-server";
 import { inject, injectable } from "inversify";
 import { Env } from "../env";

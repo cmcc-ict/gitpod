@@ -6,8 +6,8 @@
 
 import EventEmitter from "events";
 import React, { useEffect, Suspense } from "react";
-import { DisposableCollection, WorkspaceInstance, WorkspaceImageBuild, Workspace, WithPrebuild, ContextURL } from "@gitpod/gitpod-protocol";
-import { ErrorCodes } from "@gitpod/gitpod-protocol/lib/messaging/error";
+import { DisposableCollection, WorkspaceInstance, WorkspaceImageBuild, Workspace, WithPrebuild, ContextURL } from "cmict-gitpod-protocol";
+import { ErrorCodes } from "cmict-gitpod-protocol/lib/messaging/error";
 import PendingChangesDropdown from "../components/PendingChangesDropdown";
 import { getGitpodService, gitpodHostUrl } from "../service/service";
 import { StartPage, StartPhase, StartWorkspaceError } from "./StartPage";

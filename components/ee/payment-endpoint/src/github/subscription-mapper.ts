@@ -7,11 +7,11 @@
 import { injectable, inject } from "inversify";
 import { SubscriptionModel } from "../accounting/subscription-model";
 import * as Webhooks from '@octokit/webhooks';
-import { User } from "@gitpod/gitpod-protocol";
-import { Subscription } from "@gitpod/gitpod-protocol/lib/accounting-protocol";
-import { UserDB } from "@gitpod/gitpod-db/lib";
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
-import { Plan, Plans } from "@gitpod/gitpod-protocol/lib/plans";
+import { User } from "cmict-gitpod-protocol";
+import { Subscription } from "cmict-gitpod-protocol/lib/accounting-protocol";
+import { UserDB } from "cmict-gitpod-db/lib";
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
+import { Plan, Plans } from "cmict-gitpod-protocol/lib/plans";
 
 export type MarketplacePurchaseEvent = Webhooks.WebhookEvent<Webhooks.EventPayloads.WebhookPayloadMarketplacePurchase>;
 export type WebhookPayloadMarketplacePurchaseChanged = Webhooks.EventPayloads.WebhookPayloadMarketplacePurchase & { previous_marketplace_purchase: Webhooks.EventPayloads.WebhookPayloadMarketplacePurchaseMarketplacePurchase };

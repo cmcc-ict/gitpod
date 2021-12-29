@@ -6,10 +6,10 @@
 
 
 import * as express from 'express';
-import { AuthProviderInfo, User, OAuth2Config, AuthProviderEntry } from "@gitpod/gitpod-protocol";
+import { AuthProviderInfo, User, OAuth2Config, AuthProviderEntry } from "cmict-gitpod-protocol";
 import { saveSession } from '../express-util';
 
-import { UserEnvVarValue } from "@gitpod/gitpod-protocol";
+import { UserEnvVarValue } from "cmict-gitpod-protocol";
 
 export const AuthProviderParams = Symbol("AuthProviderParams");
 export interface AuthProviderParams extends AuthProviderEntry {

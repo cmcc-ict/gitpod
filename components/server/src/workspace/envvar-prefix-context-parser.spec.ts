@@ -9,7 +9,7 @@ import "reflect-metadata";
 import { suite, test } from "@testdeck/mocha";
 import * as chai from 'chai';
 import { EnvvarPrefixParser } from "./envvar-prefix-context-parser";
-import { WithEnvvarsContext } from "@gitpod/gitpod-protocol";
+import { WithEnvvarsContext } from "cmict-gitpod-protocol";
 const expect = chai.expect;
 
 @suite

@@ -15,7 +15,7 @@ import { TeamsContext } from './teams/teams-context';
 import { getGitpodService } from './service/service';
 import { shouldSeeWhatsNew, WhatsNew } from './whatsnew/WhatsNew';
 import gitpodIcon from './icons/gitpod.svg';
-import { ErrorCodes } from '@gitpod/gitpod-protocol/lib/messaging/error';
+import { ErrorCodes } from 'cmict-gitpod-protocol/lib/messaging/error';
 
 const Setup = React.lazy(() => import(/* webpackPrefetch: true */ './Setup'));
 const Workspaces = React.lazy(() => import(/* webpackPrefetch: true */ './workspaces/Workspaces'));

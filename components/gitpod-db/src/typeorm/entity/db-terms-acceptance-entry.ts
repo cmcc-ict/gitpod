@@ -5,7 +5,7 @@
  */
 
 import { Column, Entity, PrimaryColumn } from "typeorm";
-import { TermsAcceptanceEntry } from "@gitpod/gitpod-protocol";
+import { TermsAcceptanceEntry } from "cmict-gitpod-protocol";
 
 /**
  * A single entry per User is created/managed over time.

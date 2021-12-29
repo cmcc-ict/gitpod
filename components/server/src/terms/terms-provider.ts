@@ -5,7 +5,7 @@
  */
 
 import { injectable } from 'inversify';
-import { Terms } from '@gitpod/gitpod-protocol';
+import { Terms } from 'cmict-gitpod-protocol';
 
 @injectable()
 export class TermsProvider {

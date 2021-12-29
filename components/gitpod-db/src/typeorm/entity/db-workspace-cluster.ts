@@ -5,7 +5,7 @@
  */
 
 import { PrimaryColumn, Column, Entity, Index } from "typeorm";
-import { AdmissionConstraint, TLSConfig, WorkspaceCluster, WorkspaceClusterState } from "@gitpod/gitpod-protocol/lib/workspace-cluster";
+import { AdmissionConstraint, TLSConfig, WorkspaceCluster, WorkspaceClusterState } from "cmict-gitpod-protocol/lib/workspace-cluster";
 import { ValueTransformer } from "typeorm/decorator/options/ValueTransformer";
 
 @Entity()

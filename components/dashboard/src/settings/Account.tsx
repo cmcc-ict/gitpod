@@ -4,7 +4,7 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { User } from "@gitpod/gitpod-protocol";
+import { User } from "cmict-gitpod-protocol";
 import { useContext, useState } from "react";
 import { PageWithSubMenu } from "../components/PageWithSubMenu";
 import { getGitpodService, gitpodHostUrl } from "../service/service";

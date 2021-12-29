@@ -6,13 +6,13 @@
 
 import * as express from 'express';
 import { injectable, inject } from 'inversify';
-import { UserDB } from '@gitpod/gitpod-db/lib';
+import { UserDB } from 'cmict-gitpod-db/lib';
 import { Strategy as DummyStrategy } from "passport-dummy";
-import { ErrorCodes } from '@gitpod/gitpod-protocol/lib/messaging/error';
+import { ErrorCodes } from 'cmict-gitpod-protocol/lib/messaging/error';
 import { ResponseError } from 'vscode-jsonrpc';
 import { Authenticator } from '../auth/authenticator';
 import { AuthProvider } from '../auth/auth-provider';
-import { AuthProviderInfo } from '@gitpod/gitpod-protocol';
+import { AuthProviderInfo } from 'cmict-gitpod-protocol';
 import { DevData } from './dev-data';
 
 @injectable()

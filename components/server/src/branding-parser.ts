@@ -4,7 +4,7 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { Branding } from "@gitpod/gitpod-protocol";
+import { Branding } from "cmict-gitpod-protocol";
 
 export namespace BrandingParser {
     export function parse(jsonString: string): Branding {

@@ -6,11 +6,11 @@
 
 import { injectable } from "inversify";
 import { AbstractMessageBusIntegration, MessageBusHelper, AbstractTopicListener, TopicListener, MessageBusHelperImpl, MessagebusListener } from "@gitpod/gitpod-messagebus/lib";
-import { Disposable, WorkspaceInstance } from "@gitpod/gitpod-protocol";
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
-import { HeadlessLogEvent, HeadlessWorkspaceEventType } from "@gitpod/gitpod-protocol/lib/headless-workspace-log";
+import { Disposable, WorkspaceInstance } from "cmict-gitpod-protocol";
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
+import { HeadlessLogEvent, HeadlessWorkspaceEventType } from "cmict-gitpod-protocol/lib/headless-workspace-log";
 import { Channel, Message } from "amqplib";
-import { TraceContext } from "@gitpod/gitpod-protocol/lib/util/tracing";
+import { TraceContext } from "cmict-gitpod-protocol/lib/util/tracing";
 import * as opentracing from "opentracing";
 import { CancellationTokenSource } from "vscode-ws-jsonrpc";
 import { increaseMessagebusTopicReads } from '../prometheus-metrics';

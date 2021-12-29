@@ -4,10 +4,10 @@
  * See License.enterprise.txt in the project root folder.
  */
 
-import { User, PrebuiltWorkspace } from "@gitpod/gitpod-protocol";
+import { User, PrebuiltWorkspace } from "cmict-gitpod-protocol";
 import { inject, injectable } from "inversify";
-import { WorkspaceDB, DBWithTracing, TracedWorkspaceDB } from "@gitpod/gitpod-db/lib";
-import { TraceContext } from "@gitpod/gitpod-protocol/lib/util/tracing";
+import { WorkspaceDB, DBWithTracing, TracedWorkspaceDB } from "cmict-gitpod-db/lib";
+import { TraceContext } from "cmict-gitpod-protocol/lib/util/tracing";
 import { Env } from "../../../src/env";
 
 @injectable()

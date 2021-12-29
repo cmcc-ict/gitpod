@@ -4,7 +4,7 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { PendingGithubEvent, User, Identity } from "@gitpod/gitpod-protocol";
+import { PendingGithubEvent, User, Identity } from "cmict-gitpod-protocol";
 
 export type PendingGithubEventWithUser = PendingGithubEvent & { identity: Identity & { user: User } };
 

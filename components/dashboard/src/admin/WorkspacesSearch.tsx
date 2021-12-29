@@ -4,7 +4,7 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { AdminGetListResult, User, WorkspaceAndInstance } from "@gitpod/gitpod-protocol";
+import { AdminGetListResult, User, WorkspaceAndInstance } from "cmict-gitpod-protocol";
 import moment from "moment";
 import { useContext, useEffect, useState } from "react";
 import { useLocation } from "react-router";

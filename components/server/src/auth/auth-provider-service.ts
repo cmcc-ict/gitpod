@@ -5,14 +5,14 @@
  */
 
 import { injectable, inject } from "inversify";
-import { AuthProviderEntry as AuthProviderEntry, User } from "@gitpod/gitpod-protocol";
+import { AuthProviderEntry as AuthProviderEntry, User } from "cmict-gitpod-protocol";
 import { AuthProviderParams } from "./auth-provider";
-import { AuthProviderEntryDB } from "@gitpod/gitpod-db/lib";
+import { AuthProviderEntryDB } from "cmict-gitpod-db/lib";
 import { Env } from "../env";
 import * as uuidv4 from 'uuid/v4';
 import { oauthUrls as githubUrls } from "../github/github-urls";
 import { oauthUrls as gitlabUrls } from "../gitlab/gitlab-urls";
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
 
 @injectable()
 export class AuthProviderService {

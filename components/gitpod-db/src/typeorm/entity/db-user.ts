@@ -5,7 +5,7 @@
  */
 
 import { PrimaryColumn, Entity, Column, OneToMany, JoinColumn, Index } from "typeorm";
-import { User, RoleOrPermission, AdditionalUserData, UserFeatureSettings } from "@gitpod/gitpod-protocol";
+import { User, RoleOrPermission, AdditionalUserData, UserFeatureSettings } from "cmict-gitpod-protocol";
 import { DBIdentity } from './db-identity';
 import { TypeORM } from "../typeorm";
 import { Transformer } from "../transformer";

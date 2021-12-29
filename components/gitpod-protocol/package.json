@@ -1,5 +1,5 @@
 {
-    "name": "@gitpod/gitpod-protocol",
+    "name": "cmict-gitpod-protocol",
     "version": "0.1.5",
     "license": "UNLICENSED",
     "main": "./lib/index.js",

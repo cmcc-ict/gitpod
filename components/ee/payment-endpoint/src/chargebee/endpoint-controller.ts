@@ -9,8 +9,8 @@ import * as express from 'express';
 import * as passport from 'passport';
 import { BasicStrategy } from 'passport-http';
 
-import { PaymentProtocol } from '@gitpod/gitpod-protocol/lib/payment-protocol';
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { PaymentProtocol } from 'cmict-gitpod-protocol/lib/payment-protocol';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
 
 import { Config } from "../config";
 import { CompositeEventHandler } from "./chargebee-event-handler";

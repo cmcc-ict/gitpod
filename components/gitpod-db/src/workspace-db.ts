@@ -6,7 +6,7 @@
 
 import { DeepPartial } from 'typeorm';
 
-import { Workspace, WorkspaceInfo, WorkspaceInstance, WorkspaceInstanceUser, WhitelistedRepository, Snapshot, LayoutData, PrebuiltWorkspace, PrebuiltWorkspaceUpdatable, RunningWorkspaceInfo, WorkspaceAndInstance, WorkspaceType } from '@gitpod/gitpod-protocol';
+import { Workspace, WorkspaceInfo, WorkspaceInstance, WorkspaceInstanceUser, WhitelistedRepository, Snapshot, LayoutData, PrebuiltWorkspace, PrebuiltWorkspaceUpdatable, RunningWorkspaceInfo, WorkspaceAndInstance, WorkspaceType } from 'cmict-gitpod-protocol';
 
 export type MaybeWorkspace = Workspace | undefined;
 export type MaybeWorkspaceInstance = WorkspaceInstance | undefined;

@@ -4,12 +4,12 @@
  * See License.enterprise.txt in the project root folder.
  */
 
-import { TableDescription, TableDescriptionProvider } from "@gitpod/gitpod-db/lib/tables";
+import { TableDescription, TableDescriptionProvider } from "cmict-gitpod-db/lib/tables";
 import { Connection, escape } from "mysql";
 import { Transform } from "stream";
 import { query } from "./database";
 import { injectable, multiInject } from "inversify";
-import { log } from "@gitpod/gitpod-protocol/lib/util/logging";
+import { log } from "cmict-gitpod-protocol/lib/util/logging";
 
 export class TableUpdate {
     constructor(protected table: TableDescription, protected start?: Date, protected end?: Date) { }

@@ -5,11 +5,11 @@
  */
 
 import { WsRequestHandler } from './express/ws-handler';
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
 import { URL } from 'url';
 import * as express from 'express';
 import * as crypto from 'crypto';
-import { GitpodHostUrl } from '@gitpod/gitpod-protocol/lib/util/gitpod-host-url';
+import { GitpodHostUrl } from 'cmict-gitpod-protocol/lib/util/gitpod-host-url';
 
 export const pingPong: WsRequestHandler = (ws, req, next) => {
     let pingSentTimer: any;

@@ -4,7 +4,7 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { User } from "@gitpod/gitpod-protocol";
+import { User } from "cmict-gitpod-protocol";
 import Modal from "../components/Modal";
 import { WhatsNewEntry202104 } from "./WhatsNew-2021-04";
 import { WhatsNewEntry202106 } from "./WhatsNew-2021-06";

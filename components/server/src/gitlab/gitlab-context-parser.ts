@@ -6,14 +6,14 @@
 
 import { injectable, inject } from 'inversify';
 
-import { NavigatorContext, User, CommitContext, Repository, PullRequestContext, IssueContext, RefType } from '@gitpod/gitpod-protocol';
+import { NavigatorContext, User, CommitContext, Repository, PullRequestContext, IssueContext, RefType } from 'cmict-gitpod-protocol';
 import { GitLabApi, GitLab } from './api';
 import { UnauthorizedError, NotFoundError } from '../errors';
 import { GitLabScope } from './scopes';
 import { IContextParser, IssueContexts, AbstractContextParser, URLParts } from '../workspace/context-parser';
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
 import { GitLabTokenHelper } from './gitlab-token-helper';
-import { TraceContext } from '@gitpod/gitpod-protocol/lib/util/tracing';
+import { TraceContext } from 'cmict-gitpod-protocol/lib/util/tracing';
 const path = require('path');
 import { URL } from 'url';
 

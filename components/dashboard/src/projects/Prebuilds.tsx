@@ -5,7 +5,7 @@
  */
 
 import moment from "moment";
-import { PrebuildInfo, ProjectInfo } from "@gitpod/gitpod-protocol";
+import { PrebuildInfo, ProjectInfo } from "cmict-gitpod-protocol";
 import { useContext, useEffect, useState } from "react";
 import { useLocation, useRouteMatch } from "react-router";
 import Header from "../components/Header";

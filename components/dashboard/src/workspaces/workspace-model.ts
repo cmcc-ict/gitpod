@@ -4,7 +4,7 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { Disposable, DisposableCollection, GitpodClient, WorkspaceInfo, WorkspaceInstance } from "@gitpod/gitpod-protocol";
+import { Disposable, DisposableCollection, GitpodClient, WorkspaceInfo, WorkspaceInstance } from "cmict-gitpod-protocol";
 import { getGitpodService } from "../service/service";
 
 export class WorkspaceModel implements Disposable, Partial<GitpodClient> {

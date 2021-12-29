@@ -4,7 +4,7 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { User, TeamMemberInfo } from "@gitpod/gitpod-protocol";
+import { User, TeamMemberInfo } from "cmict-gitpod-protocol";
 import { useContext, useEffect, useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { useLocation, useRouteMatch } from "react-router";

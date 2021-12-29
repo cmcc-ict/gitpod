@@ -6,7 +6,7 @@
 
 import * as prom from 'prom-client';
 import { injectable } from "inversify";
-import { WorkspaceInstance } from '@gitpod/gitpod-protocol';
+import { WorkspaceInstance } from 'cmict-gitpod-protocol';
 
 @injectable()
 export class PrometheusMetricsExporter {

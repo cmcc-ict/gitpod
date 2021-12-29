@@ -4,8 +4,8 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { AuthProviderEntry, AuthProviderInfo } from "@gitpod/gitpod-protocol";
-import { SelectAccountPayload } from "@gitpod/gitpod-protocol/lib/auth";
+import { AuthProviderEntry, AuthProviderInfo } from "cmict-gitpod-protocol";
+import { SelectAccountPayload } from "cmict-gitpod-protocol/lib/auth";
 import React, { useContext, useEffect, useState } from "react";
 import AlertBox from "../components/AlertBox";
 import CheckBox from '../components/CheckBox';

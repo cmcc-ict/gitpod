@@ -4,7 +4,7 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { Repository, User } from "@gitpod/gitpod-protocol";
+import { Repository, User } from "cmict-gitpod-protocol";
 import { inject, injectable } from 'inversify';
 import { parseRepoUrl } from '../repohost/repo-url';
 import { RepositoryProvider } from '../repohost/repository-provider';

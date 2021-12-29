@@ -6,8 +6,8 @@
 
 import * as express from 'express';
 import { WorkspaceHealthMonitoring } from './workspace/workspace-health-monitoring';
-import { TraceContext } from '@gitpod/gitpod-protocol/lib/util/tracing';
-import { log } from "@gitpod/gitpod-protocol/lib/util/logging";
+import { TraceContext } from 'cmict-gitpod-protocol/lib/util/tracing';
+import { log } from "cmict-gitpod-protocol/lib/util/logging";
 import { injectable, inject } from 'inversify';
 import { register } from '../../src/prometheus-metrics';
 

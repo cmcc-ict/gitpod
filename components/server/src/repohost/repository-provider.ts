@@ -5,7 +5,7 @@
  */
 
 
-import { Repository, User } from "@gitpod/gitpod-protocol"
+import { Repository, User } from "cmict-gitpod-protocol"
 
 export const RepositoryProvider = Symbol('RepositoryProvider');
 export interface RepositoryProvider {

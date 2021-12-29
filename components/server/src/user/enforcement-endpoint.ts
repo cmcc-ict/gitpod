@@ -6,15 +6,15 @@
 
 import * as express from 'express';
 import { injectable, inject } from "inversify";
-import { WorkspaceDB, UserDB } from '@gitpod/gitpod-db/lib';
-import { User, GitpodClient, GitpodServer } from '@gitpod/gitpod-protocol';
-import { log, LogContext } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { WorkspaceDB, UserDB } from 'cmict-gitpod-db/lib';
+import { User, GitpodClient, GitpodServer } from 'cmict-gitpod-protocol';
+import { log, LogContext } from 'cmict-gitpod-protocol/lib/util/logging';
 import { Env } from '../env';
 import { UserDeletionService } from '../user/user-deletion-service';
 import { AuthorizationService } from './authorization-service';
-import { Permission } from '@gitpod/gitpod-protocol/lib/permission';
+import { Permission } from 'cmict-gitpod-protocol/lib/permission';
 import { ResponseError } from 'vscode-jsonrpc';
-import { ErrorCodes } from '@gitpod/gitpod-protocol/lib/messaging/error';
+import { ErrorCodes } from 'cmict-gitpod-protocol/lib/messaging/error';
 import { GitpodServerImpl } from '../workspace/gitpod-server-impl';
 import { ResourceAccessGuard, OwnerResourceGuard } from '../auth/resource-access';
 

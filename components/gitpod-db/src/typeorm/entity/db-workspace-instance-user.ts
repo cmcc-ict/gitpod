@@ -4,7 +4,7 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { WorkspaceInstanceUser } from "@gitpod/gitpod-protocol";
+import { WorkspaceInstanceUser } from "cmict-gitpod-protocol";
 import { Column, Entity, PrimaryColumn } from "typeorm";
 import { TypeORM } from "../typeorm";
 import { Transformer } from "../transformer";

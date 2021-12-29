@@ -20,5 +20,5 @@ RUN mkdir /home/jenkins && chown -R 10000 /home/jenkins
 COPY --from=proxy /bin/cloud_sql_proxy /bin/cloud_sql_proxy
 COPY --from=proxy /etc/ssl/certs/ /etc/ssl/certs/
 COPY --chown=10000:10000 --from=builder /app /app/
-WORKDIR /app/node_modules/@gitpod/gitpod-db
+WORKDIR /app/node_modules/cmict-gitpod-db
 

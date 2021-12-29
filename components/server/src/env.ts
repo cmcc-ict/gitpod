@@ -6,12 +6,12 @@
 
 import { injectable } from 'inversify';
 
-import { GitpodHostUrl } from '@gitpod/gitpod-protocol/lib/util/gitpod-host-url';
-import { AbstractComponentEnv, getEnvVar } from '@gitpod/gitpod-protocol/lib/env';
+import { GitpodHostUrl } from 'cmict-gitpod-protocol/lib/util/gitpod-host-url';
+import { AbstractComponentEnv, getEnvVar } from 'cmict-gitpod-protocol/lib/env';
 import { AuthProviderParams, parseAuthProviderParamsFromEnv } from './auth/auth-provider';
 
 import * as fs from "fs";
-import { Branding, NamedWorkspaceFeatureFlag, WorkspaceFeatureFlags } from '@gitpod/gitpod-protocol';
+import { Branding, NamedWorkspaceFeatureFlag, WorkspaceFeatureFlags } from 'cmict-gitpod-protocol';
 
 import { BrandingParser } from './branding-parser';
 

@@ -5,8 +5,8 @@
  */
 
 import { injectable, inject } from "inversify";
-import { User } from "@gitpod/gitpod-protocol";
-import { AccountingDB } from "@gitpod/gitpod-db/lib/accounting-db";
+import { User } from "cmict-gitpod-protocol";
+import { AccountingDB } from "cmict-gitpod-db/lib/accounting-db";
 import { EligibilityService } from "../user/eligibility-service";
 
 const COUPON_GITHUB_STUDENT_PACK = "INTERNAL_GITPOD_GHSP_2";

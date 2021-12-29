@@ -5,16 +5,16 @@
  */
 
 import { injectable, inject } from "inversify";
-import { User } from "@gitpod/gitpod-protocol";
-import { TeamSubscription, AssigneeIdentifier, TeamSubscriptionSlot, TeamSubscriptionSlotState, TeamSubscriptionSlotAssigned, TeamSubscriptionSlotDeactivated, TeamSubscriptionSlotResolved } from "@gitpod/gitpod-protocol/lib/team-subscription-protocol";
-import { Subscription, AssignedTeamSubscription, CreditDescription } from "@gitpod/gitpod-protocol/lib/accounting-protocol";
-import { TeamSubscriptionDB } from '@gitpod/gitpod-db/lib/team-subscription-db';
-import { AccountingDB } from "@gitpod/gitpod-db/lib/accounting-db";
-import { Plans } from "@gitpod/gitpod-protocol/lib/plans";
+import { User } from "cmict-gitpod-protocol";
+import { TeamSubscription, AssigneeIdentifier, TeamSubscriptionSlot, TeamSubscriptionSlotState, TeamSubscriptionSlotAssigned, TeamSubscriptionSlotDeactivated, TeamSubscriptionSlotResolved } from "cmict-gitpod-protocol/lib/team-subscription-protocol";
+import { Subscription, AssignedTeamSubscription, CreditDescription } from "cmict-gitpod-protocol/lib/accounting-protocol";
+import { TeamSubscriptionDB } from 'cmict-gitpod-db/lib/team-subscription-db';
+import { AccountingDB } from "cmict-gitpod-db/lib/accounting-db";
+import { Plans } from "cmict-gitpod-protocol/lib/plans";
 import { SubscriptionModel } from "./subscription-model";
 import { SubscriptionService } from "./subscription-service";
 import { AccountService } from "./account-service";
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
 
 type TS = string | TeamSubscription;
 

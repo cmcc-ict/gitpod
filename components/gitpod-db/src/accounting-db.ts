@@ -4,8 +4,8 @@
  * See License.enterprise.txt in the project root folder.
  */
 
-import { AccountEntry, Subscription, SubscriptionAndUser, Credit } from "@gitpod/gitpod-protocol/lib/accounting-protocol";
-import { Without } from "@gitpod/gitpod-protocol/lib/util/without";
+import { AccountEntry, Subscription, SubscriptionAndUser, Credit } from "cmict-gitpod-protocol/lib/accounting-protocol";
+import { Without } from "cmict-gitpod-protocol/lib/util/without";
 import { DBSubscriptionAdditionalData, DBPaymentSourceInfo } from "./typeorm/entity/db-subscription";
 import { DeepPartial } from "typeorm";
 

@@ -4,12 +4,12 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { GitpodClient, GitpodServer, GitpodServerPath, GitpodService, GitpodServiceImpl } from '@gitpod/gitpod-protocol';
-import { WebSocketConnectionProvider } from '@gitpod/gitpod-protocol/lib/messaging/browser/connection';
-import { createWindowMessageConnection } from '@gitpod/gitpod-protocol/lib/messaging/browser/window-connection';
-import { JsonRpcProxyFactory } from '@gitpod/gitpod-protocol/lib/messaging/proxy-factory';
-import { GitpodHostUrl } from '@gitpod/gitpod-protocol/lib/util/gitpod-host-url';
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { GitpodClient, GitpodServer, GitpodServerPath, GitpodService, GitpodServiceImpl } from 'cmict-gitpod-protocol';
+import { WebSocketConnectionProvider } from 'cmict-gitpod-protocol/lib/messaging/browser/connection';
+import { createWindowMessageConnection } from 'cmict-gitpod-protocol/lib/messaging/browser/window-connection';
+import { JsonRpcProxyFactory } from 'cmict-gitpod-protocol/lib/messaging/proxy-factory';
+import { GitpodHostUrl } from 'cmict-gitpod-protocol/lib/util/gitpod-host-url';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
 
 export const gitpodHostUrl = new GitpodHostUrl(window.location.toString());
 

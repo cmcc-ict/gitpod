@@ -14,8 +14,8 @@ import * as express from "express";
 import { Server } from "../server"
 import { Container } from 'inversify';
 import { productionContainerModule } from '../container-module';
-import { dbContainerModule } from '@gitpod/gitpod-db/lib/container-module';
-import { GitpodClient, GitpodServer } from "@gitpod/gitpod-protocol";
+import { dbContainerModule } from 'cmict-gitpod-db/lib/container-module';
+import { GitpodClient, GitpodServer } from "cmict-gitpod-protocol";
 
 const expect = chai.expect;
 

@@ -11,9 +11,9 @@ import * as uuidv4 from "uuid/v4"
 import { injectable, inject , postConstruct } from 'inversify';
 
 import * as MySQLStore from 'express-mysql-session';
-import { Config } from '@gitpod/gitpod-db/lib/config';
+import { Config } from 'cmict-gitpod-db/lib/config';
 import { Env } from './env';
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
 
 
 @injectable()

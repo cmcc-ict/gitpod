@@ -11,11 +11,11 @@ import * as fs from 'fs';
 import * as path from 'path';
 
 import { Chargebee as chargebee } from './chargebee-types';
-import { testContainer } from '@gitpod/gitpod-db/lib/test-container';
-import { Subscription } from '@gitpod/gitpod-protocol/lib/accounting-protocol';
+import { testContainer } from 'cmict-gitpod-db/lib/test-container';
+import { Subscription } from 'cmict-gitpod-protocol/lib/accounting-protocol';
 
 import { SubscriptionMapperFactory, SubscriptionMapper } from './subscription-mapper';
-import { Plans, ABSOLUTE_MAX_USAGE } from '@gitpod/gitpod-protocol/lib/plans';
+import { Plans, ABSOLUTE_MAX_USAGE } from 'cmict-gitpod-protocol/lib/plans';
 
 @suite class SubscriptionMapperSpec {
 

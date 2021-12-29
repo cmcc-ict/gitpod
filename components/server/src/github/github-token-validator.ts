@@ -7,7 +7,7 @@
 import { inject, injectable } from "inversify";
 import { CheckWriteAccessResult, IGitTokenValidator, IGitTokenValidatorParams } from "../workspace/git-token-validator";
 import { GitHubApiError, GitHubGraphQlEndpoint, GitHubRestApi, GitHubResult } from "./api";
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
 
 @injectable()
 export class GitHubTokenValidator implements IGitTokenValidator {

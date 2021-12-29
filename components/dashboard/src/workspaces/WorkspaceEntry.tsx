@@ -4,8 +4,8 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { CommitContext, Workspace, WorkspaceInfo, WorkspaceInstance, WorkspaceInstanceConditions, WorkspaceInstancePhase } from '@gitpod/gitpod-protocol';
-import { GitpodHostUrl } from '@gitpod/gitpod-protocol/lib/util/gitpod-host-url';
+import { CommitContext, Workspace, WorkspaceInfo, WorkspaceInstance, WorkspaceInstanceConditions, WorkspaceInstancePhase } from 'cmict-gitpod-protocol';
+import { GitpodHostUrl } from 'cmict-gitpod-protocol/lib/util/gitpod-host-url';
 import moment from 'moment';
 import React, { useState } from 'react';
 import ConfirmationModal from '../components/ConfirmationModal';

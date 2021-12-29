@@ -6,7 +6,7 @@
 
 import { PrimaryColumn, Column, Entity } from "typeorm";
 import { TypeORM } from "../typeorm";
-import { TheiaPlugin } from "@gitpod/gitpod-protocol";
+import { TheiaPlugin } from "cmict-gitpod-protocol";
 import { Transformer } from "../transformer";
 
 @Entity()

@@ -4,8 +4,8 @@
  * See License.enterprise.txt in the project root folder.
  */
 
-import { UserDB, WorkspaceDB } from "@gitpod/gitpod-db/lib";
-import { Permission, PermissionName, User } from '@gitpod/gitpod-protocol';
+import { UserDB, WorkspaceDB } from "cmict-gitpod-db/lib";
+import { Permission, PermissionName, User } from 'cmict-gitpod-protocol';
 import { inject, injectable } from "inversify";
 import { AuthorizationService } from "../../../src/user/authorization-service";
 import { Context } from "./graphql-controller";

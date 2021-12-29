@@ -5,9 +5,9 @@
  */
 
 import { injectable } from "inversify";
-import { WorkspaceConfig, GithubAppConfig } from "@gitpod/gitpod-protocol";
+import { WorkspaceConfig, GithubAppConfig } from "cmict-gitpod-protocol";
 import * as deepmerge from 'deepmerge';
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
 
 const defaultConfig: GithubAppConfig = {
     prebuilds: {

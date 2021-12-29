@@ -4,7 +4,7 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { AuthProviderEntry as AuthProviderEntry } from "@gitpod/gitpod-protocol";
+import { AuthProviderEntry as AuthProviderEntry } from "cmict-gitpod-protocol";
 
 export const AuthProviderEntryDB = Symbol('AuthProviderEntryDB');
 

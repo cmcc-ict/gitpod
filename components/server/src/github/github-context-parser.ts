@@ -6,14 +6,14 @@
 
 import { injectable, inject } from 'inversify';
 
-import { Repository, PullRequestContext, NavigatorContext, IssueContext, User, CommitContext, RefType } from '@gitpod/gitpod-protocol';
+import { Repository, PullRequestContext, NavigatorContext, IssueContext, User, CommitContext, RefType } from 'cmict-gitpod-protocol';
 import { GitHubGraphQlEndpoint } from './api';
 import { NotFoundError, UnauthorizedError } from '../errors';
-import { log, LogContext, LogPayload } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { log, LogContext, LogPayload } from 'cmict-gitpod-protocol/lib/util/logging';
 import { IContextParser, IssueContexts, AbstractContextParser } from '../workspace/context-parser';
 import { GitHubScope } from './scopes';
 import { GitHubTokenHelper } from './github-token-helper';
-import { TraceContext } from '@gitpod/gitpod-protocol/lib/util/tracing';
+import { TraceContext } from 'cmict-gitpod-protocol/lib/util/tracing';
 
 @injectable()
 export class GithubContextParser extends AbstractContextParser implements IContextParser {

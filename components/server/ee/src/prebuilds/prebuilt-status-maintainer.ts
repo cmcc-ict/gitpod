@@ -6,13 +6,13 @@
 
 import { ProbotOctokit } from 'probot';
 import { injectable, inject } from 'inversify';
-import { WorkspaceDB, TracedWorkspaceDB, DBWithTracing } from '@gitpod/gitpod-db/lib';
+import { WorkspaceDB, TracedWorkspaceDB, DBWithTracing } from 'cmict-gitpod-db/lib';
 import { v4 as uuidv4 } from 'uuid'
 import { MessageBusIntegration } from '../../../src/workspace/messagebus-integration';
-import { HeadlessLogEvent } from '@gitpod/gitpod-protocol/lib/headless-workspace-log';
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
-import { PrebuiltWorkspaceUpdatable, PrebuiltWorkspace, Disposable } from '@gitpod/gitpod-protocol';
-import { TraceContext } from '@gitpod/gitpod-protocol/lib/util/tracing';
+import { HeadlessLogEvent } from 'cmict-gitpod-protocol/lib/headless-workspace-log';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
+import { PrebuiltWorkspaceUpdatable, PrebuiltWorkspace, Disposable } from 'cmict-gitpod-protocol';
+import { TraceContext } from 'cmict-gitpod-protocol/lib/util/tracing';
 
 export interface CheckRunInfo {
     owner: string;

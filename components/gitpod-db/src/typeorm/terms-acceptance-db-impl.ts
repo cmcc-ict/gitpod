@@ -7,7 +7,7 @@
 import { Repository, EntityManager } from "typeorm";
 import { injectable, inject } from "inversify";
 import { TypeORM } from "./typeorm";
-import { TermsAcceptanceEntry } from "@gitpod/gitpod-protocol";
+import { TermsAcceptanceEntry } from "cmict-gitpod-protocol";
 import { TermsAcceptanceDB } from "../terms-acceptance-db";
 import { DBTermsAcceptanceEntry } from "./entity/db-terms-acceptance-entry";
 

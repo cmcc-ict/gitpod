@@ -6,7 +6,7 @@
 
 import { PrimaryColumn, Column, Index, Entity } from "typeorm";
 
-import { WorkspaceInstance, WorkspaceInstanceStatus, WorkspaceInstancePhase, WorkspaceInstanceConfiguration } from "@gitpod/gitpod-protocol";
+import { WorkspaceInstance, WorkspaceInstanceStatus, WorkspaceInstancePhase, WorkspaceInstanceConfiguration } from "cmict-gitpod-protocol";
 import { TypeORM } from "../typeorm";
 import { Transformer } from "../transformer";
 

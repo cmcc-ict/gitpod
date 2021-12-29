@@ -7,9 +7,9 @@
 import * as express from 'express';
 import * as passport from "passport"
 import { injectable, postConstruct, inject } from 'inversify';
-import { User } from '@gitpod/gitpod-protocol';
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
-import { UserDB } from '@gitpod/gitpod-db/lib';
+import { User } from 'cmict-gitpod-protocol';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
+import { UserDB } from 'cmict-gitpod-db/lib';
 import { Env } from '../env';
 import { HostContextProvider } from './host-context-provider';
 import { AuthProvider, AuthFlow } from './auth-provider';

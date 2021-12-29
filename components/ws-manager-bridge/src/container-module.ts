@@ -13,15 +13,15 @@ import { MessageBusIntegration } from './messagebus-integration';
 import { Configuration } from './config';
 import * as fs from 'fs';
 import { WorkspaceManagerBridgeFactory, WorkspaceManagerBridge } from './bridge';
-import { TracingManager } from '@gitpod/gitpod-protocol/lib/util/tracing';
+import { TracingManager } from 'cmict-gitpod-protocol/lib/util/tracing';
 import { PrometheusMetricsExporter } from './prometheus-metrics-exporter';
 import { BridgeController, WorkspaceManagerClientProviderConfigSource } from './bridge-controller';
-import { filePathTelepresenceAware } from '@gitpod/gitpod-protocol/lib/env';
+import { filePathTelepresenceAware } from 'cmict-gitpod-protocol/lib/env';
 import { WorkspaceManagerClientProvider } from '@gitpod/ws-manager/lib/client-provider';
 import { WorkspaceManagerClientProviderCompositeSource, WorkspaceManagerClientProviderDBSource, WorkspaceManagerClientProviderSource } from '@gitpod/ws-manager/lib/client-provider-source';
 import { ClusterService, ClusterServiceServer } from './cluster-service-server';
-import { IAnalyticsWriter } from '@gitpod/gitpod-protocol/lib/analytics';
-import { newAnalyticsWriterFromEnv } from '@gitpod/gitpod-protocol/lib/util/analytics';
+import { IAnalyticsWriter } from 'cmict-gitpod-protocol/lib/analytics';
+import { newAnalyticsWriterFromEnv } from 'cmict-gitpod-protocol/lib/util/analytics';
 
 export const containerModule = new ContainerModule(bind => {
 

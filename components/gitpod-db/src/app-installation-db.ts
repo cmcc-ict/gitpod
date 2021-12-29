@@ -4,7 +4,7 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { AppInstallation, AppInstallationPlatform } from "@gitpod/gitpod-protocol";
+import { AppInstallation, AppInstallationPlatform } from "cmict-gitpod-protocol";
 
 export const AppInstallationDB = Symbol('AppInstallationDB');
 

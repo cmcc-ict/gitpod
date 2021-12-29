@@ -5,7 +5,7 @@
  */
 
 import { UserService, CheckSignUpParams, CheckTermsParams } from "../../../src/user/user-service";
-import { User, WorkspaceTimeoutDuration } from "@gitpod/gitpod-protocol";
+import { User, WorkspaceTimeoutDuration } from "cmict-gitpod-protocol";
 import { inject } from "inversify";
 import { LicenseEvaluator } from "@gitpod/licensor/lib";
 import { Feature } from "@gitpod/licensor/lib/api";

@@ -5,16 +5,16 @@
  */
 
 import { injectable, inject } from "inversify";
-import { UserDB, WorkspaceDB, UserStorageResourcesDB } from '@gitpod/gitpod-db/lib';
-import { User, Workspace } from "@gitpod/gitpod-protocol";
+import { UserDB, WorkspaceDB, UserStorageResourcesDB } from 'cmict-gitpod-db/lib';
+import { User, Workspace } from "cmict-gitpod-protocol";
 import { Env } from "../env";
 import { StorageClient } from "../storage/storage-client";
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
 import { WorkspaceManagerClientProvider } from "@gitpod/ws-manager/lib/client-provider";
 import { StopWorkspaceRequest, StopWorkspacePolicy } from "@gitpod/ws-manager/lib";
 import { WorkspaceDeletionService } from "../workspace/workspace-deletion-service";
 import { AuthProviderService } from "../auth/auth-provider-service";
-import { IAnalyticsWriter } from '@gitpod/gitpod-protocol/lib/analytics';
+import { IAnalyticsWriter } from 'cmict-gitpod-protocol/lib/analytics';
 
 @injectable()
 export class UserDeletionService {

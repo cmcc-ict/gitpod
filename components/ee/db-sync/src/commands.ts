@@ -11,7 +11,7 @@ import { ReplicationConfig } from "./config";
 import { PeriodicReplicatorProvider } from "./replication";
 import { connect } from "./database";
 import { injectable, inject } from "inversify";
-import { Config } from "@gitpod/gitpod-db/lib/config";
+import { Config } from "cmict-gitpod-db/lib/config";
 import * as path from 'path';
 
 export const ICommand = Symbol('ICommand');

@@ -12,7 +12,7 @@ import { useHistory, useLocation } from "react-router";
 import { useContext, useEffect, useState } from "react";
 import { getGitpodService } from "../service/service";
 import { getCurrentTeam, TeamsContext } from "../teams/teams-context";
-import { ProjectInfo } from "@gitpod/gitpod-protocol";
+import { ProjectInfo } from "cmict-gitpod-protocol";
 import DropDown from "../components/DropDown";
 
 export default function () {

@@ -4,7 +4,7 @@
  * See License.enterprise.txt in the project root folder.
  */
 
-import { Subscription, AccountEntry, AccountEntryFixedPeriod } from "@gitpod/gitpod-protocol/lib/accounting-protocol";
+import { Subscription, AccountEntry, AccountEntryFixedPeriod } from "cmict-gitpod-protocol/lib/accounting-protocol";
 
 const toInt = (dateStr?: string) => dateStr ? new Date(dateStr).getTime() : Number.MAX_SAFE_INTEGER;
 export const orderByEndDateDescThenStartDateDesc = (s1: Subscription, s2: Subscription) => {

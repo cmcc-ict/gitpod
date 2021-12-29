@@ -4,7 +4,7 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { TheiaPlugin } from "@gitpod/gitpod-protocol";
+import { TheiaPlugin } from "cmict-gitpod-protocol";
 
 export const TheiaPluginDB = Symbol('TheiaPluginDB');
 

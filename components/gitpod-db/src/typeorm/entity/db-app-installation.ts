@@ -5,7 +5,7 @@
  */
 
 import { Column, PrimaryColumn, Entity, Index } from "typeorm";
-import { AppInstallation, AppInstallationPlatform, AppInstallationState } from "@gitpod/gitpod-protocol";
+import { AppInstallation, AppInstallationPlatform, AppInstallationState } from "cmict-gitpod-protocol";
 import { TypeORM } from "../typeorm";
 import { Transformer } from "../transformer";
 

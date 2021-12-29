@@ -7,17 +7,17 @@
 import { inject, injectable } from 'inversify';
 
 import { SubscriptionService } from '../accounting/subscription-service';
-import { AccountingDB } from '@gitpod/gitpod-db/lib/accounting-db';
-import { log, LogContext } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { AccountingDB } from 'cmict-gitpod-db/lib/accounting-db';
+import { log, LogContext } from 'cmict-gitpod-protocol/lib/util/logging';
 import { SubscriptionMapperFactory } from './subscription-mapper';
-import { Plans } from '@gitpod/gitpod-protocol/lib/plans';
+import { Plans } from 'cmict-gitpod-protocol/lib/plans';
 import { Chargebee as chargebee } from './chargebee-types';
 import { EventHandler } from './chargebee-event-handler';
 import { UpgradeHelper } from './upgrade-helper';
-import { formatDate } from "@gitpod/gitpod-protocol/lib/util/date-time";
+import { formatDate } from "cmict-gitpod-protocol/lib/util/date-time";
 import { getUpdatedAt } from './chargebee-subscription-helper';
-import { UserPaidSubscription } from '@gitpod/gitpod-protocol/lib/accounting-protocol';
-import { DBSubscriptionAdditionalData } from '@gitpod/gitpod-db/lib/typeorm/entity/db-subscription';
+import { UserPaidSubscription } from 'cmict-gitpod-protocol/lib/accounting-protocol';
+import { DBSubscriptionAdditionalData } from 'cmict-gitpod-db/lib/typeorm/entity/db-subscription';
 
 @injectable()
 export class SubscriptionHandler implements EventHandler<chargebee.SubscriptionEventV2> {

@@ -4,7 +4,7 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { UserEnvVarValue } from "@gitpod/gitpod-protocol";
+import { UserEnvVarValue } from "cmict-gitpod-protocol";
 import { useEffect, useRef, useState } from "react";
 import ConfirmationModal from "../components/ConfirmationModal";
 import { Item, ItemField, ItemFieldContextMenu, ItemsList } from "../components/ItemsList";

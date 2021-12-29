@@ -5,7 +5,7 @@
  */
 
 import { Column, Entity, PrimaryColumn } from "typeorm";
-import { PendingGithubEvent } from "@gitpod/gitpod-protocol";
+import { PendingGithubEvent } from "cmict-gitpod-protocol";
 import { TypeORM } from "../typeorm";
 
 @Entity()

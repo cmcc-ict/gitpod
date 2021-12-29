@@ -6,7 +6,7 @@
 
 import { injectable, inject } from 'inversify';
 
-import { User, Repository } from "@gitpod/gitpod-protocol"
+import { User, Repository } from "cmict-gitpod-protocol"
 import { GitLabApi, GitLab } from "./api";
 import { RepositoryProvider } from '../repohost/repository-provider';
 import { parseRepoUrl } from '../repohost/repo-url';

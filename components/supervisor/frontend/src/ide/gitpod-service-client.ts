@@ -4,7 +4,7 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { WorkspaceInfo, Event, Emitter } from "@gitpod/gitpod-protocol";
+import { WorkspaceInfo, Event, Emitter } from "cmict-gitpod-protocol";
 import { workspaceUrl } from "../shared/urls";
 
 export interface GitpodServiceClient {

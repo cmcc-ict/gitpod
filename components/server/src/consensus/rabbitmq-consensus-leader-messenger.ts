@@ -6,11 +6,11 @@
 
 import { ConsensusLeaderMessenger, ConsensusLeaderMessageType, RaftMessage, RequestVoteMessage, CastVoteMessage, HeartbeatMessage } from "./consensus-leader-messenger";
 import { injectable } from "inversify";
-import { Disposable } from "@gitpod/gitpod-protocol";
+import { Disposable } from "cmict-gitpod-protocol";
 import { AbstractMessageBusIntegration, AbstractTopicListener } from "@gitpod/gitpod-messagebus/lib";
 import * as uuid from 'uuid/v4';
 import { EventEmitter } from "events";
-import { TraceContext } from "@gitpod/gitpod-protocol/lib/util/tracing";
+import { TraceContext } from "cmict-gitpod-protocol/lib/util/tracing";
 import { CancellationTokenSource } from "vscode-jsonrpc/lib/cancellation";
 
 const exchangeConsensusLeader = 'consensus-leader';

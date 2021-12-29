@@ -6,7 +6,7 @@
 
 import { PrimaryColumn, Column, Entity } from "typeorm";
 import { TypeORM } from "../typeorm";
-import { AuthProviderEntry, OAuth2Config } from "@gitpod/gitpod-protocol";
+import { AuthProviderEntry, OAuth2Config } from "cmict-gitpod-protocol";
 import { Transformer } from "../transformer";
 import { encryptionService } from "../user-db-impl";
 

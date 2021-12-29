@@ -9,7 +9,7 @@
  import { TypeORM } from "./typeorm";
 import { WorkspaceClusterDB } from "../workspace-cluster-db";
 import { DBWorkspaceCluster } from "./entity/db-workspace-cluster";
-import { WorkspaceCluster, WorkspaceClusterFilter, WorkspaceClusterWoTLS } from "@gitpod/gitpod-protocol/lib/workspace-cluster";
+import { WorkspaceCluster, WorkspaceClusterFilter, WorkspaceClusterWoTLS } from "cmict-gitpod-protocol/lib/workspace-cluster";
 
  @injectable()
  export class WorkspaceClusterDBImpl implements WorkspaceClusterDB {

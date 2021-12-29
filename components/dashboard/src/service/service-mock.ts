@@ -4,7 +4,7 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { createServiceMock, Event } from "@gitpod/gitpod-protocol";
+import { createServiceMock, Event } from "cmict-gitpod-protocol";
 
 
 

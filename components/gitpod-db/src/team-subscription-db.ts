@@ -4,7 +4,7 @@
  * See License.enterprise.txt in the project root folder.
  */
 
-import { TeamSubscription, TeamSubscriptionSlot } from "@gitpod/gitpod-protocol/lib/team-subscription-protocol";
+import { TeamSubscription, TeamSubscriptionSlot } from "cmict-gitpod-protocol/lib/team-subscription-protocol";
 import { DeepPartial } from "typeorm";
 
 export const TeamSubscriptionDB = Symbol('TeamSubscriptionDB');

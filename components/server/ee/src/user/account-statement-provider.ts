@@ -5,8 +5,8 @@
  */
 
 import { injectable, inject } from "inversify";
-import { WorkspaceInstance } from "@gitpod/gitpod-protocol";
-import { AccountStatement } from "@gitpod/gitpod-protocol/lib/accounting-protocol";
+import { WorkspaceInstance } from "cmict-gitpod-protocol";
+import { AccountStatement } from "cmict-gitpod-protocol/lib/accounting-protocol";
 import { AccountService } from "@gitpod/gitpod-payment-endpoint/lib/accounting";
 
 

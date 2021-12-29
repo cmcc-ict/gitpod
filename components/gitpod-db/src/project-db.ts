@@ -4,7 +4,7 @@
  * See License.enterprise.txt in the project root folder.
  */
 
-import { Project } from "@gitpod/gitpod-protocol";
+import { Project } from "cmict-gitpod-protocol";
 
 export const ProjectDB = Symbol('ProjectDB');
 export interface ProjectDB {

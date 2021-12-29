@@ -11,7 +11,7 @@ import { query, NamedConnection } from "./database";
 import { injectable, inject } from "inversify";
 import * as path from 'path';
 import * as fs from 'fs';
-import { Semaphore } from '@gitpod/gitpod-protocol/lib/util/semaphore'
+import { Semaphore } from 'cmict-gitpod-protocol/lib/util/semaphore'
 
 export type PeriodicReplicatorProvider = (source: Connection, targets: Connection[], syncInterval: number, tableSet: string) => PeriodicReplicator
 export const PeriodicReplicatorProvider = Symbol("PeriodicReplicatorProvider");

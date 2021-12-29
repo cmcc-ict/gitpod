@@ -5,7 +5,7 @@
  */
 
 import { GraphQLResolveInfo } from 'graphql';
-import * as protocol from '@gitpod/gitpod-protocol';
+import * as protocol from 'cmict-gitpod-protocol';
 import { Context } from './graphql-controller';
 export type Maybe<T> = T | undefined;
 export type Omit<T, K extends keyof T> = Pick<T, Exclude<keyof T, K>>;

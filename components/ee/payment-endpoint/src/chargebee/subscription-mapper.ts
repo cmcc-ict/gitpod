@@ -4,15 +4,15 @@
  * See License.enterprise.txt in the project root folder.
  */
 
-import { Plans } from "@gitpod/gitpod-protocol/lib/plans";
+import { Plans } from "cmict-gitpod-protocol/lib/plans";
 import { orderByEndDateDescThenStartDateDesc } from "../accounting/accounting-util";
-import { Subscription } from "@gitpod/gitpod-protocol/lib/accounting-protocol";
-import { oneMonthLater, secondsBefore } from '@gitpod/gitpod-protocol/lib/util/timeutil';
+import { Subscription } from "cmict-gitpod-protocol/lib/accounting-protocol";
+import { oneMonthLater, secondsBefore } from 'cmict-gitpod-protocol/lib/util/timeutil';
 import { Chargebee as chargebee } from './/chargebee-types';
 
 import { getStartDate, getCancelledAt, getUpdatedAt } from './chargebee-subscription-helper';
 import { SubscriptionModel } from '../accounting/subscription-model';
-import { log } from "@gitpod/gitpod-protocol/lib/util/logging";
+import { log } from "cmict-gitpod-protocol/lib/util/logging";
 
 /**
  * This class updates our internal Gitpod Subscription model with the events coming from the payment provider Chargebee

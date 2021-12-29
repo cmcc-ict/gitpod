@@ -6,7 +6,7 @@
 
 import { Entity, Column, PrimaryColumn, Index } from "typeorm";
 
-import { TeamSubscription } from "@gitpod/gitpod-protocol/lib/team-subscription-protocol";
+import { TeamSubscription } from "cmict-gitpod-protocol/lib/team-subscription-protocol";
 
 import { TypeORM } from "../../typeorm/typeorm";
 import { Transformer } from "../../typeorm/transformer";

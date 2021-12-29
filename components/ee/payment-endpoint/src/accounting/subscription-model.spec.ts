@@ -4,8 +4,8 @@
  * See License.enterprise.txt in the project root folder.
  */
 
-import { hoursLater, yearsLater } from '@gitpod/gitpod-protocol/lib/util/timeutil';
-import { Subscription } from '@gitpod/gitpod-protocol/lib/accounting-protocol';
+import { hoursLater, yearsLater } from 'cmict-gitpod-protocol/lib/util/timeutil';
+import { Subscription } from 'cmict-gitpod-protocol/lib/accounting-protocol';
 import * as chai from 'chai';
 import { suite, test, only } from 'mocha-typescript';
 import { SubscriptionModel } from './subscription-model';

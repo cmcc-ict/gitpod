@@ -4,7 +4,7 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { User } from "@gitpod/gitpod-protocol";
+import { User } from "cmict-gitpod-protocol";
 import * as chai from 'chai';
 import { Container, ContainerModule } from "inversify";
 import { suite, test, timeout } from "mocha-typescript";
@@ -16,7 +16,7 @@ import { BitbucketApiFactory, BasicAuthBitbucketApiFactory } from './bitbucket-a
 import { BitbucketContextParser } from "./bitbucket-context-parser";
 import { BitbucketTokenHelper } from "./bitbucket-token-handler";
 const expect = chai.expect;
-import { skipIfEnvVarNotSet } from "@gitpod/gitpod-protocol/lib/util/skip-if";
+import { skipIfEnvVarNotSet } from "cmict-gitpod-protocol/lib/util/skip-if";
 
 @suite(timeout(10000), skipIfEnvVarNotSet("GITPOD_TEST_TOKEN_BITBUCKET"))
 class TestBitbucketContextParser {

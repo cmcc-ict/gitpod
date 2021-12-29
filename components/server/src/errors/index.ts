@@ -4,7 +4,7 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { User, Token } from "@gitpod/gitpod-protocol";
+import { User, Token } from "cmict-gitpod-protocol";
 
 export interface NotFoundError extends Error {
     readonly data: NotFoundError.Data;

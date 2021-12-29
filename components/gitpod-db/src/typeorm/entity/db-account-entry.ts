@@ -6,7 +6,7 @@
 
 import { Entity, Column, PrimaryColumn } from "typeorm";
 
-import { AccountEntry, AccountEntryKind } from "@gitpod/gitpod-protocol/lib/accounting-protocol";
+import { AccountEntry, AccountEntryKind } from "cmict-gitpod-protocol/lib/accounting-protocol";
 import { TypeORM } from "../../typeorm/typeorm";
 import { Transformer } from "../../typeorm/transformer";
 

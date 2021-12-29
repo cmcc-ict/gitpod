@@ -17,7 +17,7 @@ const expect = chai.expect;
 import { BranchRef, GitHubGraphQlEndpoint } from './api';
 import { NotFoundError } from '../errors';
 import { GithubContextParser } from './github-context-parser';
-import { User } from "@gitpod/gitpod-protocol";
+import { User } from "cmict-gitpod-protocol";
 import { ContainerModule, Container } from "inversify";
 import { Env } from "../env";
 import { DevData } from "../dev/dev-data";
@@ -25,7 +25,7 @@ import { AuthProviderParams } from "../auth/auth-provider";
 import { TokenProvider } from "../user/token-provider";
 import { GitHubTokenHelper } from "./github-token-helper";
 import { HostContextProvider } from "../auth/host-context-provider";
-import { skipIfEnvVarNotSet } from "@gitpod/gitpod-protocol/lib/util/skip-if";
+import { skipIfEnvVarNotSet } from "cmict-gitpod-protocol/lib/util/skip-if";
 
 @suite(timeout(10000), retries(2), skipIfEnvVarNotSet("GITPOD_TEST_TOKEN_GITHUB"))
 class TestGithubContextParser {

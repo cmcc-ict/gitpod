@@ -4,9 +4,9 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { IDEFrontendService, IDEFrontendState } from "@gitpod/gitpod-protocol/lib/ide-frontend-service";
-import { Disposable, DisposableCollection } from "@gitpod/gitpod-protocol/lib/util/disposable";
-import { Emitter } from "@gitpod/gitpod-protocol/lib/util/event";
+import { IDEFrontendService, IDEFrontendState } from "cmict-gitpod-protocol/lib/ide-frontend-service";
+import { Disposable, DisposableCollection } from "cmict-gitpod-protocol/lib/util/disposable";
+import { Emitter } from "cmict-gitpod-protocol/lib/util/event";
 
 interface IDEFrontendCapabilities {
     /**

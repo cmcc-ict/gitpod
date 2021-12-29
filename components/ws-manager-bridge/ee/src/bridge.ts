@@ -6,11 +6,11 @@
 
 import { WorkspaceManagerBridge } from "../../src/bridge";
 import { injectable } from "inversify";
-import { TraceContext } from "@gitpod/gitpod-protocol/lib/util/tracing";
+import { TraceContext } from "cmict-gitpod-protocol/lib/util/tracing";
 import { WorkspaceStatus, WorkspaceType, WorkspacePhase } from "@gitpod/ws-manager/lib";
-import { HeadlessLogEvent, HeadlessWorkspaceEventType } from "@gitpod/gitpod-protocol/lib/headless-workspace-log";
-import { WorkspaceInstance } from "@gitpod/gitpod-protocol";
-import { log } from "@gitpod/gitpod-protocol/lib/util/logging";
+import { HeadlessLogEvent, HeadlessWorkspaceEventType } from "cmict-gitpod-protocol/lib/headless-workspace-log";
+import { WorkspaceInstance } from "cmict-gitpod-protocol";
+import { log } from "cmict-gitpod-protocol/lib/util/logging";
 
 @injectable()
 export class WorkspaceManagerBridgeEE extends WorkspaceManagerBridge {

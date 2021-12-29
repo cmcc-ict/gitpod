@@ -4,8 +4,8 @@
  * See License-AGPL.txt in the project root for license information.
  */
 import { injectable, inject, multiInject } from 'inversify';
-import { TLSConfig, WorkspaceCluster, WorkspaceClusterDB, WorkspaceClusterWoTLS } from '@gitpod/gitpod-protocol/lib/workspace-cluster';
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { TLSConfig, WorkspaceCluster, WorkspaceClusterDB, WorkspaceClusterWoTLS } from 'cmict-gitpod-protocol/lib/workspace-cluster';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
 
 export const WorkspaceManagerClientProviderSource = Symbol("WorkspaceManagerClientProviderSource");
 

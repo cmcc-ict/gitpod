@@ -4,9 +4,9 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { createGitpodService, GitpodClient } from '@gitpod/gitpod-protocol';
-import { WindowMessageReader, WindowMessageWriter } from "@gitpod/gitpod-protocol/lib/messaging/browser/window-connection";
-import { JsonRpcProxyFactory } from '@gitpod/gitpod-protocol/lib/messaging/proxy-factory';
+import { createGitpodService, GitpodClient } from 'cmict-gitpod-protocol';
+import { WindowMessageReader, WindowMessageWriter } from "cmict-gitpod-protocol/lib/messaging/browser/window-connection";
+import { JsonRpcProxyFactory } from 'cmict-gitpod-protocol/lib/messaging/proxy-factory';
 import { createMessageConnection } from 'vscode-jsonrpc/lib/main';
 import { ConsoleLogger } from 'vscode-ws-jsonrpc';
 import { startUrl } from './urls';

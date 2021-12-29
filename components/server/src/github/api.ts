@@ -9,13 +9,13 @@ import { Octokit, RestEndpointMethodTypes } from "@octokit/rest"
 import { OctokitResponse } from "@octokit/types"
 import { OctokitOptions } from "@octokit/core/dist-types/types"
 
-import { User } from "@gitpod/gitpod-protocol"
+import { User } from "cmict-gitpod-protocol"
 import { injectable, inject } from 'inversify';
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
 import { GitHubScope } from './scopes';
 import { AuthProviderParams } from '../auth/auth-provider';
 import { GitHubTokenHelper } from './github-token-helper';
-import { Deferred } from '@gitpod/gitpod-protocol/lib/util/deferred';
+import { Deferred } from 'cmict-gitpod-protocol/lib/util/deferred';
 
 import { URL } from 'url';
 

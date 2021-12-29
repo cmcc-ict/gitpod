@@ -6,7 +6,7 @@
 
 import { PrimaryColumn, Column, Entity } from "typeorm";
 
-import { PrebuiltWorkspaceUpdatable } from "@gitpod/gitpod-protocol";
+import { PrebuiltWorkspaceUpdatable } from "cmict-gitpod-protocol";
 import { TypeORM } from "../typeorm";
 import { Transformer } from "../transformer";
 

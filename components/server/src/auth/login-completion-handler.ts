@@ -6,16 +6,16 @@
 
 import { inject, injectable } from 'inversify';
 import * as express from 'express';
-import { User } from '@gitpod/gitpod-protocol';
+import { User } from 'cmict-gitpod-protocol';
 import { GitpodCookie } from './gitpod-cookie';
-import { log, LogContext } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { log, LogContext } from 'cmict-gitpod-protocol/lib/util/logging';
 import { Env } from "../env";
 import { AuthFlow } from './auth-provider';
 import { HostContextProvider } from './host-context-provider';
 import { AuthProviderService } from './auth-provider-service';
 import { TosFlow } from '../terms/tos-flow';
 import { increaseLoginCounter } from '../../src/prometheus-metrics';
-import { IAnalyticsWriter } from '@gitpod/gitpod-protocol/lib/analytics';
+import { IAnalyticsWriter } from 'cmict-gitpod-protocol/lib/analytics';
 
 /**
  * The login completion handler pulls the strings between the OAuth2 flow, the ToS flow, and the session management.

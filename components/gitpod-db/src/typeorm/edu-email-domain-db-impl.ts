@@ -7,7 +7,7 @@
 import { injectable, inject } from "inversify";
 import { EntityManager, Repository } from "typeorm";
 
-import { EduEmailDomain } from "@gitpod/gitpod-protocol";
+import { EduEmailDomain } from "cmict-gitpod-protocol";
 import { TypeORM } from "./typeorm";
 import { EduEmailDomainDB } from "../edu-email-domain-db";
 import { DBEduEmailDomain } from "./entity/db-edu-email-domain";

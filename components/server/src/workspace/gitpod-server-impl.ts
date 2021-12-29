@@ -6,18 +6,18 @@
 
 import { BlobServiceClient } from "@gitpod/content-service/lib/blobs_grpc_pb";
 import { DownloadUrlRequest, DownloadUrlResponse, UploadUrlRequest, UploadUrlResponse } from '@gitpod/content-service/lib/blobs_pb';
-import { AppInstallationDB, UserDB, UserMessageViewsDB, WorkspaceDB, DBWithTracing, TracedWorkspaceDB, DBGitpodToken, DBUser, UserStorageResourcesDB, ProjectDB, TeamDB } from '@gitpod/gitpod-db/lib';
-import { AuthProviderEntry, AuthProviderInfo, Branding, CommitContext, Configuration, CreateWorkspaceMode, DisposableCollection, GetWorkspaceTimeoutResult, GitpodClient, GitpodServer, GitpodToken, GitpodTokenType, InstallPluginsParams, PermissionName, PortVisibility, PrebuiltWorkspace, PrebuiltWorkspaceContext, PreparePluginUploadParams, ResolvedPlugins, ResolvePluginsParams, SetWorkspaceTimeoutResult, StartPrebuildContext, StartWorkspaceResult, Terms, Token, UninstallPluginParams, User, UserEnvVar, UserEnvVarValue, UserInfo, WhitelistedRepository, Workspace, WorkspaceContext, WorkspaceCreationResult, WorkspaceImageBuild, WorkspaceInfo, WorkspaceInstance, WorkspaceInstancePort, WorkspaceInstanceUser, WorkspaceTimeoutDuration, GuessGitTokenScopesParams, GuessedGitTokenScopes, Team, TeamMemberInfo, TeamMembershipInvite, CreateProjectParams, ProjectInfo, Project, ProviderRepository, PrebuildInfo, TeamMemberRole } from '@gitpod/gitpod-protocol';
-import { AccountStatement } from "@gitpod/gitpod-protocol/lib/accounting-protocol";
-import { AdminBlockUserRequest, AdminGetListRequest, AdminGetListResult, AdminGetWorkspacesRequest, AdminModifyPermanentWorkspaceFeatureFlagRequest, AdminModifyRoleOrPermissionRequest, WorkspaceAndInstance } from '@gitpod/gitpod-protocol/lib/admin-protocol';
-import { GetLicenseInfoResult, LicenseFeature, LicenseValidationResult } from '@gitpod/gitpod-protocol/lib/license-protocol';
-import { ErrorCodes } from '@gitpod/gitpod-protocol/lib/messaging/error';
-import { GithubUpgradeURL, PlanCoupon } from "@gitpod/gitpod-protocol/lib/payment-protocol";
-import { TeamSubscription, TeamSubscriptionSlot, TeamSubscriptionSlotResolved } from "@gitpod/gitpod-protocol/lib/team-subscription-protocol";
-import { Cancelable } from '@gitpod/gitpod-protocol/lib/util/cancelable';
-import { log, LogContext } from '@gitpod/gitpod-protocol/lib/util/logging';
-import { TraceContext } from '@gitpod/gitpod-protocol/lib/util/tracing';
-import { RemoteTrackMessage, TrackMessage } from '@gitpod/gitpod-protocol/lib/analytics';
+import { AppInstallationDB, UserDB, UserMessageViewsDB, WorkspaceDB, DBWithTracing, TracedWorkspaceDB, DBGitpodToken, DBUser, UserStorageResourcesDB, ProjectDB, TeamDB } from 'cmict-gitpod-db/lib';
+import { AuthProviderEntry, AuthProviderInfo, Branding, CommitContext, Configuration, CreateWorkspaceMode, DisposableCollection, GetWorkspaceTimeoutResult, GitpodClient, GitpodServer, GitpodToken, GitpodTokenType, InstallPluginsParams, PermissionName, PortVisibility, PrebuiltWorkspace, PrebuiltWorkspaceContext, PreparePluginUploadParams, ResolvedPlugins, ResolvePluginsParams, SetWorkspaceTimeoutResult, StartPrebuildContext, StartWorkspaceResult, Terms, Token, UninstallPluginParams, User, UserEnvVar, UserEnvVarValue, UserInfo, WhitelistedRepository, Workspace, WorkspaceContext, WorkspaceCreationResult, WorkspaceImageBuild, WorkspaceInfo, WorkspaceInstance, WorkspaceInstancePort, WorkspaceInstanceUser, WorkspaceTimeoutDuration, GuessGitTokenScopesParams, GuessedGitTokenScopes, Team, TeamMemberInfo, TeamMembershipInvite, CreateProjectParams, ProjectInfo, Project, ProviderRepository, PrebuildInfo, TeamMemberRole } from 'cmict-gitpod-protocol';
+import { AccountStatement } from "cmict-gitpod-protocol/lib/accounting-protocol";
+import { AdminBlockUserRequest, AdminGetListRequest, AdminGetListResult, AdminGetWorkspacesRequest, AdminModifyPermanentWorkspaceFeatureFlagRequest, AdminModifyRoleOrPermissionRequest, WorkspaceAndInstance } from 'cmict-gitpod-protocol/lib/admin-protocol';
+import { GetLicenseInfoResult, LicenseFeature, LicenseValidationResult } from 'cmict-gitpod-protocol/lib/license-protocol';
+import { ErrorCodes } from 'cmict-gitpod-protocol/lib/messaging/error';
+import { GithubUpgradeURL, PlanCoupon } from "cmict-gitpod-protocol/lib/payment-protocol";
+import { TeamSubscription, TeamSubscriptionSlot, TeamSubscriptionSlotResolved } from "cmict-gitpod-protocol/lib/team-subscription-protocol";
+import { Cancelable } from 'cmict-gitpod-protocol/lib/util/cancelable';
+import { log, LogContext } from 'cmict-gitpod-protocol/lib/util/logging';
+import { TraceContext } from 'cmict-gitpod-protocol/lib/util/tracing';
+import { RemoteTrackMessage, TrackMessage } from 'cmict-gitpod-protocol/lib/analytics';
 import { ImageBuilderClientProvider, LogsRequest } from '@gitpod/image-builder/lib';
 import { WorkspaceManagerClientProvider } from '@gitpod/ws-manager/lib/client-provider';
 import { ControlPortRequest, DescribeWorkspaceRequest, MarkActiveRequest, PortSpec, PortVisibility as ProtoPortVisibility, StopWorkspacePolicy, StopWorkspaceRequest } from '@gitpod/ws-manager/lib/core_pb';
@@ -27,7 +27,7 @@ import * as opentracing from 'opentracing';
 import { URL } from 'url';
 import * as uuidv4 from 'uuid/v4';
 import { Disposable, ResponseError } from 'vscode-jsonrpc';
-import { IAnalyticsWriter } from "@gitpod/gitpod-protocol/lib/analytics";
+import { IAnalyticsWriter } from "cmict-gitpod-protocol/lib/analytics";
 import { AuthProviderService } from '../auth/auth-provider-service';
 import { HostContextProvider } from '../auth/host-context-provider';
 import { GuardedResource, ResourceAccessGuard, ResourceAccessOp } from '../auth/resource-access';
@@ -47,7 +47,7 @@ import { MessageBusIntegration } from './messagebus-integration';
 import { WorkspaceDeletionService } from './workspace-deletion-service';
 import { WorkspaceFactory } from './workspace-factory';
 import { WorkspaceStarter } from './workspace-starter';
-import { HeadlessLogSources } from "@gitpod/gitpod-protocol/lib/headless-workspace-log";
+import { HeadlessLogSources } from "cmict-gitpod-protocol/lib/headless-workspace-log";
 import { WorkspaceLogService } from "./workspace-log-service";
 
 @injectable()

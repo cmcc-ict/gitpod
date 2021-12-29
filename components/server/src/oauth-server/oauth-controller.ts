@@ -4,10 +4,10 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { AuthCodeRepositoryDB } from '@gitpod/gitpod-db/lib/typeorm/auth-code-repository-db';
-import { UserDB } from '@gitpod/gitpod-db/lib/user-db';
-import { User } from "@gitpod/gitpod-protocol";
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { AuthCodeRepositoryDB } from 'cmict-gitpod-db/lib/typeorm/auth-code-repository-db';
+import { UserDB } from 'cmict-gitpod-db/lib/user-db';
+import { User } from "cmict-gitpod-protocol";
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
 import { OAuthException, OAuthRequest, OAuthResponse } from "@jmondi/oauth2-server";
 import * as express from 'express';
 import { inject, injectable } from "inversify";

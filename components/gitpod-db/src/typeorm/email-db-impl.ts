@@ -5,7 +5,7 @@
  */
 
 import { injectable, inject } from "inversify";
-import { EMail } from "@gitpod/gitpod-protocol";
+import { EMail } from "cmict-gitpod-protocol";
 import { TypeORM } from "../typeorm/typeorm";
 import { EntityManager, Repository } from "typeorm";
 import { DBEmail } from "./entity/db-email";

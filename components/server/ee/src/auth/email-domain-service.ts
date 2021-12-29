@@ -7,8 +7,8 @@
 import { injectable, inject } from "inversify";
 import * as SwotJs from 'swot-js';
 
-import { EmailDomainFilterDB } from "@gitpod/gitpod-db/lib/email-domain-filter-db";
-import { EduEmailDomainDB } from "@gitpod/gitpod-db/lib/edu-email-domain-db";
+import { EmailDomainFilterDB } from "cmict-gitpod-db/lib/email-domain-filter-db";
+import { EduEmailDomainDB } from "cmict-gitpod-db/lib/edu-email-domain-db";
 import { BlockedUserFilter } from "../../../src/auth/blocked-user-filter"
 
 export const EMailDomainService = Symbol('EMailDomainService');

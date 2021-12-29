@@ -4,7 +4,7 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { TeamMemberRole } from "@gitpod/gitpod-protocol";
+import { TeamMemberRole } from "cmict-gitpod-protocol";
 import { Entity, Column, PrimaryColumn, Index } from "typeorm";
 import { Transformer } from "../transformer";
 import { TypeORM } from "../typeorm";

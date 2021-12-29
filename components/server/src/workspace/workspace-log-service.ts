@@ -4,22 +4,22 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { WorkspaceDB } from "@gitpod/gitpod-db/lib/workspace-db";
-import { HeadlessLogSources } from "@gitpod/gitpod-protocol/lib/headless-workspace-log";
+import { WorkspaceDB } from "cmict-gitpod-db/lib/workspace-db";
+import { HeadlessLogSources } from "cmict-gitpod-protocol/lib/headless-workspace-log";
 import { inject, injectable } from "inversify";
 import * as url from "url";
 import { Status, StatusServiceClient } from '@gitpod/supervisor-api-grpcweb/lib/status_pb_service'
 import { TasksStatusRequest, TasksStatusResponse, TaskStatus } from "@gitpod/supervisor-api-grpcweb/lib/status_pb";
 import { ResponseStream, TerminalServiceClient } from "@gitpod/supervisor-api-grpcweb/lib/terminal_pb_service";
 import { ListenTerminalRequest, ListenTerminalResponse } from "@gitpod/supervisor-api-grpcweb/lib/terminal_pb";
-import { WorkspaceInstance } from "@gitpod/gitpod-protocol";
+import { WorkspaceInstance } from "cmict-gitpod-protocol";
 import { status as grpcStatus } from '@grpc/grpc-js';
 import { Env } from "../env";
 import * as browserHeaders from "browser-headers";
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
 import { TextDecoder } from "util";
 import { WebsocketTransport } from "../util/grpc-web-ws-transport";
-import { Deferred } from "@gitpod/gitpod-protocol/lib/util/deferred";
+import { Deferred } from "cmict-gitpod-protocol/lib/util/deferred";
 
 @injectable()
 export class WorkspaceLogService {

@@ -4,11 +4,11 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { Disposable, GitpodClient, GitpodServer, GitpodServerPath, User } from "@gitpod/gitpod-protocol";
-import { ErrorCodes } from "@gitpod/gitpod-protocol/lib/messaging/error";
-import { ConnectionHandler } from "@gitpod/gitpod-protocol/lib/messaging/handler";
-import { JsonRpcConnectionHandler, JsonRpcProxy, JsonRpcProxyFactory } from "@gitpod/gitpod-protocol/lib/messaging/proxy-factory";
-import { log } from "@gitpod/gitpod-protocol/lib/util/logging";
+import { Disposable, GitpodClient, GitpodServer, GitpodServerPath, User } from "cmict-gitpod-protocol";
+import { ErrorCodes } from "cmict-gitpod-protocol/lib/messaging/error";
+import { ConnectionHandler } from "cmict-gitpod-protocol/lib/messaging/handler";
+import { JsonRpcConnectionHandler, JsonRpcProxy, JsonRpcProxyFactory } from "cmict-gitpod-protocol/lib/messaging/proxy-factory";
+import { log } from "cmict-gitpod-protocol/lib/util/logging";
 import { EventEmitter } from "events";
 import * as express from "express";
 import { ErrorCodes as RPCErrorCodes, MessageConnection, ResponseError } from "vscode-jsonrpc";

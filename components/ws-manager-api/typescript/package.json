@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@gitpod/content-service": "0.1.5",
-    "@gitpod/gitpod-protocol": "0.1.5",
+    "cmict-gitpod-protocol": "0.1.5",
     "@grpc/grpc-js": "^1.2.12",
     "google-protobuf": "^3.15.8",
     "inversify": "^5.0.1",

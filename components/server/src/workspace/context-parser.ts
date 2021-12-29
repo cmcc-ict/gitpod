@@ -4,8 +4,8 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { WorkspaceContext, User } from "@gitpod/gitpod-protocol";
-import { TraceContext } from "@gitpod/gitpod-protocol/lib/util/tracing";
+import { WorkspaceContext, User } from "cmict-gitpod-protocol";
+import { TraceContext } from "cmict-gitpod-protocol/lib/util/tracing";
 import { inject, injectable } from "inversify";
 import { AuthProviderParams } from "../auth/auth-provider";
 import { URLSearchParams, URL } from "url";

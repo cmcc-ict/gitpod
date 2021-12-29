@@ -4,12 +4,12 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { DBWithTracing, TracedWorkspaceDB, WorkspaceDB } from '@gitpod/gitpod-db/lib';
-import { CommitContext, IssueContext, PullRequestContext, Repository, SnapshotContext, User, Workspace, WorkspaceConfig, WorkspaceContext, WorkspaceProbeContext } from '@gitpod/gitpod-protocol';
-import { ErrorCodes } from '@gitpod/gitpod-protocol/lib/messaging/error';
-import { generateWorkspaceID } from '@gitpod/gitpod-protocol/lib/util/generate-workspace-id';
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
-import { TraceContext } from '@gitpod/gitpod-protocol/lib/util/tracing';
+import { DBWithTracing, TracedWorkspaceDB, WorkspaceDB } from 'cmict-gitpod-db/lib';
+import { CommitContext, IssueContext, PullRequestContext, Repository, SnapshotContext, User, Workspace, WorkspaceConfig, WorkspaceContext, WorkspaceProbeContext } from 'cmict-gitpod-protocol';
+import { ErrorCodes } from 'cmict-gitpod-protocol/lib/messaging/error';
+import { generateWorkspaceID } from 'cmict-gitpod-protocol/lib/util/generate-workspace-id';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
+import { TraceContext } from 'cmict-gitpod-protocol/lib/util/tracing';
 import { inject, injectable } from 'inversify';
 import { ResponseError } from 'vscode-jsonrpc';
 import { ConfigProvider } from './config-provider';

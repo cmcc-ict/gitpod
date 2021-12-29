@@ -8,9 +8,9 @@ import { injectable, inject, postConstruct } from 'inversify';
 import * as express from "express"
 import * as passport from "passport"
 import * as OAuth2Strategy from "passport-oauth2";
-import { UserDB } from "@gitpod/gitpod-db/lib";
-import { AuthProviderInfo, Identity, Token, User } from '@gitpod/gitpod-protocol';
-import { log, LogContext } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { UserDB } from "cmict-gitpod-db/lib";
+import { AuthProviderInfo, Identity, Token, User } from 'cmict-gitpod-protocol';
+import { log, LogContext } from 'cmict-gitpod-protocol/lib/util/logging';
 import fetch from "node-fetch";
 import { oauth2tokenCallback, OAuth2 } from 'oauth';
 import { URL } from 'url';

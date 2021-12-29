@@ -4,19 +4,19 @@
  * See License.enterprise.txt in the project root folder.
  */
 
-import { testContainer } from '@gitpod/gitpod-db/lib/test-container';
-import { hoursLater, rightBefore, rightAfter, oneMonthLater } from '@gitpod/gitpod-protocol/lib/util/timeutil';
-import { DBWorkspace, DBWorkspaceInstance, WorkspaceDB, UserDB, DBUser, DBIdentity } from '@gitpod/gitpod-db/lib';
-import { DBAccountEntry } from '@gitpod/gitpod-db/lib/typeorm/entity/db-account-entry';
-import { TypeORM } from '@gitpod/gitpod-db/lib/typeorm/typeorm';
-import { AccountEntry, Subscription, AccountStatement } from '@gitpod/gitpod-protocol/lib/accounting-protocol';
-import { Plans, ABSOLUTE_MAX_USAGE, Plan } from '@gitpod/gitpod-protocol/lib/plans';
+import { testContainer } from 'cmict-gitpod-db/lib/test-container';
+import { hoursLater, rightBefore, rightAfter, oneMonthLater } from 'cmict-gitpod-protocol/lib/util/timeutil';
+import { DBWorkspace, DBWorkspaceInstance, WorkspaceDB, UserDB, DBUser, DBIdentity } from 'cmict-gitpod-db/lib';
+import { DBAccountEntry } from 'cmict-gitpod-db/lib/typeorm/entity/db-account-entry';
+import { TypeORM } from 'cmict-gitpod-db/lib/typeorm/typeorm';
+import { AccountEntry, Subscription, AccountStatement } from 'cmict-gitpod-protocol/lib/accounting-protocol';
+import { Plans, ABSOLUTE_MAX_USAGE, Plan } from 'cmict-gitpod-protocol/lib/plans';
 import * as chai from 'chai';
 import { suite, test, timeout } from 'mocha-typescript';
 import { AccountService } from './account-service';
 import { AccountServiceImpl } from './account-service-impl';
-import { DBSubscription } from '@gitpod/gitpod-db/lib/typeorm/entity/db-subscription';
-import { AccountingDB } from '@gitpod/gitpod-db/lib/accounting-db';
+import { DBSubscription } from 'cmict-gitpod-db/lib/typeorm/entity/db-subscription';
+import { AccountingDB } from 'cmict-gitpod-db/lib/accounting-db';
 import { AccountingServer } from './accounting-server';
 import { SubscriptionService } from './subscription-service';
 

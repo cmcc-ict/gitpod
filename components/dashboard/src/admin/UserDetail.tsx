@@ -4,9 +4,9 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { NamedWorkspaceFeatureFlag, Permissions, RoleOrPermission, Roles, User, WorkspaceFeatureFlags } from "@gitpod/gitpod-protocol"
-import { AccountStatement, Subscription } from "@gitpod/gitpod-protocol/lib/accounting-protocol";
-import { Plans } from "@gitpod/gitpod-protocol/lib/plans";
+import { NamedWorkspaceFeatureFlag, Permissions, RoleOrPermission, Roles, User, WorkspaceFeatureFlags } from "cmict-gitpod-protocol"
+import { AccountStatement, Subscription } from "cmict-gitpod-protocol/lib/accounting-protocol";
+import { Plans } from "cmict-gitpod-protocol/lib/plans";
 import moment from "moment";
 import { ReactChild, useEffect, useRef, useState } from "react";
 import CheckBox from "../components/CheckBox";

@@ -6,13 +6,13 @@
 
 import { AccountingDB } from "../accounting-db";
 import { DBAccountEntry } from "./entity/db-account-entry";
-import { User } from "@gitpod/gitpod-protocol";
-import { AccountEntry, Subscription, Credit, SubscriptionAndUser } from "@gitpod/gitpod-protocol/lib/accounting-protocol";
+import { User } from "cmict-gitpod-protocol";
+import { AccountEntry, Subscription, Credit, SubscriptionAndUser } from "cmict-gitpod-protocol/lib/accounting-protocol";
 import { EntityManager, Repository } from "typeorm";
 import { DBSubscription, DBSubscriptionAdditionalData, DBPaymentSourceInfo } from "./entity/db-subscription";
 import { injectable, inject } from "inversify";
 import * as uuidv4 from 'uuid/v4';
-import { Without } from "@gitpod/gitpod-protocol/lib/util/without";
+import { Without } from "cmict-gitpod-protocol/lib/util/without";
 import { DBUser } from "../typeorm/entity/db-user";
 import { TypeORM } from "./typeorm";
 

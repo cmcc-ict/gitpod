@@ -5,11 +5,11 @@
  */
 
 import { inject, injectable } from "inversify";
-import { WorkspaceSoftDeletion } from "@gitpod/gitpod-protocol";
-import { WorkspaceDB, WorkspaceAndOwner, WorkspaceOwnerAndSoftDeleted, TracedWorkspaceDB, DBWithTracing } from "@gitpod/gitpod-db/lib";
+import { WorkspaceSoftDeletion } from "cmict-gitpod-protocol";
+import { WorkspaceDB, WorkspaceAndOwner, WorkspaceOwnerAndSoftDeleted, TracedWorkspaceDB, DBWithTracing } from "cmict-gitpod-db/lib";
 import { StorageClient } from "../storage/storage-client";
 import { Env } from "../env";
-import { TraceContext } from "@gitpod/gitpod-protocol/lib/util/tracing";
+import { TraceContext } from "cmict-gitpod-protocol/lib/util/tracing";
 
 @injectable()
 export class WorkspaceDeletionService {

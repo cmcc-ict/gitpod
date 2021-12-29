@@ -6,10 +6,10 @@
 
 import { inject, injectable } from 'inversify';
 
-import { TeamSubscriptionDB } from '@gitpod/gitpod-db/lib/team-subscription-db';
-import { log, LogContext } from '@gitpod/gitpod-protocol/lib/util/logging';
-import { Plans } from '@gitpod/gitpod-protocol/lib/plans';
-import { TeamSubscription } from '@gitpod/gitpod-protocol/lib/team-subscription-protocol';
+import { TeamSubscriptionDB } from 'cmict-gitpod-db/lib/team-subscription-db';
+import { log, LogContext } from 'cmict-gitpod-protocol/lib/util/logging';
+import { Plans } from 'cmict-gitpod-protocol/lib/plans';
+import { TeamSubscription } from 'cmict-gitpod-protocol/lib/team-subscription-protocol';
 import { getCancelledAt, getStartDate } from './chargebee-subscription-helper';
 import { Chargebee as chargebee } from './chargebee-types';
 import { EventHandler } from './chargebee-event-handler';

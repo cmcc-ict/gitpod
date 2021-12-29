@@ -4,7 +4,7 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
-import { GitpodToken, GitpodTokenType } from "@gitpod/gitpod-protocol"
+import { GitpodToken, GitpodTokenType } from "cmict-gitpod-protocol"
 import { Column, Entity, JoinColumn, ManyToOne, PrimaryColumn } from "typeorm"
 import { Transformer } from "../transformer"
 import { DBUser } from "./db-user"

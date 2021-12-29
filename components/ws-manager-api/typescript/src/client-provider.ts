@@ -8,10 +8,10 @@ import * as grpc from "@grpc/grpc-js";
 import { injectable, inject } from 'inversify';
 import { WorkspaceManagerClient } from './core_grpc_pb';
 import { PromisifiedWorkspaceManagerClient, linearBackoffStrategy } from "./promisified-client";
-import { Disposable, User, Workspace, WorkspaceInstance } from "@gitpod/gitpod-protocol";
-import { WorkspaceClusterWoTLS, WorkspaceManagerConnectionInfo } from '@gitpod/gitpod-protocol/lib/workspace-cluster';
+import { Disposable, User, Workspace, WorkspaceInstance } from "cmict-gitpod-protocol";
+import { WorkspaceClusterWoTLS, WorkspaceManagerConnectionInfo } from 'cmict-gitpod-protocol/lib/workspace-cluster';
 import { WorkspaceManagerClientProviderCompositeSource, WorkspaceManagerClientProviderSource } from "./client-provider-source";
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
 
 @injectable()
 export class WorkspaceManagerClientProvider implements Disposable {

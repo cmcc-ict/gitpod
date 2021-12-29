@@ -5,8 +5,8 @@
  */
 
 import * as crypto from 'crypto';
-import { GitpodToken, GitpodTokenType, Identity, IdentityLookup, Token, TokenEntry, User, UserEnvVar } from "@gitpod/gitpod-protocol";
-import { EncryptionService } from "@gitpod/gitpod-protocol/lib/encryption/encryption-service";
+import { GitpodToken, GitpodTokenType, Identity, IdentityLookup, Token, TokenEntry, User, UserEnvVar } from "cmict-gitpod-protocol";
+import { EncryptionService } from "cmict-gitpod-protocol/lib/encryption/encryption-service";
 import { DateInterval, ExtraAccessTokenFields, GrantIdentifier, OAuthClient, OAuthScope, OAuthToken, OAuthUser } from "@jmondi/oauth2-server";
 import { inject, injectable, postConstruct } from "inversify";
 import { EntityManager, Repository } from "typeorm";

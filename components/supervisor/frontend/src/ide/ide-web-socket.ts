@@ -5,7 +5,7 @@
  */
 
 import ReconnectingWebSocket from 'reconnecting-websocket';
-import { Disposable } from '@gitpod/gitpod-protocol/lib/util/disposable';
+import { Disposable } from 'cmict-gitpod-protocol/lib/util/disposable';
 
 let connected = false;
 const workspaceSockets = new Set<IDEWebSocket>();

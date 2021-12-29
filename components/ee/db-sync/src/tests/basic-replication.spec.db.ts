@@ -9,11 +9,11 @@ import { Connection } from 'mysql';
 import * as chai from 'chai';
 const expect = chai.expect;
 import { connect, query, NamedConnection } from '../database';
-import { Config } from '@gitpod/gitpod-db/lib/config';
+import { Config } from 'cmict-gitpod-db/lib/config';
 import { ConnectionConfig } from 'mysql';
 import { Container, injectable } from 'inversify';
 import { productionContainerModule } from '../container-module';
-import { TableDescriptionProvider, TableDescription } from '@gitpod/gitpod-db/lib/tables';
+import { TableDescriptionProvider, TableDescription } from 'cmict-gitpod-db/lib/tables';
 import { PeriodicReplicator } from '../replication';
 
 const dbConfig = new Config().mysqlConfig;

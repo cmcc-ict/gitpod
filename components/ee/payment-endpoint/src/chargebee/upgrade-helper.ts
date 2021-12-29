@@ -6,7 +6,7 @@
 
 import { injectable, inject } from "inversify";
 import { ChargebeeProvider } from "./chargebee-provider";
-import { LogContext, log } from "@gitpod/gitpod-protocol/lib/util/logging";
+import { LogContext, log } from "cmict-gitpod-protocol/lib/util/logging";
 
 @injectable()
 export class UpgradeHelper {

@@ -6,7 +6,7 @@
 
 import { createConnection, Connection, QueryOptions } from "mysql";
 import { NamedConnectionConfig } from "./config";
-import { Without } from '@gitpod/gitpod-protocol/lib/util/without';
+import { Without } from 'cmict-gitpod-protocol/lib/util/without';
 
 export type NamedConnection = Connection & { name: string };
 

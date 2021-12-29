@@ -5,11 +5,11 @@
  */
 
 import { AbstractTopicListener, MessageBusHelper, TopicListener } from "@gitpod/gitpod-messagebus/lib";
-import { CreditAlert } from "@gitpod/gitpod-protocol/lib/accounting-protocol";
+import { CreditAlert } from "cmict-gitpod-protocol/lib/accounting-protocol";
 import { injectable } from "inversify";
 import { MessageBusIntegration } from "../../../src/workspace/messagebus-integration";
-import { TraceContext } from "@gitpod/gitpod-protocol/lib/util/tracing";
-import { Disposable } from "@gitpod/gitpod-protocol";
+import { TraceContext } from "cmict-gitpod-protocol/lib/util/tracing";
+import { Disposable } from "cmict-gitpod-protocol";
 import { CancellationTokenSource } from 'vscode-jsonrpc/lib/cancellation';
 
 @injectable()

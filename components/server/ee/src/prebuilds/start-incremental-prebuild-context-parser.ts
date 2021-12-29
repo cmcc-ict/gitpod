@@ -4,7 +4,7 @@
  * See License.enterprise.txt in the project root folder.
  */
 
-import { User, WorkspaceContext, StartPrebuildContext, CommitContext, ContextURL } from "@gitpod/gitpod-protocol";
+import { User, WorkspaceContext, StartPrebuildContext, CommitContext, ContextURL } from "cmict-gitpod-protocol";
 import { inject, injectable } from "inversify";
 import { URL } from "url";
 import { Env } from '../../../src/env';

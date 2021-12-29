@@ -4,8 +4,8 @@
  * See License.enterprise.txt in the project root folder.
  */
 
-import { Subscription } from "@gitpod/gitpod-protocol/lib/accounting-protocol";
-import { Plans } from "@gitpod/gitpod-protocol/lib/plans";
+import { Subscription } from "cmict-gitpod-protocol/lib/accounting-protocol";
+import { Plans } from "cmict-gitpod-protocol/lib/plans";
 import { orderByEndDateDescThenStartDateDesc, orderByStartDateAscEndDateAsc } from "./accounting-util";
 
 /**

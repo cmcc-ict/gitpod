@@ -5,7 +5,7 @@
  */
 
 import { ValueTransformer } from "typeorm/decorator/options/ValueTransformer";
-import { EncryptionService } from "@gitpod/gitpod-protocol/lib/encryption/encryption-service";
+import { EncryptionService } from "cmict-gitpod-protocol/lib/encryption/encryption-service";
 
 
 export namespace Transformer {

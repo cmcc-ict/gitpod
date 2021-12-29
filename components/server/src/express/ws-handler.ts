@@ -11,7 +11,7 @@ import * as https from 'https';
 import * as url from 'url';
 import * as net from 'net';
 import { WsLayer } from './ws-layer';
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
 import { increaseHttpRequestCounter } from '../prometheus-metrics';
 
 export type HttpServer = http.Server | https.Server;

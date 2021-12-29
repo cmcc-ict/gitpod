@@ -6,14 +6,14 @@
 
 import { injectable, inject } from "inversify";
 
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
-import { WorkspaceDB, UserDB } from "@gitpod/gitpod-db/lib";
-import { User } from "@gitpod/gitpod-protocol";
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
+import { WorkspaceDB, UserDB } from "cmict-gitpod-db/lib";
+import { User } from "cmict-gitpod-protocol";
 import { WorkspaceManagerClientProvider } from "@gitpod/ws-manager/lib/client-provider";
 import { DescribeWorkspaceRequest, PortVisibility } from "@gitpod/ws-manager/lib";
-import { worspacePortAuthCookieName as workspacePortAuthCookieName } from "@gitpod/gitpod-protocol/lib/util/workspace-port-authentication";
-import { GarbageCollectedCache } from "@gitpod/gitpod-protocol/lib/util/garbage-collected-cache";
-import { parseWorkspaceIdFromHostname } from "@gitpod/gitpod-protocol/lib/util/parse-workspace-id";
+import { worspacePortAuthCookieName as workspacePortAuthCookieName } from "cmict-gitpod-protocol/lib/util/workspace-port-authentication";
+import { GarbageCollectedCache } from "cmict-gitpod-protocol/lib/util/garbage-collected-cache";
+import { parseWorkspaceIdFromHostname } from "cmict-gitpod-protocol/lib/util/parse-workspace-id";
 
 import { Env } from "../env";
 import { TokenService } from "./token-service";

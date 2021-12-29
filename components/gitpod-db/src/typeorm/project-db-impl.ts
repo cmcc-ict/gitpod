@@ -9,7 +9,7 @@ import { TypeORM } from "./typeorm";
 import { Repository } from "typeorm";
 import { ProjectDB } from "../project-db";
 import { DBProject } from "./entity/db-project";
-import { Project } from "@gitpod/gitpod-protocol";
+import { Project } from "cmict-gitpod-protocol";
 import * as uuidv4 from 'uuid/v4';
 
 @injectable()

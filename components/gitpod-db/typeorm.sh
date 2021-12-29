@@ -5,5 +5,5 @@
 
 set -euo pipefail
 
-yarn --cwd /app/node_modules/@gitpod/gitpod-db run wait-for-db
-yarn --cwd /app/node_modules/@gitpod/gitpod-db typeorm "$@"
+yarn --cwd /app/node_modules/cmict-gitpod-db run wait-for-db
+yarn --cwd /app/node_modules/cmict-gitpod-db typeorm "$@"

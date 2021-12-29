@@ -6,9 +6,9 @@
 
 import { injectable, inject } from "inversify";
 import { ConsensusLeaderMessenger, HeartbeatMessage, RequestVoteMessage, CastVoteMessage, RaftMessage } from "./consensus-leader-messenger";
-import { Disposable } from "@gitpod/gitpod-protocol";
-import { Deferred } from "@gitpod/gitpod-protocol/lib/util/deferred";
-import { log } from "@gitpod/gitpod-protocol/lib/util/logging";
+import { Disposable } from "cmict-gitpod-protocol";
+import { Deferred } from "cmict-gitpod-protocol/lib/util/deferred";
+import { log } from "cmict-gitpod-protocol/lib/util/logging";
 
 @injectable()
 /* Implements the leader election mechanism of the Raft concensus algorithm:

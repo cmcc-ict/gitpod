@@ -4,7 +4,7 @@
  * See License-AGPL.txt in the project root for license information.
  */
 
- import { AuthProviderInfo } from "@gitpod/gitpod-protocol";
+ import { AuthProviderInfo } from "cmict-gitpod-protocol";
  import { useContext, useEffect, useState } from "react";
  import { UserContext } from "./user-context";
  import { TeamsContext } from "./teams/teams-context";

@@ -5,8 +5,8 @@
  */
 
 import { injectable } from 'inversify';
-import { log } from '@gitpod/gitpod-protocol/lib/util/logging';
-import { getEnvVarParsed, getEnvVar } from '@gitpod/gitpod-protocol/lib/env';
+import { log } from 'cmict-gitpod-protocol/lib/util/logging';
+import { getEnvVarParsed, getEnvVar } from 'cmict-gitpod-protocol/lib/env';
 import { ConnectionConfig } from 'mysql';
 
 @injectable()
