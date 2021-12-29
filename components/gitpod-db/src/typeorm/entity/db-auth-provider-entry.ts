@@ -24,6 +24,9 @@ export class DBAuthProviderEntry implements AuthProviderEntry {
     @Column()
     host: string;
 
+    @Column()
+    schema: string;
+
     @Column('varchar')
     type: AuthProviderEntry.Type;
 
