@@ -54,6 +54,7 @@ const gitpodServiceMock = createServiceMock({
             "status": "verified",
             "host": "testing.doptig.com/gitlab",
             "type": "GitLab",
+            "schema": "https",
             "oauth": {
               "authorizationUrl": "https://testing.doptig.com/gitlab/oauth/authorize",
               "tokenUrl": "https://testing.doptig.com/gitlab/oauth/token",

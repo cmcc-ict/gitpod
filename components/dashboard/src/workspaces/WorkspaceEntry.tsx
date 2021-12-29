@@ -43,24 +43,24 @@ export function WorkspaceEntry({ desc, model, isAdmin, stopWorkspace }: Props) {
     }).toString();
     const menuEntries: ContextMenuEntry[] = [
         {
-            title: 'Open',
+            title: '打开',
             href: startUrl.toString()
         }];
     if (state === 'running') {
         menuEntries.push({
-            title: 'Stop',
+            title: '停止',
             onClick: () => stopWorkspace(ws.id)
         });
     }
     menuEntries.push(
         {
-            title: 'Download',
+            title: '下载',
             href: downloadURL
         });
     if (!isAdmin) {
         menuEntries.push(
             {
-                title: 'Share',
+                title: '分享',
                 active: !!ws.shareable,
                 onClick: () => {
                     model.toggleShared(ws.id);
@@ -75,7 +75,7 @@ export function WorkspaceEntry({ desc, model, isAdmin, stopWorkspace }: Props) {
                 }
             },
             {
-                title: 'Delete',
+                title: '删除',
                 customFontStyle: 'text-red-600 dark:text-red-400 hover:text-red-800 dark:hover:text-red-300',
                 onClick: () => {
                     setModalVisible(true);

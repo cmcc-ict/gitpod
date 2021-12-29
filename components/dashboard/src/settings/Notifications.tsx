@@ -42,16 +42,16 @@ export default function Notifications() {
         }
     }
     return <div>
-        <PageWithSubMenu subMenu={settingsMenu}  title='Notifications' subtitle='Choose when to be notified.'>
-            <h3>Email Notification Preferences</h3>
+        <PageWithSubMenu subMenu={settingsMenu}  title='通知' subtitle='选择何时收到通知.'>
+            <h3>电子邮件通知首选项</h3>
             <CheckBox
-                title="Account Notifications"
-                desc="Receive emails about changes to your account"
+                title="帐户通知"
+                desc="接收有关帐户更改的电子邮件"
                 checked={isTransactionalMail}
                 onChange={toggleTransactionalMail}/>
             <CheckBox
-                title="Product Notifications"
-                desc="Receive emails about product updates and news"
+                title="产品通知"
+                desc="接收有关产品更新和新闻的电子邮件"
                 checked={isMarketingMail}
                 onChange={toggleMarketingMail}/>
         </PageWithSubMenu>

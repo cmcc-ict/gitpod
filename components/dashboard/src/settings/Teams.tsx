@@ -427,8 +427,8 @@ function AllTeams() {
     const renderTeams = () => (<React.Fragment>
         <div className="flex flex-row">
             <div className="flex-grow ">
-                <h3 className="self-center">All Teams</h3>
-                <h2>Manage teams and team members.</h2>
+                <h3 className="self-center">所有团队</h3>
+                <h2>管理团队和团队成员.</h2>
             </div>
             <div className="flex flex-end space-x-3">
                 {isChargebeeCustomer && (
@@ -459,9 +459,11 @@ function AllTeams() {
         {(getActiveSubs().length === 0 && !pendingPlanPurchase) && (
             <div className="w-full flex h-80 mt-2 rounded-xl bg-gray-100 dark:bg-gray-900">
                 <div className="m-auto text-center">
-                    <h3 className="self-center text-gray-500 dark:text-gray-400 mb-4">No Active Teams</h3>
-                    <div className="text-gray-500 mb-6">Get started by creating a team<br /> and adding team members. <a href="https://www.gitpod.io/docs/teams/" target="_blank" rel="noopener" className="text-gray-400 learn-more hover:text-gray-600">Learn more</a></div>
-                    <button className="self-center" onClick={() => showCreateTeamModal()}>Create Team</button>
+                    <h3 className="self-center text-gray-500 dark:text-gray-400 mb-4">没有活跃的团队</h3>
+                    <div className="text-gray-500 mb-6">从创建团队开始<br />以及增加团队成员
+                    {/* <a href="https://www.gitpod.io/docs/teams/" target="_blank" rel="noopener" className="text-gray-400 learn-more hover:text-gray-600">了解更多</a> */}
+                    </div>
+                    <button className="self-center" onClick={() => showCreateTeamModal()}>创建团队</button>
                 </div>
             </div>
         )}
@@ -525,8 +527,8 @@ function AllTeams() {
         {showPaymentUI ? renderTeams() : (
             <div className="flex flex-row">
                 <div className="flex-grow ">
-                    <h3 className="self-center">All Teams</h3>
-                    <h2>Manage teams and team members.</h2>
+                    <h3 className="self-center">所有团队</h3>
+                    <h2>管理团队和团队成员.</h2>
                 </div>
             </div>
         )}
@@ -607,12 +609,12 @@ function AddMembersModal(props: {
     }
 
     return (<Modal visible={true} onClose={props.onClose}>
-        <h3 className="pb-2">Add Members</h3>
+        <h3 className="pb-2">新增成员</h3>
         <div className="border-t border-b border-gray-200 dark:border-gray-800 mt-2 -mx-6 px-6 py-4">
             <p className="pb-4 text-gray-500 text-base">Add members to the team.</p>
 
             <div className="flex flex-col space-y-2 pb-4">
-                <label htmlFor="quantity" className="font-medium">Members</label>
+                <label htmlFor="quantity" className="font-medium">成员</label>
                 <select name="quantity" value={quantity} className="rounded-md w-full"
                     onChange={(e) => setQuantity(parseInt(e.target.value || '1', 10))}>
                     {quantities.map(n => (
@@ -662,12 +664,12 @@ function NewTeamModal(props: {
     }
 
     return (<Modal visible={true} onClose={props.onClose}>
-        <h3 className="pb-2">New Team</h3>
+        <h3 className="pb-2">新建团队</h3>
         <div className="border-t border-b border-gray-200 dark:border-gray-800 mt-2 -mx-6 px-6 py-4 space-y-2">
-            <p className="pb-4 text-gray-500 text-base">Create a team and add team members.</p>
+            <p className="pb-4 text-gray-500 text-base">创建团队并添加团队成员</p>
 
             <div className="flex flex-col space-y-2">
-                <label htmlFor="type" className="font-medium">Team</label>
+                <label htmlFor="type" className="font-medium">团队</label>
                 <select name="type" value={type} className="rounded-md w-full"
                     onChange={(e) => setType(e.target.value)}>
                     {props.types.map(type => (
@@ -677,7 +679,7 @@ function NewTeamModal(props: {
             </div>
 
             <div className="flex flex-col space-y-2">
-                <label htmlFor="quantity" className="font-medium">Members</label>
+                <label htmlFor="quantity" className="font-medium">成员</label>
                 <select name="quantity" value={quantity} className="rounded-md w-full"
                     onChange={(e) => setQuantity(parseInt(e.target.value || '1', 10))}>
                     {quantities.map(n => (
