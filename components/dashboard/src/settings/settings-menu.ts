@@ -6,31 +6,31 @@
 
 export default [
     {
-        title: 'Account',
+        title: '账户',
         link: ['/account','/settings']
     },
     {
-        title: 'Notifications',
+        title: '通知',
         link: ['/notifications']
     },
+    // {
+    //     title: 'Plans',
+    //     link: ['/plans']
+    // },
+    // {
+    //     title: 'Teams',
+    //     link: ['/teams']
+    // },
     {
-        title: 'Plans',
-        link: ['/plans']
-    },
-    {
-        title: 'Teams',
-        link: ['/teams']
-    },
-    {
-        title: 'Variables',
+        title: '环境变量',
         link: ['/variables']
     },
     {
-        title: 'Integrations',
+        title: '整合',
         link: ["/integrations", "/access-control"]
     },
     {
-        title: 'Preferences',
+        title: '偏好',
         link: ['/preferences']
     },
 ];

@@ -46,7 +46,7 @@ export default function Account() {
         </ConfirmationModal>
 
         <PageWithSubMenu subMenu={settingsMenu}  title='账户' subtitle='管理帐户和git配置'>
-            <h3>Profile</h3>
+            <h3>简介</h3>
             <p className="text-base text-gray-500 pb-4 max-w-2xl">以下信息将用于设置git配置。通过使用默认环境变量，可以覆盖每个项目的git作者姓名和电子邮件 <CodeText>GIT_AUTHOR_NAME</CodeText> and <CodeText>GIT_COMMITTER_EMAIL</CodeText>.</p>
             <div className="flex flex-col lg:flex-row">
                 <div>
