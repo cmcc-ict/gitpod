@@ -39,9 +39,9 @@ export default function Setup() {
     return <div>
         {!showModal && (
             <Modal visible={true} onClose={() => { }} closeable={false}>
-                <h3 className="pb-2">欢迎来到 OneCode Space 🎉</h3>
+                <h3 className="pb-2">欢迎来到 OneCodeSpace 🎉</h3>
                 <div className="border-t border-b border-gray-200 dark:border-gray-800 mt-2 -mx-6 px-6 py-4">
-                    <p className="pb-4 text-gray-500 text-base">要开始使用OneCode Space，您需要设置git集成.</p>
+                    <p className="pb-4 text-gray-500 text-base">要开始使用OneCodeSpace，您需要设置git集成.</p>
 
                     <div className="flex">
                         <span className="text-gray-500">
