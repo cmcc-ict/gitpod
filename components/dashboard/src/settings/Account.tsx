@@ -68,7 +68,7 @@ export default function Account() {
                 </div>
             </div>
             <h3 className="mt-12">删除帐户</h3>
-            <p className="text-base text-gray-500 pb-4">此操作将删除与您在Cmict中的帐户相关的所有数据.</p>
+            <p className="text-base text-gray-500 pb-4">此操作将删除与您在OneCode Space中的帐户相关的所有数据.</p>
             <button className="danger secondary" onClick={() => setModal(true)}>删除帐户</button>
         </PageWithSubMenu>
     </div>;

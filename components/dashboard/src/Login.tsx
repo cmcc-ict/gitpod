@@ -108,7 +108,7 @@
                          <img src={gitpodDark} className="h-8 hidden dark:block" />
                      </div>
                      <div className="mb-10">
-                         <h1 className="text-5xl mb-3">欢迎使用 OneCode Space</h1>
+                         <h1 className="text-5xl mb-3">欢迎,OneCode Space</h1>
                          <div className="text-gray-400 text-lg">
                              为云中的每个任务秒级启动全新的自动化开发环境。
                          </div>
