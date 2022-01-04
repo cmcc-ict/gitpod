@@ -117,12 +117,12 @@ export default function Menu() {
             alternatives: adminMenu.flatMap(e => e.link)
         }] : []),
         {
-            title: '文档',
-            link: 'https://www.gitpod.io/docs/',
+            title: 'gitlab',
+            link: 'https://git-gitpod.onecode.ict.cmcc/',
         },
         {
-            title: '社区',
-            link: 'https://community.gitpod.io/',
+            title: '知识库',
+            link: 'http://wiki.onecode.ict.cmcc/',
         }
     ];
 

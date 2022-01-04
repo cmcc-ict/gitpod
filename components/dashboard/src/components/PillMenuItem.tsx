@@ -16,7 +16,7 @@ export default function PillMenuItem(p: {
         (p.selected
             ? 'bg-gray-200 dark:bg-gray-700'
             : 'text-gray-600 hover:bg-gray-100 dark:hover:bg-gray-800');
-    return ((!p.link || p.link.startsWith('https://'))
+    return ((!p.link || p.link.startsWith('https://') || p.link.startsWith('http://'))
         ? <a className={classes} href={p.link} onClick={p.onClick}>{p.name}</a>
         : <Link className={classes} to={p.link} onClick={p.onClick}>{p.name}</Link>);
 }
