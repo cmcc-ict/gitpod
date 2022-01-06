@@ -9,10 +9,10 @@ export default [
         title: '账户',
         link: ['/account','/settings']
     },
-    {
-        title: '通知',
-        link: ['/notifications']
-    },
+    // {
+    //     title: '通知',
+    //     link: ['/notifications']
+    // },
     // {
     //     title: 'Plans',
     //     link: ['/plans']
