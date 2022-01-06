@@ -228,7 +228,7 @@ export default function Menu() {
                                 href: gitpodHostUrl.asApiLogout().toString()
                             },
                         ]}>
-                            <img className="rounded-full w-6 h-6" src={user?.avatarUrl || ''} alt={user?.name || 'Anonymous'} />
+                            <img className="rounded-full w-6 h-6" src={'http://minio.onecode.ict.cmcc/user-avatar/user-sculpture.jpg' || user?.avatarUrl} alt={user?.name || 'Anonymous'} />
                         </ContextMenu>
                     </div>
                 </div>

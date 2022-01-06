@@ -63,7 +63,7 @@ export default function Account() {
                     <div className="mt-4">
                         <h4>Avatar</h4>
                         <img className="rounded-full w-24 h-24"
-                            src={user!.avatarUrl} alt={user!.name} />
+                            src={'http://minio.onecode.ict.cmcc/user-avatar/user-sculpture.jpg'} alt={user!.name} />
                     </div>
                 </div>
             </div>
