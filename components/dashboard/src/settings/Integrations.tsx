@@ -558,7 +558,6 @@ export function GitIntegrationModal(props: ({
     const updateSchemaValue = (schema: string) => {
         if (mode === "new") {
             setSchema(schema);
-            setRedirectURL(callbackUrl(schema));
             setErrorMessage(undefined);
         }
     }
@@ -654,10 +653,15 @@ export function GitIntegrationModal(props: ({
                     <input name="hostName" disabled={mode === "edit"} type="text" value={host} className="w-full"
                         onChange={(e) => updateHostValue(e.target.value)} />
                 </div>
+                {/* 新增请求类型单选框 */}
                 <div className="flex flex-col space-y-2">
                     <label htmlFor="schema" className="font-medium">类型</label>
-                    <input name="schema" disabled={mode === "edit"} type="text" value={schema} className="w-full"
-                        onChange={(e) => updateSchemaValue(e.target.value)} />
+                    <select name="schema" value={schema} disabled={mode === "edit"} className="w-full"
+                        onChange={(e) => updateSchemaValue(e.target.value)}>
+                        <option value="http">http</option>
+                        <option value="https">https</option>
+                    </select>
+
                 </div>
                 <div className="flex flex-col space-y-2">
                     <label htmlFor="redirectURL" className="font-medium">重定向地址</label>
