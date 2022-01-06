@@ -80,13 +80,13 @@ function GitProviders() {
         const connected = isConnected(provider.authProviderId);
         if (connected) {
             result.push({
-                title: 'Edit Permissions',
+                title: '编辑权限',
                 onClick: () => startEditPermissions(provider),
                 separator: !provider.settingsUrl,
             });
             if (provider.settingsUrl) {
                 result.push({
-                    title: `Manage on ${provider.host}`,
+                    title: `在${provider.host}管理`,
                     onClick: () => {
                         window.open(provider.settingsUrl, "_blank", "noopener,noreferrer");
                     },
@@ -250,10 +250,10 @@ function GitProviders() {
 
         {editModal && (
             <Modal visible={true} onClose={() => setEditModal(undefined)}>
-                <h3 className="pb-2">Edit Permissions</h3>
+                <h3 className="pb-2">编辑权限</h3>
                 <div className="border-t border-b border-gray-200 dark:border-gray-800 mt-2 -mx-6 px-6 py-4">
                     <div className="text-gray-500">
-                        Configure provider permissions.
+                        配置提供程序权限
                     </div>
                     {(editModal.provider.scopes || []).map(scope => (
                         <div key={`scope-${scope}`}>
@@ -273,7 +273,7 @@ function GitProviders() {
                     <button onClick={() => updatePermissions()}
                         disabled={equals(editModal.nextScopes, editModal.prevScopes)}
                     >
-                        Update Permissions
+                        更新权限
                     </button>
                 </div>
             </Modal>
@@ -365,7 +365,7 @@ function GitIntegrations() {
                     name: modal.provider.type,
                     description: modal.provider.host,
                 }}
-                buttonText="Delete Workspace"
+                buttonText="删除工作区"
                 onClose={() => setModal(undefined)}
                 onConfirm={() => deleteProvider(modal.provider)}
             />
@@ -390,7 +390,7 @@ function GitIntegrations() {
                 <div className="m-auto text-center">
                     <h3 className="self-center text-gray-500 dark:text-gray-400 mb-4">没有Git集成</h3>
                     <div className="text-gray-500 mb-6">除了默认的Git提供程序之外，您还可以使用提供程序的自托管实例来授权.</div>
-                    <button className="self-center" onClick={() => setModal({ mode: "new" })}>New Integration</button>
+                    <button className="self-center" onClick={() => setModal({ mode: "new" })}>新建整合</button>
                 </div>
             </div>
         )}

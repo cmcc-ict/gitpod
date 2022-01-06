@@ -38,33 +38,33 @@ export function StartWorkspaceModal(p: StartWorkspaceModalProps) {
         </a>);
 
     return <Modal onClose={p.onClose} visible={p.visible}>
-        <h3 className="pb-2">New Workspace</h3>
+        <h3 className="pb-2">新工作区</h3>
         {/* separator */}
         <div className="border-t border-gray-200 dark:border-gray-800 mt-2 -mx-6 px-6 pt-2">
             <div className="flex">
-                <TabMenuItem name='Recent' selected={selection === 'Recent'} onClick={() => setSelection('Recent')} />
-                <TabMenuItem name='Examples' selected={selection === 'Examples'} onClick={() => setSelection('Examples')} />
+                <TabMenuItem name='最近' selected={selection === 'Recent'} onClick={() => setSelection('Recent')} />
+                <TabMenuItem name='示例' selected={selection === 'Examples'} onClick={() => setSelection('Examples')} />
             </div>
         </div>
         <div className="border-t border-gray-200 dark:border-gray-800 -mx-6 px-6 py-2">
             {list.length > 0 ?
                 <p className="my-4 text-base">
                     {selection === 'Recent' ?
-                        'Create a new workspace using the default branch.' :
-                        'Create a new workspace using an example project.'}
+                        '使用默认分支创建新工作区' :
+                        '使用示例项目创建新工作区'}
                 </p> : <p className="h-6 my-4"></p>}
             <div className="space-y-2 mt-4 overflow-y-scroll h-80 pr-2">
                 {list.length > 0 ? list :
                     (selection === 'Recent' ?
                         <div className="flex flex-col pt-10 items-center px-2">
-                            <h3 className="mb-2 text-gray-500 dark:text-gray-400">No Recent Projects</h3>
-                            <p className="text-center">Projects you use frequently will show up here.</p>
-                            <p className="text-center">Prefix a git repository URL with gitpod.io/# or start with an example.</p>
-                            <button onClick={() => setSelection('Examples')} className="font-medium mt-8">Select Example</button>
+                            <h3 className="mb-2 text-gray-500 dark:text-gray-400">没有最近的项目</h3>
+                            <p className="text-center">您经常使用的项目将显示在此处</p>
+                            <p className="text-center"> 在git存储库URL前面加上gitpod.io/#前缀，或者从一个示例开始 </p>
+                            <button onClick={() => setSelection('Examples')} className="font-medium mt-8">选择示例</button>
                         </div> :
                         <div className="flex flex-col pt-10 items-center px-2">
-                            <h3 className="mb-2 text-gray-500 dark:text-gray-400">No Example Projects</h3>
-                            <p className="text-center">Sorry there seem to be no example projects, that work with your current git provider.</p>
+                            <h3 className="mb-2 text-gray-500 dark:text-gray-400">没有示例项目</h3>
+                            <p className="text-center">很抱歉，似乎没有与当前git提供商一起工作的示例项目</p>
                         </div>)
                 }
             </div>
