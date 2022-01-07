@@ -134,7 +134,7 @@
                              <img src={gitpodIcon} className="h-16 mx-auto" />
                          </div>
                          <div className="mx-auto text-center pb-8 space-y-2">
-                             <h1 className="text-3xl">登录{showWelcome ? '' : ' 到 CMICT'}</h1>
+                             <h1 className="text-3xl">登录{showWelcome ? '' : ' 到 OneCodeSpace'}</h1>
                              <h2 className="uppercase text-sm text-gray-400">时刻准备好编程</h2>
                          </div>
                          <div className="flex flex-col space-y-3 items-center">
