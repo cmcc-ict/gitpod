@@ -10,6 +10,7 @@ import { Link, useHistory } from "react-router-dom";
 import { useLocation, useRouteMatch } from "react-router";
 import { Location } from "history";
 import gitpodIcon from './icons/gitpod.svg';
+import userImg from './icons/user.svg';
 import CaretDown from "./icons/CaretDown.svg";
 import { getGitpodService, gitpodHostUrl } from "./service/service";
 import { UserContext } from "./user-context";
@@ -228,7 +229,7 @@ export default function Menu() {
                                 href: gitpodHostUrl.asApiLogout().toString()
                             },
                         ]}>
-                            <img className="rounded-full w-6 h-6" src={'http://minio.onecode.ict.cmcc/user-avatar/user-sculpture.jpg' || user?.avatarUrl} alt={user?.name || 'Anonymous'} />
+                            <img src={userImg} className="rounded-full w-6 h-5" alt={user?.name || 'Anonymous'} />
                         </ContextMenu>
                     </div>
                 </div>

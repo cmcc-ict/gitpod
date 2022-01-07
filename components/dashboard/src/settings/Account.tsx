@@ -12,6 +12,7 @@ import { UserContext } from "../user-context";
 import settingsMenu from "./settings-menu";
 import ConfirmationModal from "../components/ConfirmationModal";
 import CodeText from "../components/CodeText";
+import userImg from '../icons/user.svg';
 
 export default function Account() {
     const { user } = useContext(UserContext);
@@ -62,8 +63,7 @@ export default function Account() {
                 <div className="lg:pl-14">
                     <div className="mt-4">
                         <h4>Avatar</h4>
-                        <img className="rounded-full w-24 h-24"
-                            src='http://minio.onecode.ict.cmcc/user-avatar/user-sculpture.jpg' alt={user!.name} />
+                        <img src={userImg} className="rounded-full w-24 h-20" alt={user!.name} />
                     </div>
                 </div>
             </div>
