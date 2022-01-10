@@ -26,13 +26,16 @@ export abstract class AbstractContextParser implements IContextParser {
     protected get host(): string {
         return this.config.host;
     }
-
+    // 控制打开ide的拼接链接 /#`url`
     public normalize(contextUrl: string): string | undefined {
         let url = contextUrl.trim();
         if (url.startsWith(`${this.host}/`)) {
             url = `https://${url}`;
         }
         if (url.startsWith(`https://${this.host}/`)) {
+            return url;
+        }
+        if (url.startsWith(`http://${this.host}/`)) {
             return url;
         }
         return undefined;
