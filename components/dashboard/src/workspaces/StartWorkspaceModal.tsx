@@ -59,7 +59,7 @@ export function StartWorkspaceModal(p: StartWorkspaceModalProps) {
                         <div className="flex flex-col pt-10 items-center px-2">
                             <h3 className="mb-2 text-gray-500 dark:text-gray-400">没有最近的项目</h3>
                             <p className="text-center">您经常使用的项目将显示在此处</p>
-                            <p className="text-center"> 在git存储库URL前面加上gitpod.io/#前缀，或者从一个示例开始 </p>
+                            <p className="text-center"> 在git存储库URL前面加上cmict.dev/#前缀，或者从一个示例开始 </p>
                             <button onClick={() => setSelection('Examples')} className="font-medium mt-8">选择示例</button>
                         </div> :
                         <div className="flex flex-col pt-10 items-center px-2">
