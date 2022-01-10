@@ -31,7 +31,7 @@ export class GitLabApi {
             oauthToken = gitlabToken.value;
         }
         return GitLab.create({
-            host: `http://${this.config.host}`,
+            host: `${this.config.schema}://${this.config.host}`,
             oauthToken
         });
     }

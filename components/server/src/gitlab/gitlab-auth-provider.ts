@@ -53,7 +53,7 @@ export class GitLabAuthProvider extends GenericAuthProvider {
     }
 
     protected get baseURL() {
-        return `http://${this.config.host}`;
+        return `${this.config.schema}://${this.config.host}`;
     }
 
     protected readAuthUserSetup = async (accessToken: string, tokenResponse: object) => {
