@@ -118,8 +118,8 @@ export default function Menu() {
             alternatives: adminMenu.flatMap(e => e.link)
         }] : []),
         {
-            title: 'gitlab',
-            link: 'https://git-gitpod.onecode.ict.cmcc/',
+            title: '代码仓库',
+            link: 'http://portal.onecode.ict.cmcc/login?jmpUrl=%2Foauth2-server%2Foauth%2Fauthorize%3Fclient_id%3Dgitlab%26redirect_uri%3Dhttp%253A%252F%252Fgit.onecode.ict.cmcc%252Fusers%252Fauth%252FPortalLogin%252Fcallback%26response_type%3Dcode%26scope%3Deamil%26state%3Dba6a7121a7b6b3758015294220720f7dc2916246484e5a7b',
         },
         {
             title: '知识库',
