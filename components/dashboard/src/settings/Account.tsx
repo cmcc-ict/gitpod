@@ -52,17 +52,17 @@ export default function Account() {
             <div className="flex flex-col lg:flex-row">
                 <div>
                     <div className="mt-4">
-                        <h4>Name</h4>
+                        <h4>姓名</h4>
                         <input type="text" disabled={true} value={user?.fullName || user?.name} />
                     </div>
                     <div className="mt-4">
-                        <h4>Email</h4>
+                        <h4>邮件</h4>
                         <input type="text" disabled={true} value={User.getPrimaryEmail(user!)} />
                     </div>
                 </div>
                 <div className="lg:pl-14">
                     <div className="mt-4">
-                        <h4>Avatar</h4>
+                        <h4>头像</h4>
                         <img src={userImg} className="rounded-full w-24 h-20" alt={user!.name} />
                     </div>
                 </div>
