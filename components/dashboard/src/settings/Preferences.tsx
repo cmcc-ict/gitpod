@@ -47,9 +47,9 @@ export default function Preferences() {
         <PageWithSubMenu subMenu={settingsMenu} title='偏好' subtitle='配置用户首选项.'>
             <h3>默认 IDE</h3>
             <p className="text-base text-gray-500">选择要使用的IDE.</p>
-            <AlertBox className="mt-3 mb-4 w-3/4">
+            {/* <AlertBox className="mt-3 mb-4 w-3/4">
             我们反对Theia的编辑。在接下来的几周内，你仍然可以转回Theia，但会在2021年8月后取消.
-            </AlertBox>
+            </AlertBox> */}
             <div className="mt-4 space-x-4 flex">
                 <SelectableCard className="w-36 h-40" title="VS Code" selected={defaultIde === 'code'} onClick={() => actuallySetDefaultIde('code')}>
                     <div className="flex-grow flex justify-center items-center">
