@@ -52,7 +52,7 @@ function AddEnvVarModal(p: EnvVarModalProps) {
     };
 
     return <Modal visible={true} onClose={p.onClose} onEnter={save}>
-        <h3 className="mb-4">{isNew ? 'New' : 'Edit'} Variable</h3>
+        <h3 className="mb-4">{isNew ? '新建' : '编辑'}环境变量</h3>
         <div className="border-t border-b border-gray-200 dark:border-gray-800 -mx-6 px-6 py-4 flex flex-col">
             {error ? <div className="bg-gitpod-kumquat-light rounded-md p-3 text-gitpod-red text-sm mb-2">
                 {error}

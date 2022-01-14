@@ -140,7 +140,7 @@
                          <div className="flex flex-col space-y-3 items-center">
                              {authProviders.map(ap => {
                                  return (
-                                     <button key={"button" + ap.host} className="btn-login flex-none w-56 h-10 p-0 inline-flex" onClick={() => openLogin(ap.host)}>
+                                     <button key={"button" + ap.host} className="btn-login flex-none w-64 h-10 p-0 inline-flex" onClick={() => openLogin(ap.host)}>
                                          {iconForAuthProvider(ap.authProviderType)}
                                          <span className="pt-2 pb-2 mr-3 text-sm my-auto font-medium truncate overflow-ellipsis">从 {simplifyProviderName(ap.host)} 继续</span>
                                      </button>

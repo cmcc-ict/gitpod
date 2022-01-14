@@ -12,7 +12,7 @@ import theia from '../images/theia-gray.svg';
 import vscode from '../images/vscode.svg';
 import { PageWithSubMenu } from "../components/PageWithSubMenu";
 import settingsMenu from "./settings-menu";
-import AlertBox from "../components/AlertBox";
+// import AlertBox from "../components/AlertBox";
 
 type Theme = 'light' | 'dark' | 'system';
 
