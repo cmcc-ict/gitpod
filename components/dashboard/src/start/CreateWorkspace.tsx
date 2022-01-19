@@ -158,9 +158,9 @@ export default class CreateWorkspace extends React.Component<CreateWorkspaceProp
 
     else if (result?.existingWorkspaces) {
       statusMessage = <Modal visible={true} closeable={false} onClose={() => { }}>
-        <h3>Running Workspaces</h3>
+        <h3>运行工作区间</h3>
         <div className="border-t border-b border-gray-200 dark:border-gray-800 mt-4 -mx-6 px-6 py-2">
-          <p className="mt-1 mb-2 text-base">You already have running workspaces with the same context. You can open an existing one or open a new workspace.</p>
+          <p className="mt-1 mb-2 text-base">您已经有了具有相同上下文的正在运行的工作区。您可以打开现有工作区或打开新工作区。 </p>
           <>
             {result?.existingWorkspaces?.map(w =>
               <a href={w.latestInstance?.ideUrl} className="rounded-xl group hover:bg-gray-100 dark:hover:bg-gray-800 flex p-3 my-1">
@@ -173,7 +173,7 @@ export default class CreateWorkspace extends React.Component<CreateWorkspaceProp
           </>
         </div>
         <div className="flex justify-end mt-6">
-          <button onClick={() => this.createWorkspace(CreateWorkspaceMode.Default)}>New Workspace</button>
+          <button onClick={() => this.createWorkspace(CreateWorkspaceMode.Default)}>新工作区间</button>
         </div>
       </Modal>;
     }
