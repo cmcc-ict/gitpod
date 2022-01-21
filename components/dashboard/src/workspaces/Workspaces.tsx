@@ -106,10 +106,10 @@ export default class Workspaces extends React.Component<WorkspacesProps, Workspa
                     <ItemsList className="lg:px-28 px-10">
                         <Item header={true} className="px-6">
                             <ItemFieldIcon />
-                            <ItemField className="w-3/12">名称</ItemField>
-                            <ItemField className="w-4/12">环境</ItemField>
-                            <ItemField className="w-2/12">修改</ItemField>
-                            <ItemField className="w-2/12">最后开始</ItemField>
+                            <ItemField className="w-3/12">仓库名称</ItemField>
+                            <ItemField className="w-4/12">仓库地址</ItemField>
+                            <ItemField className="w-2/12">分支状态</ItemField>
+                            <ItemField className="w-2/12">上次打开时间</ItemField>
                             <ItemFieldContextMenu />
                         </Item>
                         {

@@ -21,7 +21,7 @@ module.exports = {
                  headers: {
                      host: 'gitpod.io',
                      origin: 'https://' + 'gitpod.io',
-                     cookie: '_gitpod_io_=s%3Abd0febaf-1d99-490b-a4b9-ce452d06e107.aSzRjYOESeI1d582QOVKl%2BiViWNHWnGzYO08%2BKvTpo8'
+                     cookie: '_gitpod_io_=s%3A68eeb162-f1ee-4143-964f-886e0c25e893.AvShGgRR4q4IKQfh1aN80mH%2BhnQbQos89YXH7AZ5cQA'
                 }
             }
         }

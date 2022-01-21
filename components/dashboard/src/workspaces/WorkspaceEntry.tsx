@@ -90,17 +90,25 @@ export function WorkspaceEntry({ desc, model, isAdmin, stopWorkspace }: Props) {
             <WorkspaceStatusIndicator instance={desc?.latestInstance} />
         </ItemFieldIcon>
         <ItemField className="w-3/12 flex flex-col">
-            <a href={startUrl.toString()}><div className="font-medium text-gray-800 dark:text-gray-200 truncate hover:text-blue-600 dark:hover:text-blue-400">{ws.id}</div></a>
-            <a href={project ? 'https://' + project : undefined}><div className="text-sm overflow-ellipsis truncate text-gray-400 dark:text-gray-500 hover:text-blue-600 dark:hover:text-blue-400">{project || 'Unknown'}</div></a>
+            <a href={startUrl.toString()}><div className="font-medium text-gray-800 dark:text-gray-200 truncate hover:text-blue-600 dark:hover:text-blue-400">{project?.split('/').pop()}</div></a>
+            <Tooltip content={project ? project?.toString() : ''}>
+                <a href={project ? 'https://' + project : undefined}><div className="text-sm overflow-ellipsis truncate text-gray-400 dark:text-gray-500 hover:text-blue-600 dark:hover:text-blue-400">{project || 'Unknown'}</div></a>
+            </Tooltip>
         </ItemField>
         <ItemField className="w-4/12 flex flex-col">
-            <div className="text-gray-500 dark:text-gray-400 overflow-ellipsis truncate">{ws.description}</div>
-            <a href={ws.contextURL}>
-                <div className="text-sm text-gray-400 dark:text-gray-500 overflow-ellipsis truncate hover:text-blue-600 dark:hover:text-blue-400">{ws.contextURL}</div>
-            </a>
+            <Tooltip content={ws.description ? ws.description?.toString() : ''}>
+                <div className="text-gray-500 dark:text-gray-400 overflow-ellipsis truncate">{ws.description}</div>
+            </Tooltip>
+            <Tooltip content={ws.contextURL ? ws.contextURL?.toString() : ''}>
+                <a href={ws.contextURL}>
+                    <div className="text-sm text-gray-400 dark:text-gray-500 overflow-ellipsis truncate hover:text-blue-600 dark:hover:text-blue-400">{ws.contextURL}</div>
+                </a>
+            </Tooltip>
         </ItemField>
         <ItemField className="w-2/12 flex flex-col">
-            <div className="text-gray-500 dark:text-gray-400 overflow-ellipsis truncate">{currentBranch}</div>
+            <Tooltip content={currentBranch ? currentBranch?.toString() : ''}>
+                <div className="text-gray-500 dark:text-gray-400 overflow-ellipsis truncate">{currentBranch}</div>
+            </Tooltip>
             <PendingChangesDropdown workspaceInstance={desc.latestInstance} />
         </ItemField>
         <ItemField className="w-2/12 flex">
