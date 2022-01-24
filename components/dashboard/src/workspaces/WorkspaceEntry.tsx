@@ -91,9 +91,9 @@ export function WorkspaceEntry({ desc, model, isAdmin, stopWorkspace }: Props) {
         </ItemFieldIcon>
         <ItemField className="w-3/12 flex flex-col">
             <a href={startUrl.toString()}><div className="font-medium text-gray-800 dark:text-gray-200 truncate hover:text-blue-600 dark:hover:text-blue-400">{project?.split('/').pop()}</div></a>
-            <Tooltip content={project ? project?.toString() : ''}>
+            {/* <Tooltip content={project ? project?.toString() : ''}>
                 <a href={project ? 'https://' + project : undefined}><div className="text-sm overflow-ellipsis truncate text-gray-400 dark:text-gray-500 hover:text-blue-600 dark:hover:text-blue-400">{project || 'Unknown'}</div></a>
-            </Tooltip>
+            </Tooltip> */}
         </ItemField>
         <ItemField className="w-4/12 flex flex-col">
             <Tooltip content={ws.description ? ws.description?.toString() : ''}>
